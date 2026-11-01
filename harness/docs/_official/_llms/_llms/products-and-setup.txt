@@ -1,0 +1,128 @@
+# Docs by LangChain: PRODUCTS AND SETUP
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## PRODUCTS AND SETUP
+
+- [PRODUCTS AND SETUP / LangSmith setup (146 pages)](https://docs.langchain.com/_llms/products-and-setup/lang-smith-setup.txt): Hosting and administration
+
+### LLM Gateway
+
+#### Get started
+
+- [LLM Gateway](https://docs.langchain.com/langsmith/llm-gateway.md): Access models across providers with one LangSmith API key while tracing calls and enforcing spend and data protection policies.
+- [Set up the LLM Gateway](https://docs.langchain.com/langsmith/llm-gateway-admin-setup.md): Set up the LLM Gateway for a team by adding provider keys, granting permission to call the gateway, issuing API keys, and setting governance policies.
+- [Send your first LLM Gateway request](https://docs.langchain.com/langsmith/llm-gateway-first-request.md): Send your first request through the LLM Gateway from the Simulator, call the gateway from your code, and view the request's trace.
+- [How the LLM Gateway works](https://docs.langchain.com/langsmith/llm-gateway-how-it-works.md): Understand what the LLM Gateway does to each request, how upstream credentials are resolved, and where the gateway is available.
+
+#### Call the gateway
+
+- [API formats](https://docs.langchain.com/langsmith/llm-gateway-api-formats.md): Use OpenAI Chat Completions, Anthropic Messages, or OpenAI Responses requests to call models across providers through the LLM Gateway.
+- [Direct model access](https://docs.langchain.com/langsmith/llm-gateway-direct-model-access.md): Access provider APIs directly through provider-specific LLM Gateway paths without using the gateway standardization layer.
+- [Set up coding agents](https://docs.langchain.com/langsmith/llm-gateway-coding-agents.md): Configure Claude Code, Codex, Gemini CLI, and Deep Agents Code to route LLM calls through the LLM Gateway.
+- [Decision models](https://docs.langchain.com/langsmith/llm-gateway-decision-models.md): Call TypeSafe and OpenAI decision models through the LangSmith LLM Gateway using the System One API or the OpenAI Decisions API.
+
+#### Models and reliability
+
+- [Gateway Credits](https://docs.langchain.com/langsmith/llm-gateway-credits.md): Use Gateway Credits to access models without a provider key, just authenticate with LangSmith.
+- [Custom model configurations](https://docs.langchain.com/langsmith/llm-gateway-model-configurations.md): Call saved model configurations through the LLM Gateway to reach custom endpoints and use them in fallback chains.
+- [Model fallbacks](https://docs.langchain.com/langsmith/llm-gateway-fallbacks.md): Automatically retry a request against backup models when the primary model rate-limits, errors, or returns another configured status code.
+
+#### Authentication
+
+- [Authenticate to the LLM Gateway](https://docs.langchain.com/langsmith/llm-gateway-authentication.md): Choose a LangSmith API key for LLM Gateway requests, grant it permission to call the gateway, send it from your client, and fix authentication errors.
+- [Provider authentication](https://docs.langchain.com/langsmith/llm-gateway-provider-authentication.md): Choose how the LLM Gateway authenticates to each model provider, add provider keys as workspace secrets, and fix provider credential errors.
+
+#### Observability
+
+- [View LLM Gateway traces](https://docs.langchain.com/langsmith/llm-gateway-traces.md): Find LLM Gateway traces, read their policy and cost metadata, triage policy violations in LangSmith Engine, and control who can see gateway traces.
+- [Monitor LLM Gateway spend](https://docs.langchain.com/langsmith/llm-gateway-monitoring.md): View and analyze LLM Gateway costs by user, API key, model, provider, and request header.
+
+#### Governance
+
+- [Spend policies](https://docs.langchain.com/langsmith/llm-gateway-spend-policies.md): Set cost limits on LLM usage across your organization and prevent runaway spend before it reaches providers.
+- [Rate limit policies](https://docs.langchain.com/langsmith/llm-gateway-rate-limit-policies.md): Limit the number of requests or tokens an organization, workspace, user, or API key can send through the LLM Gateway in a rolling time window.
+- [Model access policies](https://docs.langchain.com/langsmith/llm-gateway-model-access-policies.md): Control which model providers and models are accessible through the LLM Gateway for your organization, workspaces, users, or API keys.
+- [Header-based policies](https://docs.langchain.com/langsmith/llm-gateway-header-policies.md): Scope gateway spend caps, rate limits, and model access by a custom request header, such as a customer, tenant, or team identifier, under a single API key.
+- [Data policies](https://docs.langchain.com/langsmith/llm-gateway-data-policy.md): Create data policies that redact sensitive data and control trace content in the LLM Gateway.
+
+### No-code agents
+
+- [No-code agents with LangSmith Fleet](https://docs.langchain.com/langsmith/fleet/index.md): Create helpful AI agents without code. Start from a template, connect your accounts, and let the agent handle routine work while you stay in control.
+
+#### Get started
+
+- [Quickstart](https://docs.langchain.com/langsmith/fleet/quickstart.md): Build an agent from a template
+- [Essentials](https://docs.langchain.com/langsmith/fleet/essentials.md): Fleet's core features
+- [Templates](https://docs.langchain.com/langsmith/fleet/templates.md): Start faster with curated Fleet templates and customize tools, prompts, and channels.
+- [Agent platform comparison](https://docs.langchain.com/langsmith/fleet/comparison.md): Compare LangSmith Fleet with Claude Cowork, Amazon Quick, Google Workspace Studio, and Microsoft Copilot to choose the right enterprise agent platform for your team
+
+#### Configure
+
+- [Manage workspace administration](https://docs.langchain.com/langsmith/fleet/workspace-admin.md): Configure workspace-level settings for Fleet.
+- [Agent identity](https://docs.langchain.com/langsmith/fleet/agent-identity.md): Choose whether your Fleet agent authenticates with its own credentials or with each user's credentials.
+- [Manage agent settings](https://docs.langchain.com/langsmith/fleet/manage-agent-settings.md): Manage your agents in Fleet.
+- [Computer use](https://docs.langchain.com/langsmith/fleet/computer-use.md): Run code, manage files, and call authenticated APIs from a persistent virtual computer attached to your Fleet agent.
+
+#### Tools and automation
+
+- [Tool integrations](https://docs.langchain.com/langsmith/fleet/tools.md): Give your agents access to a wide range of tools and services.
+- [Channels](https://docs.langchain.com/langsmith/fleet/channels.md): Configure channels to trigger your Fleet agents automatically.
+- [Schedules](https://docs.langchain.com/langsmith/fleet/schedules.md): Configure schedules to run your Fleet agents on a recurring basis.
+- [Skills](https://docs.langchain.com/langsmith/fleet/skills.md): Use skills to give your agents access to specific capabilities.
+- [Integrate Slack with an agent](https://docs.langchain.com/langsmith/fleet/slack-app.md): Connect LangSmith Fleet to your Slack workspace so your agents work as Slack bots your team can tag directly.
+- [Integrate Microsoft Teams with an agent](https://docs.langchain.com/langsmith/fleet/teams-app.md): Connect LangSmith Fleet to Microsoft Teams by bringing your own Azure Bot to let agents communicate with users in Teams.
+- [Remote MCP servers](https://docs.langchain.com/langsmith/fleet/remote-mcp-servers.md): Connect Fleet to popular remote MCP servers
+- [Arcade integration](https://docs.langchain.com/langsmith/fleet/arcade.md): Connect your workspace to Arcade to give agents access to third-party tools like GitHub, Gmail, Slack, and more.
+- [Salesforce integration](https://docs.langchain.com/langsmith/fleet/salesforce.md): Connect LangSmith Fleet to Salesforce so your agents can query records, navigate schemas, and read custom fields.
+
+#### Advanced
+
+- [Use Fleet agents in code](https://docs.langchain.com/langsmith/fleet/code.md): Invoke Fleet agents via the LangGraph SDK or REST API, or download and run them locally with the fleet-deepagents-export package.
+- [LangSmith Tool Server](https://docs.langchain.com/langsmith/fleet/mcp-framework.md)
+- [Fleet webhooks](https://docs.langchain.com/langsmith/fleet/webhooks.md): Integrate agent publishing with external systems, CI/CD pipelines, or custom deployment workflows.
+- [Auth-aware tool responses](https://docs.langchain.com/langsmith/fleet/auth-format.md): Format tool responses to trigger OAuth flows and resume execution automatically.
+
+#### Additional resources
+
+- [Access & oversight](https://docs.langchain.com/langsmith/fleet/access-and-oversight.md): Control who can access agents, how they authenticate, and audit everything they do.
+- [LangSmith Fleet changelog](https://docs.langchain.com/langsmith/fleet/changelog.md): Weekly updates to LangSmith Fleet
+
+### Engine
+
+- [LangSmith Engine](https://docs.langchain.com/langsmith/engine.md): LangSmith Engine is the agent for agent engineering, turning production traces into tracked issues, fixes, and datasets across the development lifecycle.
+- [Set up LangSmith Engine](https://docs.langchain.com/langsmith/engine-setup.md): Enable LangSmith Engine for your organization, turn it on for a tracing project, and configure what it analyzes.
+- [Find and fix your agent's issues with LangSmith Engine](https://docs.langchain.com/langsmith/engine-issues.md): Review the issues LangSmith Engine detects, open pull requests with its proposed fixes, and turn failing traces into dataset examples.
+- [Connect Engine to your repository](https://docs.langchain.com/langsmith/engine-repositories.md): Connect your agent's GitHub repositories or GitLab projects to LangSmith Engine so it can read your source code when investigating issues and propose fixes as pull or merge requests.
+- [LangSmith Engine notifications](https://docs.langchain.com/langsmith/engine-notifications.md): Send LangSmith Engine notifications to Slack, Jira Automation, and webhook endpoints.
+- [Validate fixes automatically](https://docs.langchain.com/langsmith/engine-fix-validation.md): Confirm that a LangSmith Engine issue reproduces on your deployment, and that Engine's fix resolves it, by replaying the issue's traces.
+- [Proactively identify issues with Red Teaming](https://docs.langchain.com/langsmith/engine-red-teaming.md): Test a deployed agent with synthetic LangSmith Engine probes to find prompt injection, data exposure, and unsafe tool use before they reach production.
+- [LangSmith Engine security](https://docs.langchain.com/langsmith/engine-security.md): How LangSmith Engine handles your data, the GitHub, GitLab, and model subprocessor controls that govern its access, and its compliance posture.
+
+#### Self-hosted and BYOC
+
+- [LangSmith Engine on Self-hosted and BYOC](https://docs.langchain.com/langsmith/engine-self-hosted.md): Set up LangSmith Engine on a self-hosted LangSmith instance or a BYOC data plane, including model provider options and external network requirements.
+- [Configure model providers for Engine on self-hosted and BYOC](https://docs.langchain.com/langsmith/engine-self-hosted-model-providers.md): Choose the model providers LangSmith Engine uses on a self-hosted LangSmith instance, authenticate with credentials or cloud identity, and keep model traffic on private networking.
+- [Configure GitHub for Engine on self-hosted and BYOC](https://docs.langchain.com/langsmith/engine-self-hosted-github.md): Register a GitHub App and configure self-hosted LangSmith or a BYOC data plane so LangSmith Engine can read repositories and open pull requests, on GitHub.com, Enterprise Cloud with data residency, or Enterprise Server.
+
+### Deep Agents Code
+
+- [Deep Agents Code](https://docs.langchain.com/oss/deepagents/code/overview.md): Terminal coding agent built on the Deep Agents SDK
+- [Quickstart](https://docs.langchain.com/oss/deepagents/code/quickstart.md): Install Deep Agents Code, run your first task, and use interactive or non-interactive modes
+- [Command reference](https://docs.langchain.com/oss/deepagents/code/cli-reference.md): Deep Agents Code command-line flags and management subcommands
+- [Approval modes](https://docs.langchain.com/oss/deepagents/code/approval-modes.md): Choose how Deep Agents Code reviews gated tool calls with Manual, Auto, and YOLO modes
+- [Goals and rubrics](https://docs.langchain.com/oss/deepagents/code/goals-and-rubrics.md): Define objectives and acceptance criteria for Deep Agents Code sessions
+- [Plugins and marketplaces](https://docs.langchain.com/oss/deepagents/code/plugins.md): Install plugins from marketplaces or package skills, MCP servers, hooks, and Python extensions for dcode
+- [Python extensions](https://docs.langchain.com/oss/deepagents/code/extensions.md): Customize dcode with Python tools, middleware, and storage routes
+- [Memory and Skills](https://docs.langchain.com/oss/deepagents/code/memory-and-skills.md): Persistent memory, AGENTS.md files, and reusable skills for Deep Agents Code, including creation, discovery, and invocation.
+- [Use remote sandboxes](https://docs.langchain.com/oss/deepagents/code/remote-sandboxes.md): Run Deep Agents Code tool execution in LangSmith, AgentCore, Daytona, Modal, Runloop, Vercel, or E2B sandboxes. Install provider dependencies, set credentials, and use flags and setup scripts.
+- [Use subagents in Deep Agents Code](https://docs.langchain.com/oss/deepagents/code/subagents.md): Define custom Deep Agents Code subagents as AGENTS.md files with YAML frontmatter. Covers project and user paths, optional model overrides, and examples.
+- [Model providers](https://docs.langchain.com/oss/deepagents/code/providers.md): Configure any LangChain-compatible model provider for Deep Agents Code
+
+#### Configuration
+
+- [Configuration](https://docs.langchain.com/oss/deepagents/code/configuration.md): Configure Deep Agents Code with config files, administrator settings, environment variables, hooks, and CLI flags
+- [Provider credentials](https://docs.langchain.com/oss/deepagents/code/credentials.md): Add and manage API keys for model providers, Tavily web search, and LangSmith tracing
+- [Config file](https://docs.langchain.com/oss/deepagents/code/config-file.md): Configure model providers, defaults, retries, and gateways in config.toml
+- [Hooks](https://docs.langchain.com/oss/deepagents/code/hooks.md): Observe and control Deep Agents Code lifecycle events with command hooks configured in hooks.json
+- [MCP tools](https://docs.langchain.com/oss/deepagents/code/mcp-tools.md): Load additional tools from MCP (Model Context Protocol) servers

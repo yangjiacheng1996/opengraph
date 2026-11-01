@@ -1,0 +1,164 @@
+# Docs by LangChain: AGENT DEVELOPMENT LIFECYCLE Monitor Reference LangSmith REST API Administration
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## Administration
+
+- [List workspaces](https://docs.langchain.com/langsmith/smith-api/workspaces/list-workspaces.md): Get all workspaces visible to this auth in the current org. Does not create a new workspace/org.
+- [Create workspace](https://docs.langchain.com/langsmith/smith-api/workspaces/create-workspace.md): Create a new workspace.
+- [Get workspace](https://docs.langchain.com/langsmith/smith-api/workspaces/get-workspace.md): Get a single workspace by ID, scoped to the current org and identity.
+- [Delete workspace](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-workspace.md): Delete a workspace and its data.
+- [Patch workspace](https://docs.langchain.com/langsmith/smith-api/workspaces/patch-workspace.md): Rename a workspace in the current organization.
+- [Get current workspace stats](https://docs.langchain.com/langsmith/smith-api/workspaces/get-current-workspace-stats.md)
+- [Get current workspace usage limits info](https://docs.langchain.com/langsmith/smith-api/workspaces/get-current-workspace-usage-limits-info.md)
+- [Get shared tokens](https://docs.langchain.com/langsmith/smith-api/workspaces/get-shared-tokens.md): List all shared entities and their tokens by the workspace.
+- [Bulk unshare entities](https://docs.langchain.com/langsmith/smith-api/workspaces/bulk-unshare-entities.md): Bulk unshare entities by share tokens for the workspace.
+- [List current workspace secrets](https://docs.langchain.com/langsmith/smith-api/workspaces/list-current-workspace-secrets.md)
+- [Upsert current workspace secrets](https://docs.langchain.com/langsmith/smith-api/workspaces/upsert-current-workspace-secrets.md)
+- [Put current workspace secret](https://docs.langchain.com/langsmith/smith-api/workspaces/put-current-workspace-secret.md): Create or update a workspace secret and the hosts it may be sent to.
+- [Delete current workspace secret](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-current-workspace-secret.md): Delete a workspace secret and its allowed hosts. Missing keys succeed.
+- [Get current workspace encrypted secrets](https://docs.langchain.com/langsmith/smith-api/workspaces/get-current-workspace-encrypted-secrets.md): Get encrypted workspace secrets for use with Fleet and external services.
+- [List tag keys](https://docs.langchain.com/langsmith/smith-api/workspaces/list-tag-keys.md)
+- [Create tag key](https://docs.langchain.com/langsmith/smith-api/workspaces/create-tag-key.md)
+- [Get tag key](https://docs.langchain.com/langsmith/smith-api/workspaces/get-tag-key.md)
+- [Delete tag key](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-tag-key.md)
+- [Update tag key](https://docs.langchain.com/langsmith/smith-api/workspaces/update-tag-key.md)
+- [List tag values](https://docs.langchain.com/langsmith/smith-api/workspaces/list-tag-values.md)
+- [Create tag value](https://docs.langchain.com/langsmith/smith-api/workspaces/create-tag-value.md)
+- [Get tag value](https://docs.langchain.com/langsmith/smith-api/workspaces/get-tag-value.md)
+- [Delete tag value](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-tag-value.md)
+- [Update tag value](https://docs.langchain.com/langsmith/smith-api/workspaces/update-tag-value.md)
+- [List taggings](https://docs.langchain.com/langsmith/smith-api/workspaces/list-taggings.md)
+- [Create tagging](https://docs.langchain.com/langsmith/smith-api/workspaces/create-tagging.md)
+- [Delete tagging](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-tagging.md)
+- [List tags](https://docs.langchain.com/langsmith/smith-api/workspaces/list-tags.md)
+- [List tags for resource](https://docs.langchain.com/langsmith/smith-api/workspaces/list-tags-for-resource.md)
+- [List tags for resources](https://docs.langchain.com/langsmith/smith-api/workspaces/list-tags-for-resources.md)
+- [Get audit logs](https://docs.langchain.com/langsmith/smith-api/audit-logs/get-audit-logs.md): Retrieve audit log records for the authenticated user's organization in OCSF format.
+- [List audit log operations](https://docs.langchain.com/langsmith/smith-api/audit-logs/list-audit-log-operations.md): List all possible audit log operation names, for populating filter UI.
+- [List TTL settings](https://docs.langchain.com/langsmith/smith-api/ttl-settings/list-ttl-settings.md): List out the configured TTL settings for a given tenant.
+- [Upsert TTL settings](https://docs.langchain.com/langsmith/smith-api/ttl-settings/upsert-ttl-settings.md)
+- [List TTL settings](https://docs.langchain.com/langsmith/smith-api/orgs/list-ttl-settings.md): List out the configured TTL settings for a given org (org-level and tenant-level).
+- [Upsert TTL settings](https://docs.langchain.com/langsmith/smith-api/orgs/upsert-ttl-settings.md)
+- [List organizations](https://docs.langchain.com/langsmith/smith-api/orgs/list-organizations.md): Get all orgs visible to this auth
+- [Create organization](https://docs.langchain.com/langsmith/smith-api/orgs/create-organization.md)
+- [Create customers and get stripe setup intent](https://docs.langchain.com/langsmith/smith-api/orgs/create-customers-and-get-stripe-setup-intent.md)
+- [Get organization info](https://docs.langchain.com/langsmith/smith-api/orgs/get-organization-info.md)
+- [Get current organization info](https://docs.langchain.com/langsmith/smith-api/orgs/get-current-organization-info.md)
+- [Update current organization info](https://docs.langchain.com/langsmith/smith-api/orgs/update-current-organization-info.md)
+- [Get organization billing info](https://docs.langchain.com/langsmith/smith-api/orgs/get-organization-billing-info.md)
+- [Get dashboard](https://docs.langchain.com/langsmith/smith-api/orgs/get-dashboard.md)
+- [On payment method created](https://docs.langchain.com/langsmith/smith-api/orgs/on-payment-method-created.md)
+- [Get company info](https://docs.langchain.com/langsmith/smith-api/orgs/get-company-info.md)
+- [Set company info](https://docs.langchain.com/langsmith/smith-api/orgs/set-company-info.md)
+- [Change payment plan](https://docs.langchain.com/langsmith/smith-api/orgs/change-payment-plan.md)
+- [List organization roles](https://docs.langchain.com/langsmith/smith-api/orgs/list-organization-roles.md)
+- [Create organization roles](https://docs.langchain.com/langsmith/smith-api/orgs/create-organization-roles.md)
+- [Delete organization roles](https://docs.langchain.com/langsmith/smith-api/orgs/delete-organization-roles.md)
+- [Update organization roles](https://docs.langchain.com/langsmith/smith-api/orgs/update-organization-roles.md)
+- [Set role restriction](https://docs.langchain.com/langsmith/smith-api/orgs/set-role-restriction.md)
+- [List permissions](https://docs.langchain.com/langsmith/smith-api/orgs/list-permissions.md)
+- [List pending organization invites](https://docs.langchain.com/langsmith/smith-api/orgs/list-pending-organization-invites.md): Get all pending orgs visible to this auth
+- [Get current org members](https://docs.langchain.com/langsmith/smith-api/orgs/get-current-org-members.md)
+- [Add member to current org](https://docs.langchain.com/langsmith/smith-api/orgs/add-member-to-current-org.md)
+- [Get current active org members](https://docs.langchain.com/langsmith/smith-api/orgs/get-current-active-org-members.md)
+- [Get current pending org members](https://docs.langchain.com/langsmith/smith-api/orgs/get-current-pending-org-members.md)
+- [Add members to current org batch](https://docs.langchain.com/langsmith/smith-api/orgs/add-members-to-current-org-batch.md): Batch invite up to 500 users to the current org.
+- [Add basic auth members to current org](https://docs.langchain.com/langsmith/smith-api/orgs/add-basic-auth-members-to-current-org.md): Batch add up to 500 users to the org and specified workspaces in basic auth mode.
+- [Delete current org pending member](https://docs.langchain.com/langsmith/smith-api/orgs/delete-current-org-pending-member.md): When an admin deletes a pending member invite.
+- [Patch current org pending member](https://docs.langchain.com/langsmith/smith-api/orgs/patch-current-org-pending-member.md): Update the role on a pending org member invite.
+- [Delete pending organization invite](https://docs.langchain.com/langsmith/smith-api/orgs/delete-pending-organization-invite.md)
+- [Claim pending organization invite](https://docs.langchain.com/langsmith/smith-api/orgs/claim-pending-organization-invite.md)
+- [Remove member from current org](https://docs.langchain.com/langsmith/smith-api/orgs/remove-member-from-current-org.md): Remove a user from the current organization.
+- [Update current org member](https://docs.langchain.com/langsmith/smith-api/orgs/update-current-org-member.md): This is used for updating a user's role (all auth modes) or full_name/password (basic auth)
+- [Update current user](https://docs.langchain.com/langsmith/smith-api/orgs/update-current-user.md): Update a user's full_name/password (basic auth only)
+- [Get current SSO settings](https://docs.langchain.com/langsmith/smith-api/orgs/get-current-sso-settings.md): Get SSO provider settings for the current organization.
+- [Create SSO settings](https://docs.langchain.com/langsmith/smith-api/orgs/create-sso-settings.md): Create SSO provider settings for the current organization.
+- [Delete SSO settings](https://docs.langchain.com/langsmith/smith-api/orgs/delete-sso-settings.md): Delete SSO provider settings for the current organization.
+- [Update SSO settings](https://docs.langchain.com/langsmith/smith-api/orgs/update-sso-settings.md): Update SSO provider settings defaults for the current organization.
+- [Update allowed login methods](https://docs.langchain.com/langsmith/smith-api/orgs/update-allowed-login-methods.md): Update allowed login methods for the current organization.
+- [Get org usage](https://docs.langchain.com/langsmith/smith-api/orgs/get-org-usage.md)
+- [Get granular usage](https://docs.langchain.com/langsmith/smith-api/orgs/get-granular-usage.md): Get granular usage data with flexible grouping.
+- [Export granular usage csv](https://docs.langchain.com/langsmith/smith-api/orgs/export-granular-usage-csv.md): Export granular usage data as CSV.
+- [Get current user login methods](https://docs.langchain.com/langsmith/smith-api/orgs/get-current-user-login-methods.md): Get login methods for the current user.
+- [Create stripe checkout sessions endpoint](https://docs.langchain.com/langsmith/smith-api/orgs/create-stripe-checkout-sessions-endpoint.md): Kick off a Stripe checkout session flow.
+- [List org service keys](https://docs.langchain.com/langsmith/smith-api/orgs/list-org-service-keys.md)
+- [Create org service key](https://docs.langchain.com/langsmith/smith-api/orgs/create-org-service-key.md): Create org-scoped service key. If workspaces is None, key is org-wide.
+- [List org tracing keys](https://docs.langchain.com/langsmith/smith-api/orgs/list-org-tracing-keys.md): List your tracing keys and keys visible through organization/workspace access.
+- [Create org tracing key](https://docs.langchain.com/langsmith/smith-api/orgs/create-org-tracing-key.md)
+- [Delete org tracing key](https://docs.langchain.com/langsmith/smith-api/orgs/delete-org-tracing-key.md): Revoke your tracing key, or one you have permission to manage.
+- [Delete org service key](https://docs.langchain.com/langsmith/smith-api/orgs/delete-org-service-key.md)
+- [Update org service key](https://docs.langchain.com/langsmith/smith-api/orgs/update-org-service-key.md): Update an API key's role(s) in place without rotating the key.
+- [List org personal access tokens](https://docs.langchain.com/langsmith/smith-api/orgs/list-org-personal-access-tokens.md)
+- [Create org personal access token](https://docs.langchain.com/langsmith/smith-api/orgs/create-org-personal-access-token.md)
+- [List all org personal access tokens](https://docs.langchain.com/langsmith/smith-api/orgs/list-all-org-personal-access-tokens.md): List every organization member's personal access tokens.
+- [Delete org personal access token](https://docs.langchain.com/langsmith/smith-api/orgs/delete-org-personal-access-token.md): Delete a personal access token, removing the record entirely.
+- [Revoke org personal access token](https://docs.langchain.com/langsmith/smith-api/orgs/revoke-org-personal-access-token.md): Revoke a personal access token, so it stops working but its record remains.
+- [Reinstate org personal access token](https://docs.langchain.com/langsmith/smith-api/orgs/reinstate-org-personal-access-token.md): Lift a revocation, so the personal access token authenticates again.
+- [Set default SSO provision](https://docs.langchain.com/langsmith/smith-api/orgs/set-default-sso-provision.md): Set the current organization as the default for SSO provisioning in self-hosted environments.
+- [Login](https://docs.langchain.com/langsmith/smith-api/auth/login.md)
+- [Send SSO email confirmation](https://docs.langchain.com/langsmith/smith-api/auth/send-sso-email-confirmation.md): Send an email to confirm the email address for an SSO user.
+- [Check SSO email verification status](https://docs.langchain.com/langsmith/smith-api/auth/check-sso-email-verification-status.md): Retrieve the email verification status of an SSO user.
+- [Confirm SSO user email](https://docs.langchain.com/langsmith/smith-api/auth/confirm-sso-user-email.md): Confirm the email of an SSO user.
+- [Get SSO settings](https://docs.langchain.com/langsmith/smith-api/auth/get-sso-settings.md): Get SSO provider settings from login slug.
+- [Lookup SSO by email](https://docs.langchain.com/langsmith/smith-api/auth/lookup-sso-by-email.md): Look up SSO providers available for a SCIM-provisioned email address.
+- [Get API keys](https://docs.langchain.com/langsmith/smith-api/api-key/get-api-keys.md): Get the current tenant's API keys
+- [Generate API key](https://docs.langchain.com/langsmith/smith-api/api-key/generate-api-key.md): Generate an api key for the user.
+- [Delete API key](https://docs.langchain.com/langsmith/smith-api/api-key/delete-api-key.md): Delete an api key for the user
+- [Get personal access tokens](https://docs.langchain.com/langsmith/smith-api/api-key/get-personal-access-tokens.md): DEPRECATED: Use /orgs/current/personal-access-tokens instead
+- [Generate personal access token](https://docs.langchain.com/langsmith/smith-api/api-key/generate-personal-access-token.md): DEPRECATED: Use /orgs/current/personal-access-tokens instead
+- [Delete personal access token](https://docs.langchain.com/langsmith/smith-api/api-key/delete-personal-access-token.md): DEPRECATED: Use /orgs/current/personal-access-tokens/{pat_id} instead
+- [List tenants](https://docs.langchain.com/langsmith/smith-api/tenant/list-tenants.md): Get all tenants visible to this auth
+- [Create tenant](https://docs.langchain.com/langsmith/smith-api/tenant/create-tenant.md): Create a new organization and corresponding workspace.
+- [Get onboarding state](https://docs.langchain.com/langsmith/smith-api/me/get-onboarding-state.md): Get onboarding state for the current user.
+- [Create onboarding state](https://docs.langchain.com/langsmith/smith-api/me/create-onboarding-state.md): Initialize onboarding state for the current user.
+- [Update onboarding state field](https://docs.langchain.com/langsmith/smith-api/me/update-onboarding-state-field.md): Update a specific onboarding completion field for the current user.
+- [Get ls user ID](https://docs.langchain.com/langsmith/smith-api/me/get-ls-user-id.md): Get the LangSmith user ID for the current user.
+- [Get service accounts](https://docs.langchain.com/langsmith/smith-api/service-accounts/get-service-accounts.md): Get the current organization's service accounts.
+- [Create service account](https://docs.langchain.com/langsmith/smith-api/service-accounts/create-service-account.md): Create a service account
+- [Delete service account](https://docs.langchain.com/langsmith/smith-api/service-accounts/delete-service-account.md): Delete a service account
+- [List pending workspace invites](https://docs.langchain.com/langsmith/smith-api/workspaces/list-pending-workspace-invites.md): Get all workspaces visible to this auth
+- [Delete pending workspace invite](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-pending-workspace-invite.md)
+- [Claim pending workspace invite](https://docs.langchain.com/langsmith/smith-api/workspaces/claim-pending-workspace-invite.md)
+- [Get current workspace members](https://docs.langchain.com/langsmith/smith-api/workspaces/get-current-workspace-members.md)
+- [Add member to current workspace](https://docs.langchain.com/langsmith/smith-api/workspaces/add-member-to-current-workspace.md): Add an existing organization member to the current workspace.
+- [Get current active workspace members](https://docs.langchain.com/langsmith/smith-api/workspaces/get-current-active-workspace-members.md)
+- [Get current pending workspace members](https://docs.langchain.com/langsmith/smith-api/workspaces/get-current-pending-workspace-members.md)
+- [Add members to current workspace batch](https://docs.langchain.com/langsmith/smith-api/workspaces/add-members-to-current-workspace-batch.md): Batch invite up to 500 users to the current workspace and organization.
+- [Delete current workspace member](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-current-workspace-member.md)
+- [Patch current workspace member](https://docs.langchain.com/langsmith/smith-api/workspaces/patch-current-workspace-member.md)
+- [Delete current workspace pending member](https://docs.langchain.com/langsmith/smith-api/workspaces/delete-current-workspace-pending-member.md)
+- [Patch current workspace pending member](https://docs.langchain.com/langsmith/smith-api/workspaces/patch-current-workspace-pending-member.md): Update the role on a pending workspace member invite.
+- [List usage limits](https://docs.langchain.com/langsmith/smith-api/usage-limits/list-usage-limits.md): List out the configured usage limits for a given tenant.
+- [Upsert usage limit](https://docs.langchain.com/langsmith/smith-api/usage-limits/upsert-usage-limit.md): Create a new usage limit.
+- [List org usage limits](https://docs.langchain.com/langsmith/smith-api/usage-limits/list-org-usage-limits.md): List out the configured usage limits for a given organization.
+- [Delete usage limit](https://docs.langchain.com/langsmith/smith-api/usage-limits/delete-usage-limit.md): Delete a specific usage limit.
+- [List access policies](https://docs.langchain.com/langsmith/smith-api/access_policies/list-access-policies.md): Lists all access policies for the organization.
+- [Create an access policy](https://docs.langchain.com/langsmith/smith-api/access_policies/create-an-access-policy.md): Creates a new access policy.
+- [Attach access policies to a role](https://docs.langchain.com/langsmith/smith-api/access_policies/attach-access-policies-to-a-role.md): Attaches one or more access policies to a specific role. The request body must contain an array of access policy IDs.
+- [Get an access policy](https://docs.langchain.com/langsmith/smith-api/access_policies/get-an-access-policy.md): Gets a specific access policy by ID.
+- [Delete an access policy](https://docs.langchain.com/langsmith/smith-api/access_policies/delete-an-access-policy.md): Deletes a specific access policy by ID.
+- [Update an access policy](https://docs.langchain.com/langsmith/smith-api/access_policies/update-an-access-policy.md): Updates one or more fields on an access policy.
+- [Get current organization info](https://docs.langchain.com/langsmith/smith-api/organizations/get-current-organization-info.md): Returns organization info for the authenticated user's current organization.
+- [List org members with workspace roles](https://docs.langchain.com/langsmith/smith-api/orgs/list-org-members-with-workspace-roles.md): Returns a paginated list of org members (active and pending) enriched with workspace memberships.
+- [Attach access policies to a role](https://docs.langchain.com/langsmith/smith-api/access_policies/attach-access-policies-to-a-role-1.md): Attaches one or more access policies to a specific role. The request body must contain an array of access policy IDs.
+- [Detach access policies from a role](https://docs.langchain.com/langsmith/smith-api/access_policies/detach-access-policies-from-a-role.md): Detaches one or more access policies from a specific role.
+- [List SCIM tokens](https://docs.langchain.com/langsmith/smith-api/scim-tokens/list-scim-tokens.md): List all SCIM bearer tokens for the current organization. The full token values are not returned.
+- [Create a SCIM token](https://docs.langchain.com/langsmith/smith-api/scim-tokens/create-a-scim-token.md): Create a new SCIM bearer token for the current organization. The full token value is only returned once upon creation.
+- [Get a SCIM token](https://docs.langchain.com/langsmith/smith-api/scim-tokens/get-a-scim-token.md): Retrieve a specific SCIM token by ID for the current organization. The full token value is not returned.
+- [Delete a SCIM token](https://docs.langchain.com/langsmith/smith-api/scim-tokens/delete-a-scim-token.md): Delete a SCIM bearer token from the current organization.
+- [Update a SCIM token](https://docs.langchain.com/langsmith/smith-api/scim-tokens/update-a-scim-token.md): Update the description of an existing SCIM token for the current organization.
+- [Get public auth info](https://docs.langchain.com/langsmith/smith-api/auth/get-public-auth-info.md): Returns public authentication information for the current workspace-level session.
+- [AWS marketplace fulfillment URL registration](https://docs.langchain.com/langsmith/smith-api/aws_marketplace/aws-marketplace-fulfillment-url-registration.md): Receives the x-amzn-marketplace-token posted by AWS Marketplace when a customer clicks "Set Up Account", resolves the customer identity, stores it in the DB, and redirects to the thank-you page.
+- [Get the authenticated user's provider user ID](https://docs.langchain.com/langsmith/smith-api/me/get-the-authenticated-users-provider-user-id.md): Returns the provider user ID associated with the authenticated user for a given provider type, or null if not set. Scoped to the current tenant.
+- [List data planes for the current organization](https://docs.langchain.com/langsmith/smith-api/data_planes/list-data-planes-for-the-current-organization.md): Returns up to 50 data planes owned by the caller's organization across all lifecycle states. Sorted by status priority (active first), then newest first. Requires BYOC to be enabled for the org.
+- [Create a new data plane](https://docs.langchain.com/langsmith/smith-api/data_planes/create-a-new-data-plane.md): Creates a new data plane object. Persists the rendered data plane spec, and returns 202 with the data plane in status=requested. Requires BYOC enabled org and org admin. The cloud of the control plane selects the AWS, the Azure, or the GCP request. For AWS, the control plane uses the organization's…
+- [Get a data plane](https://docs.langchain.com/langsmith/smith-api/data_planes/get-a-data-plane.md): Returns a data plane and its saved provisioning settings in any lifecycle state. Requires BYOC and organization:infrastructure:read.
+- [Delete a data plane](https://docs.langchain.com/langsmith/smith-api/data_planes/delete-a-data-plane.md): Verifies that the stored customer AWS role has delete permissions, that the stored Azure subscription is reachable, or that the stored GCP provisioner service account can be impersonated. Then removes linked workspaces and starts asynchronous deprovisioning for an active or provisioning_failed data…
+- [Update data plane settings](https://docs.langchain.com/langsmith/smith-api/data_planes/update-data-plane-settings.md): Update specific settings for a data plane owned by the caller's organization.
+- [Get workspace TTL settings](https://docs.langchain.com/langsmith/smith-api/ttl-settings/get-workspace-ttl-settings.md): Get the longlived trace TTL settings for a workspace
+- [Update workspace TTL settings](https://docs.langchain.com/langsmith/smith-api/ttl-settings/update-workspace-ttl-settings.md): Update the longlived trace TTL for a workspace.
+
+## OpenAPI Specs
+
+- [langsmith-platform-openapi](/langsmith/langsmith-platform-openapi.json)

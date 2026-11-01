@@ -1,0 +1,182 @@
+# Docs by LangChain: AGENT DEVELOPMENT LIFECYCLE Monitor
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## Monitor
+
+- [AGENT DEVELOPMENT LIFECYCLE / Monitor / Reference (587 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/monitor/reference.txt): Documentation for AGENT DEVELOPMENT LIFECYCLE / Monitor / Reference.
+
+### Overview
+
+- [LangSmith Observability](https://docs.langchain.com/langsmith/observability.md): Instrument your LLM application, investigate traces, and monitor performance in production with LangSmith.
+
+### Trace
+
+- [Tracing quickstart](https://docs.langchain.com/langsmith/observability-quickstart.md): Add LangSmith tracing to an agent in minutes.
+- [Trace an agent](https://docs.langchain.com/langsmith/observability-llm-tutorial.md): Add LangSmith observability to an agent across prototyping, beta testing, and production.
+- [Observability concepts](https://docs.langchain.com/langsmith/observability-concepts.md): How LangSmith structures observability data as runs, traces, threads, and trajectories, and how to send traces.
+
+#### Tracing setup
+
+##### Integrations
+
+- [Integrations](https://docs.langchain.com/langsmith/integrations.md)
+
+###### LLM providers
+
+- [Trace with Anthropic](https://docs.langchain.com/langsmith/trace-anthropic.md): Send Anthropic traces to LangSmith from the Claude Platform, from the Claude SDKs over OpenTelemetry, or with the LangSmith SDK wrapper.
+- [Trace with Amazon Bedrock](https://docs.langchain.com/langsmith/trace-bedrock.md)
+- [Trace with DeepSeek](https://docs.langchain.com/langsmith/trace-deepseek.md)
+- [Trace with Google Gemini](https://docs.langchain.com/langsmith/trace-with-google-gemini.md)
+- [Trace with LiteLLM](https://docs.langchain.com/langsmith/trace-litellm.md)
+- [Trace with Mistral](https://docs.langchain.com/langsmith/trace-with-mistral.md)
+- [Trace with OpenAI](https://docs.langchain.com/langsmith/trace-openai.md)
+- [Trace OpenAI-compatible providers](https://docs.langchain.com/langsmith/trace-with-openai-compatible.md): Trace LLM calls from any OpenAI-compatible provider to LangSmith.
+
+###### Agent frameworks
+
+- [Trace AutoGen agents](https://docs.langchain.com/langsmith/trace-with-autogen.md)
+- [Trace with the Claude Agent SDK](https://docs.langchain.com/langsmith/trace-claude-agent-sdk.md)
+- [Trace Claude Managed Agents](https://docs.langchain.com/langsmith/trace-with-claude-managed-agents.md): Automatically trace Claude Managed Agent sessions and events with LangSmith.
+- [Trace CrewAI agents](https://docs.langchain.com/langsmith/trace-with-crewai.md)
+- [Trace Deep Agents](https://docs.langchain.com/langsmith/trace-deep-agents.md)
+- [Trace Google ADK agents](https://docs.langchain.com/langsmith/trace-with-google-adk.md)
+- [Trace LangChain agents (Python and JS/TS)](https://docs.langchain.com/langsmith/trace-with-langchain.md)
+- [Trace LangGraph agents](https://docs.langchain.com/langsmith/trace-with-langgraph.md)
+- [Trace Mastra agents](https://docs.langchain.com/langsmith/trace-with-mastra.md)
+- [Trace with Microsoft Agent Framework](https://docs.langchain.com/langsmith/trace-with-microsoft-agent-framework.md)
+- [Trace with the OpenAI Agents SDK](https://docs.langchain.com/langsmith/trace-with-openai-agents-sdk.md): Trace OpenAI Agents SDK Python and JavaScript agents with LangSmith.
+- [Trace with OpenTelemetry](https://docs.langchain.com/langsmith/trace-with-opentelemetry.md): Configure OpenTelemetry tracing in LangSmith, including LANGSMITH_OTEL_ENABLED and OTEL fanout with the OpenTelemetry Collector.
+- [Trace PydanticAI agents](https://docs.langchain.com/langsmith/trace-with-pydantic-ai.md)
+- [Trace Semantic Kernel agents](https://docs.langchain.com/langsmith/trace-with-semantic-kernel.md)
+- [Trace with Strands Agents](https://docs.langchain.com/langsmith/trace-with-strands-agents.md): Trace with Strands Agents with LangSmith.
+- [Trace Vercel AI SDK agents (JS/TS only)](https://docs.langchain.com/langsmith/trace-with-vercel-ai-sdk.md): Trace Vercel AI SDK agents with LangSmith for AI SDK v5, v6, and v7.
+
+###### Voice AI frameworks
+
+- [Voice tracing fundamentals](https://docs.langchain.com/langsmith/trace-voice-fundamentals.md): Best practices for tracing voice and audio agents in LangSmith, including conversation audio, single-trace conversations, and the audio modality flag.
+- [Trace OpenAI Realtime agents](https://docs.langchain.com/langsmith/trace-openai-realtime.md): Trace OpenAI Realtime voice agents in LangSmith using the LangSmith SDK.
+- [Trace Gemini Live agents](https://docs.langchain.com/langsmith/trace-gemini-live.md): Trace Gemini Live voice agents in LangSmith using the LangSmith SDK.
+- [Trace LiveKit agents](https://docs.langchain.com/langsmith/trace-with-livekit.md)
+- [Trace Pipecat agents](https://docs.langchain.com/langsmith/trace-with-pipecat.md)
+
+###### Developer tools
+
+- [Coding agent metadata contract](https://docs.langchain.com/langsmith/coding-agent-metadata-contract.md): The metadata schema that standardizes what trace metadata coding agents must emit when sending runs to LangSmith.
+- [Trace Claude Code sessions](https://docs.langchain.com/langsmith/trace-claude-code.md)
+- [Trace OpenAI Codex sessions](https://docs.langchain.com/langsmith/trace-with-codex.md): Capture OpenAI Codex agent turns, tool calls, model metadata, and subagent threads in LangSmith.
+- [Trace OpenCode sessions](https://docs.langchain.com/langsmith/trace-with-opencode.md): Capture OpenCode sessions, assistant turns, tool calls, and subagent activity in LangSmith.
+- [Trace Cursor sessions](https://docs.langchain.com/langsmith/trace-with-cursor.md): Capture Cursor agent turns, tool calls, model metadata, token usage, attachments, and subagents in LangSmith.
+- [Trace Pi coding agent sessions](https://docs.langchain.com/langsmith/trace-with-pi.md): Trace Pi coding agent invocations to LangSmith to observe turns, debug tool calls, track token usage, and inspect individual LLM invocations.
+- [Trace with Instructor](https://docs.langchain.com/langsmith/trace-with-instructor.md)
+- [Trace n8n workflows](https://docs.langchain.com/langsmith/trace-with-n8n.md): Learn how to trace n8n AI workflows in LangSmith.
+- [Trace with Temporal](https://docs.langchain.com/langsmith/trace-with-temporal.md): Learn how to trace Temporal workflows and activities in LangSmith using OpenTelemetry.
+- [Trace Visual Studio Code Copilot Chat sessions](https://docs.langchain.com/langsmith/trace-with-vscode-copilot.md): Capture VS Code Copilot Chat agent interactions, LLM calls, tool executions, and token usage in LangSmith via OpenTelemetry.
+
+###### Productivity
+
+- [Trace Claude Cowork sessions](https://docs.langchain.com/langsmith/trace-claude-cowork.md): Send Claude Cowork tasks, tool calls, and skill use to LangSmith with the LangSmith tracing plugin for Claude.
+
+##### Manual instrumentation
+
+- [Custom instrumentation](https://docs.langchain.com/langsmith/annotate-code.md): Instrument your code directly to control which functions are traced and how they appear in LangSmith.
+- [Trace with API](https://docs.langchain.com/langsmith/trace-with-api.md): Learn how to trace LLM applications using the LangSmith REST API directly.
+- [Log LLM calls](https://docs.langchain.com/langsmith/log-llm-trace.md)
+- [Log retriever traces](https://docs.langchain.com/langsmith/log-retriever-trace.md): Log retrieval steps in LangSmith traces for document-level visibility into your RAG pipeline.
+- [Metadata parameters reference](https://docs.langchain.com/langsmith/ls-metadata-parameters.md)
+- [Upload files with traces](https://docs.langchain.com/langsmith/upload-files-with-traces.md)
+
+#### Configuration & troubleshooting
+
+- [Cost tracking](https://docs.langchain.com/langsmith/cost-tracking.md)
+- [Usage and billing](https://docs.langchain.com/langsmith/usage-and-billing.md): Understand LangSmith trace data retention tiers, pricing, rate limits, and usage limits.
+
+##### Agent & environment settings
+
+- [Log traces to an agent](https://docs.langchain.com/langsmith/log-traces-to-agent.md): Configure an agent identifier and environment to send traces from your code to LangSmith.
+- [Write traces to multiple destinations with replicas](https://docs.langchain.com/langsmith/trace-replicas.md): Send every trace to multiple agent environments or workspaces at the same time using replicas, configured by environment variable or at runtime.
+- [Trace without setting environment variables](https://docs.langchain.com/langsmith/trace-without-env-vars.md)
+- [Conditional tracing](https://docs.langchain.com/langsmith/conditional-tracing.md)
+- [Set a sampling rate for traces](https://docs.langchain.com/langsmith/sample-traces.md)
+
+##### Advanced tracing techniques
+
+- [Implement distributed tracing](https://docs.langchain.com/langsmith/distributed-tracing.md)
+- [Access the current run (span) within a traced function](https://docs.langchain.com/langsmith/access-current-span.md)
+- [Trace JS functions in serverless environments](https://docs.langchain.com/langsmith/serverless-environments.md)
+- [Log multimodal traces](https://docs.langchain.com/langsmith/log-multimodal-traces.md)
+- [Trace generator functions](https://docs.langchain.com/langsmith/trace-generator-functions.md)
+
+##### Data & privacy
+
+- [Add metadata and tags to traces](https://docs.langchain.com/langsmith/add-metadata-tags.md)
+- [Prevent logging of sensitive data in traces](https://docs.langchain.com/langsmith/mask-inputs-outputs.md)
+- [Redact secrets from traces](https://docs.langchain.com/langsmith/redact-secrets.md): Prevent API keys, tokens, and other secrets from appearing in LangSmith traces using the SDK anonymizer.
+- [Redact sensitive data with the OpenTelemetry Gateway architecture](https://docs.langchain.com/langsmith/otel-gateway-trace-redaction.md): Use an OpenTelemetry collector to redact sensitive data from traces before they land in LangSmith.
+
+##### Troubleshooting guides
+
+- [Troubleshoot trace nesting](https://docs.langchain.com/langsmith/nest-traces.md)
+- [Troubleshoot variable caching](https://docs.langchain.com/langsmith/troubleshooting-variable-caching.md)
+
+### Debug
+
+- [Configure threads](https://docs.langchain.com/langsmith/threads.md)
+
+#### Viewing & managing traces
+
+- [View traces](https://docs.langchain.com/langsmith/view-traces.md): Inspect agent threads in LangSmith using the Trajectory view or Details view.
+- [Filter traces](https://docs.langchain.com/langsmith/filter-traces.md): Find specific threads, traces, and runs in a LangSmith tracing project by writing filter queries in the search bar.
+- [Filter traces (ClickHouse)](https://docs.langchain.com/langsmith/filter-traces-in-application.md): Filter threads, traces, and runs in a LangSmith tracing project backed by ClickHouse, using the filter bar, filter shortcuts, and saved filters.
+- [Configure run input and output preview](https://docs.langchain.com/langsmith/configure-input-output-preview.md): Customize what appears in the Input and Output columns of the Runs table by configuring custom preview paths for specific trace types.
+- [Manage a trace](https://docs.langchain.com/langsmith/manage-trace.md): Share traces publicly, and view server logs from the Details view in LangSmith.
+- [Query traces using the SDK](https://docs.langchain.com/langsmith/export-traces.md)
+- [Resolve an agent environment](https://docs.langchain.com/langsmith/resolve-an-agent.md): Resolve an agent environment, experiment, or workspace evaluator traces to the session ID required by query and feedback APIs.
+- [Trace query syntax](https://docs.langchain.com/langsmith/trace-query-syntax.md)
+- [Query threads using the SDK](https://docs.langchain.com/langsmith/query-threads.md): Programmatically fetch and inspect multi-turn conversation threads from your LangSmith projects.
+- [LangSmith Remote MCP](https://docs.langchain.com/langsmith/langsmith-remote-mcp.md): Connect MCP-compatible clients to LangSmith over OAuth, or authenticate programmatic clients with a LangSmith API key.
+- [LangSmith MCP Server](https://docs.langchain.com/langsmith/langsmith-mcp-server.md): Use the Model Context Protocol (MCP) server to let language models fetch conversation history, prompts, runs, datasets, experiments, and billing from LangSmith.
+
+#### Bulk export trace data
+
+- [Bulk export trace data](https://docs.langchain.com/langsmith/data-export.md): Export LangSmith trace data to an S3-compatible bucket in Parquet format.
+- [Manage bulk export destinations](https://docs.langchain.com/langsmith/data-export-destinations.md): Configure and manage S3-compatible export destinations for LangSmith bulk exports.
+- [Monitor and troubleshoot bulk exports](https://docs.langchain.com/langsmith/data-export-monitor.md): Monitor bulk export status, manage running exports, and troubleshoot failures.
+- [Import exported data](https://docs.langchain.com/langsmith/data-export-downstream.md): Import LangSmith bulk-exported Parquet data into BigQuery, Snowflake, Redshift, Clickhouse, or DuckDB.
+- [Export trace data to BigQuery](https://docs.langchain.com/langsmith/big-query-bulk-export.md): Load LangSmith trace data into BigQuery using bulk export to GCS.
+
+#### Trajectory view
+
+- [Trajectory view integrations](https://docs.langchain.com/langsmith/trajectory-view-integrations.md): Frameworks and SDKs that render in the LangSmith Trajectory view and the metadata each one sets.
+
+#### Data type reference
+
+- [Run (span) data format](https://docs.langchain.com/langsmith/run-data-format.md)
+- [Feedback data format](https://docs.langchain.com/langsmith/feedback-data-format.md)
+
+### Observe
+
+#### Monitoring & alerting
+
+- [Monitor projects with dashboards](https://docs.langchain.com/langsmith/dashboards.md)
+- [Alerts in LangSmith](https://docs.langchain.com/langsmith/alerts.md)
+- [Discover errors and usage patterns with Insights](https://docs.langchain.com/langsmith/insights.md): Use LangSmith Insights to automatically analyze traces, detect usage patterns, identify common agent behaviors, and surface failure modes without manual trace review.
+- [Custom Apps](https://docs.langchain.com/langsmith/custom-apps.md): Build custom UIs that run inside LangSmith and call the LangSmith API, either by chatting with LangSmith Chat or locally with the LangSmith CLI.
+
+#### Online evaluators
+
+- [Set up LLM-as-a-judge online evaluators](https://docs.langchain.com/langsmith/online-evaluations-llm-as-judge.md)
+- [Set up decision model online evaluators](https://docs.langchain.com/langsmith/online-evaluations-decision-models.md): Evaluate production traces in LangSmith with a decision model as the judge and record each typed answer as feedback.
+- [Set up multi-turn online evaluators](https://docs.langchain.com/langsmith/online-evaluations-multi-turn.md)
+- [Set up LangChain Tuned Evaluators](https://docs.langchain.com/langsmith/tuned-evaluators.md): Use specialized LangChain-managed judges to attach quality feedback to traces.
+- [Set up online code evaluators](https://docs.langchain.com/langsmith/online-evaluations-code.md)
+- [Set up composite online evaluators](https://docs.langchain.com/langsmith/online-evaluations-composite.md)
+
+#### Automations
+
+- [Set up automation rules](https://docs.langchain.com/langsmith/rules.md)
+- [Configure webhook notifications for rules](https://docs.langchain.com/langsmith/webhooks.md): Configure webhook notifications to receive POST requests when automation rules match new runs or threads in LangSmith.
+
+## OpenAPI Specs
+
+- [langsmith-platform-openapi](/langsmith/langsmith-platform-openapi.json)

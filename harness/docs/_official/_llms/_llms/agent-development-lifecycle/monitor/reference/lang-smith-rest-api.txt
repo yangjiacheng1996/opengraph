@@ -1,0 +1,475 @@
+# Docs by LangChain: AGENT DEVELOPMENT LIFECYCLE Monitor Reference LangSmith REST API
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## LangSmith REST API
+
+- [LangSmith API reference](https://docs.langchain.com/langsmith/smith-api-ref.md): The LangSmith REST API provides programmatic access to tracing, datasets, experiments, annotations, and other LangSmith platform features.
+- [AGENT DEVELOPMENT LIFECYCLE / Monitor / Reference / LangSmith REST API / Administration (154 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/monitor/reference/lang-smith-rest-api/administration.txt): Documentation for AGENT DEVELOPMENT LIFECYCLE / Monitor / Reference / LangSmith REST API / Administration.
+
+### System
+
+- [Get health info](https://docs.langchain.com/langsmith/smith-api/info/get-health-info.md): Get health information about the current deployment of LangSmith.
+- [Get shared run](https://docs.langchain.com/langsmith/smith-api/public/get-shared-run.md): Get the shared run.
+- [Get shared run by ID](https://docs.langchain.com/langsmith/smith-api/public/get-shared-run-by-id.md): Get the shared run.
+- [Query shared runs](https://docs.langchain.com/langsmith/smith-api/public/query-shared-runs.md): Get run by ids or the shared run if not specifed.
+- [Read shared feedbacks](https://docs.langchain.com/langsmith/smith-api/public/read-shared-feedbacks.md)
+- [Read shared dataset](https://docs.langchain.com/langsmith/smith-api/public/read-shared-dataset.md): Get dataset by ids or the shared dataset if not specifed.
+- [Count shared examples](https://docs.langchain.com/langsmith/smith-api/public/count-shared-examples.md): Count all examples by query params
+- [Read shared examples](https://docs.langchain.com/langsmith/smith-api/public/read-shared-examples.md): Get example by ids or the shared example if not specifed.
+- [Read shared dataset tracer sessions](https://docs.langchain.com/langsmith/smith-api/public/read-shared-dataset-tracer-sessions.md): Get projects run on a dataset that has been shared.
+- [Read shared dataset tracer sessions bulk](https://docs.langchain.com/langsmith/smith-api/public/read-shared-dataset-tracer-sessions-bulk.md): Get sessions from multiple datasets using share tokens.
+- [Query shared dataset runs](https://docs.langchain.com/langsmith/smith-api/public/query-shared-dataset-runs.md): Get runs in projects run over a dataset that has been shared.
+- [Generate query for shared dataset runs](https://docs.langchain.com/langsmith/smith-api/public/generate-query-for-shared-dataset-runs.md): Get runs in projects run over a dataset that has been shared.
+- [Stats shared dataset runs](https://docs.langchain.com/langsmith/smith-api/public/stats-shared-dataset-runs.md): Get run stats in projects run over a dataset that has been shared.
+- [Read shared dataset run](https://docs.langchain.com/langsmith/smith-api/public/read-shared-dataset-run.md): Get runs in projects run over a dataset that has been shared.
+- [Read shared dataset feedback](https://docs.langchain.com/langsmith/smith-api/public/read-shared-dataset-feedback.md): Get feedback for runs in projects run over a dataset that has been shared.
+- [Read shared comparative experiments](https://docs.langchain.com/langsmith/smith-api/public/read-shared-comparative-experiments.md): Get all comparative experiments for a given dataset.
+- [Get message JSON schema](https://docs.langchain.com/langsmith/smith-api/public/get-message-json-schema.md)
+- [Get tool def JSON schema](https://docs.langchain.com/langsmith/smith-api/public/get-tool-def-json-schema.md)
+- [Execute](https://docs.langchain.com/langsmith/smith-api/ace/execute.md): Execute some custom code for testing purposes.
+- [List model prices](https://docs.langchain.com/langsmith/smith-api/model-price-map/list-model-prices.md): List the model prices LangSmith uses to compute run costs in this workspace.
+- [Create a model price](https://docs.langchain.com/langsmith/smith-api/model-price-map/create-a-model-price.md): Create a custom model price for this workspace.
+- [Replace a model price](https://docs.langchain.com/langsmith/smith-api/model-price-map/replace-a-model-price.md): Replace every field of a custom model price in this workspace.
+- [Delete a model price](https://docs.langchain.com/langsmith/smith-api/model-price-map/delete-a-model-price.md): Delete a custom model price from this workspace.
+- [Get server info](https://docs.langchain.com/langsmith/smith-api/info/get-server-info.md): Returns information about the current LangSmith deployment: version, instance feature flags, batch-ingest limits, and max SDK versions. Unauthenticated by default; set FF_INFO_ENDPOINT_AUTH_REQUIRED=true to require auth.
+- [List feature configurations](https://docs.langchain.com/langsmith/smith-api/features/list-feature-configurations.md): Returns a consolidated view of default models and disabled models per feature for the workspace.
+- [Set default model for a feature](https://docs.langchain.com/langsmith/smith-api/features/set-default-model-for-a-feature.md): Sets or replaces the default model for a feature in the workspace.
+- [Delete default model for a feature](https://docs.langchain.com/langsmith/smith-api/features/delete-default-model-for-a-feature.md): Removes the default model for a feature in the workspace.
+- [Disable a model for a feature](https://docs.langchain.com/langsmith/smith-api/features/disable-a-model-for-a-feature.md): Adds a model to the disabled list for a feature in the workspace.
+- [Re-enable a disabled model for a feature](https://docs.langchain.com/langsmith/smith-api/features/re-enable-a-disabled-model-for-a-feature.md): Removes a model from the disabled list for a feature in the workspace.
+- [Restart a backfill job](https://docs.langchain.com/langsmith/smith-api/backfills/restart-a-backfill-job.md): Deletes the backfill job record, causing the backfill to restart from the beginning on the next cron tick. Requires instance admin access.
+
+### Tracing
+
+- [Get tracing project prebuilt dashboard](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/get-tracing-project-prebuilt-dashboard.md): Get a prebuilt dashboard for a tracing project.
+- [Read tracer session](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/read-tracer-session.md): Get a specific project.
+- [Delete tracer session](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/delete-tracer-session.md): Delete a specific project.
+- [Update tracer session](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/update-tracer-session.md): Update a project.
+- [Read tracer sessions](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/read-tracer-sessions.md): List all projects.
+- [Create tracer session](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/create-tracer-session.md): Create a new project.
+- [Delete tracer sessions](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/delete-tracer-sessions.md): Delete projects.
+- [Read tracer sessions runs metadata](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/read-tracer-sessions-runs-metadata.md): Given a session, a number K, and (optionally) a list of metadata keys, return the top K values for each key.
+- [Get insights jobs (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/get-insights-jobs-beta.md): List Insights jobs for a project.
+- [Create insights job (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/create-insights-job-beta.md): Create an Insights job for a project.
+- [Get insights job configs (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/get-insights-job-configs-beta.md): List Insights job configurations for a project.
+- [Create insights job config (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/create-insights-job-config-beta.md): Create an Insights job configuration for a project.
+- [Auto-generate insights job config (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/auto-generate-insights-job-config-beta.md): Generate an Insights job configuration for a project.
+- [Delete insights job config (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/delete-insights-job-config-beta.md): Delete an Insights job configuration for a project.
+- [Update insights job config (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/update-insights-job-config-beta.md): Update an Insights job configuration for a project.
+- [Get insights job (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/get-insights-job-beta.md): Get an Insights job for a project.
+- [Delete insights job (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/delete-insights-job-beta.md): Delete an Insights job for a project.
+- [Update insights job (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/update-insights-job-beta.md): Update an Insights job for a project.
+- [Get run cluster from insights job (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/get-run-cluster-from-insights-job-beta.md): Get a cluster from the report produced by an Insights job.
+- [Get runs from insights job (Beta)](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/get-runs-from-insights-job-beta.md): List runs analyzed by an Insights job, optionally filtered by report cluster.
+- [Read filter views](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/read-filter-views.md): Get all filter views for a session.
+- [Create filter view](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/create-filter-view.md): Create a new filter view.
+- [Read filter view](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/read-filter-view.md): Get a specific filter view.
+- [Delete filter view](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/delete-filter-view.md): Delete a specific filter view.
+- [Update filter view](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/update-filter-view.md): Update a filter view.
+- [Rename filter view](https://docs.langchain.com/langsmith/smith-api/tracer-sessions/rename-filter-view.md): Rename a filter view (display_name and description only).
+- [List rules](https://docs.langchain.com/langsmith/smith-api/run/list-rules.md): List all run rules.
+- [Create rule](https://docs.langchain.com/langsmith/smith-api/run/create-rule.md): Create a new run rule.
+- [Create decision model rule](https://docs.langchain.com/langsmith/smith-api/run/create-decision-model-rule.md): Create a decision-model evaluator (Jev, SemIf or OpenAI Decisions) from its prompt and questions, and attach it to a project or dataset. Each question's key becomes a feedback key.
+- [Validate rule](https://docs.langchain.com/langsmith/smith-api/run/validate-rule.md): Validate a rule by executing it with test data without creating a saved rule.
+- [Delete rule](https://docs.langchain.com/langsmith/smith-api/run/delete-rule.md): Delete a run rule.
+- [Update rule](https://docs.langchain.com/langsmith/smith-api/run/update-rule.md): Update a run rule.
+- [Thread preview](https://docs.langchain.com/langsmith/smith-api/run/thread-preview.md): Get preview of a thread.
+- [List rule logs](https://docs.langchain.com/langsmith/smith-api/run/list-rule-logs.md): List logs for a particular rule
+- [List rule logs (v2)](https://docs.langchain.com/langsmith/smith-api/run/list-rule-logs-v2.md): List logs for a particular rule with cursor-based pagination.
+- [Get last applied rule](https://docs.langchain.com/langsmith/smith-api/run/get-last-applied-rule.md): Get the last applied rule.
+- [Trigger rule](https://docs.langchain.com/langsmith/smith-api/run/trigger-rule.md): Trigger a run rule manually.
+- [Trigger rules](https://docs.langchain.com/langsmith/smith-api/run/trigger-rules.md): Trigger an array of run rules manually.
+- [Read run](https://docs.langchain.com/langsmith/smith-api/run/read-run.md): Get a specific run.
+- [Update a run](https://docs.langchain.com/langsmith/smith-api/runs/update-a-run.md): Updates a run identified by its ID. The body should contain only the fields to be changed; unknown fields are ignored.
+- [Read run share state](https://docs.langchain.com/langsmith/smith-api/run/read-run-share-state.md): Get the state of sharing of a run.
+- [Share run](https://docs.langchain.com/langsmith/smith-api/run/share-run.md): Share a run.
+- [Unshare run](https://docs.langchain.com/langsmith/smith-api/run/unshare-run.md): Unshare a run.
+- [Validate runs query](https://docs.langchain.com/langsmith/smith-api/run/validate-runs-query.md): Validate runs query syntax, returns errors for broken queries.
+- [Query runs](https://docs.langchain.com/langsmith/smith-api/run/query-runs.md)
+- [Generate query for runs](https://docs.langchain.com/langsmith/smith-api/run/generate-query-for-runs.md): Get runs filter expression query for a given natural language query.
+- [Stats runs](https://docs.langchain.com/langsmith/smith-api/run/stats-runs.md): Get all runs by query in body payload.
+- [Create a run](https://docs.langchain.com/langsmith/smith-api/runs/create-a-run.md): Queues a single run for ingestion. The request body must be a JSON-encoded run object that follows the Run schema.
+- [Ingest runs (batch json)](https://docs.langchain.com/langsmith/smith-api/runs/ingest-runs-batch-json.md): Ingests a batch of runs in a single JSON payload. The payload must have `post` and/or `patch` arrays containing run objects. Prefer this endpoint over single‑run ingestion when submitting hundreds of runs, but `/runs/multipart` offers better handling for very large fields and attachments.
+- [Ingest runs (multipart)](https://docs.langchain.com/langsmith/smith-api/runs/ingest-runs-multipart.md): Ingests multiple runs, feedback objects, and binary attachments in a single `multipart/form-data` request. **Part‑name pattern**: `<event>.<run_id>[.<field>]` where `event` ∈ {`post`, `patch`, `feedback`, `attachment`}. * `post|patch.<run_id>` – JSON run payload. * `post|patch.<run_id>.<field>` – ou…
+- [Group runs](https://docs.langchain.com/langsmith/smith-api/run/group-runs.md): Deprecated; sunset January 31, 2027. Use POST /api/v2/threads/query to query threads instead.
+- [Stats group runs](https://docs.langchain.com/langsmith/smith-api/run/stats-group-runs.md): Get stats for the grouped runs.
+- [Delete runs abac](https://docs.langchain.com/langsmith/smith-api/run/delete-runs-abac.md): Delete specific runs by trace IDs.
+- [Delete runs](https://docs.langchain.com/langsmith/smith-api/run/delete-runs.md): DELETE with body payload — removes the runs identified by the request payload.
+- [List agent versions for a project](https://docs.langchain.com/langsmith/smith-api/sessions/list-agent-versions-for-a-project.md): Returns all agent versions (commit SHAs) seen in the given tracing project, ordered by first_seen_at descending.
+- [Resolve an address to its tracing project](https://docs.langchain.com/langsmith/smith-api/sessions/resolve-an-address-to-its-tracing-project.md): Returns the tracing project (session) an address names. An address is an AGENT (`id` and `environment`), an EXPERIMENT (`id`), or an EVALUATOR (no `id`: evaluator traces share one project per workspace). Send `kind` and `environment` in upper case, as listed; they are matched case-insensitively, whi…
+- [Get a public shared trace run](https://docs.langchain.com/langsmith/smith-api/runs/get-a-public-shared-trace-run.md): Returns one run within the trace identified by the share token. The request supplies only the run ID and that run's exact start_time coordinate.
+- [Query public shared trace runs](https://docs.langchain.com/langsmith/smith-api/runs/query-public-shared-trace-runs.md): Returns all runs within the trace identified by the share token. The share token supplies the tenant, project, and trace scope.
+- [Query runs](https://docs.langchain.com/langsmith/smith-api/runs/query-runs.md): Returns a paginated list of runs for the given projects within min/max start_time. Supports filters, cursor pagination, and `selects` to select fields to return.
+- [Get a single run](https://docs.langchain.com/langsmith/smith-api/runs/get-a-single-run.md): Returns one run by ID for the given session. Use the `selects` query parameter (repeatable) to select fields to return.
+- [Share a run](https://docs.langchain.com/langsmith/smith-api/runs/share-a-run.md): Creates or returns a share token for a run. Child runs share their trace root.
+- [Get the LangSmith UI URL for a run](https://docs.langchain.com/langsmith/smith-api/runs/get-the-langsmith-ui-url-for-a-run.md): Returns the URL to view a specific run in the LangSmith UI. The caller must supply the run's project_id and trace_id as query parameters; start_time is optional.
+- [Unshare a run](https://docs.langchain.com/langsmith/smith-api/runs/unshare-a-run.md): Deletes the share token for the trace identified by trace_id and session_id. Idempotent: returns 204 whether or not a share token existed.
+- [Query traces](https://docs.langchain.com/langsmith/smith-api/runs/query-traces.md): Returns a paginated list of traces (root runs) for a single tracing project. Each item carries the trace's root run plus optional trace-wide aggregates (`total_tokens`, `total_cost`, `first_token_time`) under `trace_aggregates`, so clients never have to merge by `trace_id`.
+- [List runs in a trace](https://docs.langchain.com/langsmith/smith-api/runs/list-runs-in-a-trace.md): Returns runs for a trace ID within min/max start time. Optional `filter`; repeatable `selects` to select fields to return.
+
+### Datasets
+
+- [Count examples](https://docs.langchain.com/langsmith/smith-api/examples/count-examples.md): Count the examples that match the filters.
+- [Read example](https://docs.langchain.com/langsmith/smith-api/examples/read-example.md): Get a specific example.
+- [Delete example](https://docs.langchain.com/langsmith/smith-api/examples/delete-example.md): Soft delete an example. Only deletes the example in the 'latest' version of the dataset.
+- [Update example](https://docs.langchain.com/langsmith/smith-api/examples/update-example.md): Update a specific example.
+- [Read examples](https://docs.langchain.com/langsmith/smith-api/examples/read-examples.md): Get all examples by query params
+- [Create example](https://docs.langchain.com/langsmith/smith-api/examples/create-example.md): Create a new example.
+- [Delete examples](https://docs.langchain.com/langsmith/smith-api/examples/delete-examples.md): Soft delete examples. Only deletes the examples in the 'latest' version of the dataset.
+- [Create examples](https://docs.langchain.com/langsmith/smith-api/examples/create-examples.md): Create bulk examples.
+- [Legacy update examples](https://docs.langchain.com/langsmith/smith-api/examples/legacy-update-examples.md): Legacy update examples in bulk. For update involving attachments, use PATCH /v1/platform/datasets/{dataset_id}/examples instead.
+- [Upload examples from csv](https://docs.langchain.com/langsmith/smith-api/examples/upload-examples-from-csv.md): Upload examples from a CSV file.
+- [Validate example](https://docs.langchain.com/langsmith/smith-api/examples/validate-example.md): Validate an example.
+- [Validate examples](https://docs.langchain.com/langsmith/smith-api/examples/validate-examples.md): Validate examples in bulk.
+- [Read datasets](https://docs.langchain.com/langsmith/smith-api/datasets/read-datasets.md): Get all datasets by query params and owner.
+- [Create dataset](https://docs.langchain.com/langsmith/smith-api/datasets/create-dataset.md): Create a new dataset.
+- [Delete datasets](https://docs.langchain.com/langsmith/smith-api/datasets/delete-datasets.md): Delete multiple datasets.
+- [Read datasets stream](https://docs.langchain.com/langsmith/smith-api/datasets/read-datasets-stream.md): Stream all datasets by query params and owner as JSON patches.
+- [Read dataset](https://docs.langchain.com/langsmith/smith-api/datasets/read-dataset.md): Get a specific dataset.
+- [Delete dataset](https://docs.langchain.com/langsmith/smith-api/datasets/delete-dataset.md): Delete a specific dataset.
+- [Update dataset](https://docs.langchain.com/langsmith/smith-api/datasets/update-dataset.md): Update a dataset.
+- [Upload csv dataset](https://docs.langchain.com/langsmith/smith-api/datasets/upload-csv-dataset.md): Create a new dataset from a CSV or JSONL file.
+- [Upload experiment](https://docs.langchain.com/langsmith/smith-api/datasets/upload-experiment.md): Upload an experiment that has already been run.
+- [Get dataset versions](https://docs.langchain.com/langsmith/smith-api/datasets/get-dataset-versions.md): Get dataset versions.
+- [Diff dataset versions](https://docs.langchain.com/langsmith/smith-api/datasets/diff-dataset-versions.md): Get diff between two dataset versions.
+- [Get dataset version](https://docs.langchain.com/langsmith/smith-api/datasets/get-dataset-version.md): Get dataset version by as_of or exact tag.
+- [Update dataset version](https://docs.langchain.com/langsmith/smith-api/datasets/update-dataset-version.md): Tag a dataset version.
+- [Download dataset openai](https://docs.langchain.com/langsmith/smith-api/datasets/download-dataset-openai.md): Download a dataset as OpenAI Evals Jsonl format.
+- [Download dataset openai ft](https://docs.langchain.com/langsmith/smith-api/datasets/download-dataset-openai-ft.md): Download a dataset as OpenAI Jsonl format.
+- [Download dataset csv](https://docs.langchain.com/langsmith/smith-api/datasets/download-dataset-csv.md): Download a dataset as CSV format.
+- [Download dataset jsonl](https://docs.langchain.com/langsmith/smith-api/datasets/download-dataset-jsonl.md): Download a dataset as CSV format.
+- [Read examples with runs](https://docs.langchain.com/langsmith/smith-api/datasets/read-examples-with-runs.md): Fetch examples for a dataset, and fetch the runs for each example if they are associated with the given session_ids.
+- [Read dataset share state](https://docs.langchain.com/langsmith/smith-api/datasets/read-dataset-share-state.md): Get a dataset's share token.
+- [Share dataset](https://docs.langchain.com/langsmith/smith-api/datasets/share-dataset.md): Share a dataset publicly and return its share token.
+- [Unshare dataset](https://docs.langchain.com/langsmith/smith-api/datasets/unshare-dataset.md): Stop sharing a dataset.
+- [Create comparative experiment](https://docs.langchain.com/langsmith/smith-api/datasets/create-comparative-experiment.md): Create a comparative experiment.
+- [Delete comparative experiment](https://docs.langchain.com/langsmith/smith-api/datasets/delete-comparative-experiment.md): Delete a specific comparative experiment.
+- [Clone dataset](https://docs.langchain.com/langsmith/smith-api/datasets/clone-dataset.md): Copy examples from a source dataset into an existing target dataset.
+- [Get dataset splits](https://docs.langchain.com/langsmith/smith-api/datasets/get-dataset-splits.md): List the split names a dataset's examples belong to.
+- [Update dataset splits](https://docs.langchain.com/langsmith/smith-api/datasets/update-dataset-splits.md): Add examples to a split, or remove them from it.
+- [Generate](https://docs.langchain.com/langsmith/smith-api/datasets/generate.md): Generate synthetic examples for a dataset.
+- [Studio experiment](https://docs.langchain.com/langsmith/smith-api/datasets/studio-experiment.md)
+- [Hard delete examples](https://docs.langchain.com/langsmith/smith-api/examples/hard-delete-examples.md): This endpoint hard deletes *all* versions of a dataset example(s). Deletion is performed by setting inputs, outputs, and metadata to null and deleting attachment files while keeping the example ID, dataset ID, and creation timestamp. IMPORTANT: attachment files can take up to 7 days to be deleted. i…
+- [Upload examples](https://docs.langchain.com/langsmith/smith-api/examples/upload-examples.md): This endpoint allows clients to upload examples to a specified dataset by sending a multipart/form-data POST request. Each form part contains either JSON-encoded data or binary attachment files associated with an example.
+- [Update examples](https://docs.langchain.com/langsmith/smith-api/examples/update-examples.md): This endpoint allows clients to update existing examples in a specified dataset by sending a multipart/form-data PATCH request. Each form part contains either JSON-encoded data or binary attachment files to update an example.
+- [Delete an example](https://docs.langchain.com/langsmith/smith-api/examples/delete-an-example.md): Soft-delete an example, preserving prior versions and their attachments. If the latest version is already deleted, the request succeeds without creating another version. Deletion is recorded at the current time or just after the latest version, whichever is later. For future-dated versions, latest r…
+- [Fetch shared experiment runs for dataset examples](https://docs.langchain.com/langsmith/smith-api/datasets/fetch-shared-experiment-runs-for-dataset-examples.md): Public share-token variant of POST /v2/datasets/{dataset_id}/experiment-runs. Returns a paginated page of dataset examples with runs from the requested experiments.
+- [Fetch experiment runs for dataset examples](https://docs.langchain.com/langsmith/smith-api/datasets/fetch-experiment-runs-for-dataset-examples.md): Returns a paginated page of dataset examples with runs from the requested experiments. Response uses the canonical `{items, next_cursor}` envelope.
+
+### Evaluation
+
+- [Evaluate experiment adhoc](https://docs.langchain.com/langsmith/smith-api/experiments/evaluate-experiment-adhoc.md): Evaluate an existing experiment with a specific evaluator.
+- [List evaluators](https://docs.langchain.com/langsmith/smith-api/evaluators/list-evaluators.md): List evaluators for the current workspace, with optional filtering by type, name, tag, feedback key, or resource ID.
+- [Create evaluator](https://docs.langchain.com/langsmith/smith-api/evaluators/create-evaluator.md): Create a new LLM or code evaluator for the current workspace.
+- [Bulk delete evaluators](https://docs.langchain.com/langsmith/smith-api/evaluators/bulk-delete-evaluators.md): Delete multiple evaluators by their IDs. Returns per-item success/failure.
+- [Get evaluator spend](https://docs.langchain.com/langsmith/smith-api/evaluators/get-evaluator-spend.md): Returns per-day LLM evaluator spend for the requested 7-day period, grouped by evaluator, resource, or run rule. Exactly one of group_by, evaluator_id, session_id, or dataset_id is required. resource_id, type, feedback_key, tag_value_id, and agent_id may be supplied with group_by to narrow listing a…
+- [Get evaluator](https://docs.langchain.com/langsmith/smith-api/evaluators/get-evaluator.md): Retrieve a single evaluator by its ID.
+- [Delete evaluator](https://docs.langchain.com/langsmith/smith-api/evaluators/delete-evaluator.md): Delete an evaluator. Returns 409 when a code evaluator build is ENQUEUED or BUILDING, or when run rules still reference the evaluator and delete_run_rules is false. When delete_run_rules is true, all run rules referencing this evaluator are deleted first (same tenant) if the build is not in flight.…
+- [Update evaluator](https://docs.langchain.com/langsmith/smith-api/evaluators/update-evaluator.md): Update an existing evaluator's name, LLM configuration, or code configuration. Returns 409 when a code evaluator build is ENQUEUED or BUILDING.
+- [Get experiment view override configurations for a dataset](https://docs.langchain.com/langsmith/smith-api/experiment-view-overrides/get-experiment-view-override-configurations-for-a-dataset.md): Retrieves all experiment view override configurations for a specific dataset. This endpoint returns column display overrides including color gradients, precision settings, and column visibility configurations that customize how experiment results are displayed in the UI.
+- [Create new experiment view override configuration for a dataset](https://docs.langchain.com/langsmith/smith-api/experiment-view-overrides/create-new-experiment-view-override-configuration-for-a-dataset.md): Creates a new experiment view override configuration for a dataset with column display settings. This endpoint allows you to customize how experiment results are displayed by configuring column-specific overrides including colors, precision, and visibility.
+- [Get experiment view override configuration by specific ID](https://docs.langchain.com/langsmith/smith-api/experiment-view-overrides/get-experiment-view-override-configuration-by-specific-id.md): Retrieves a specific experiment view override configuration using both dataset ID and override ID. This endpoint provides more precise access to experiment view overrides when you have the specific override ID, useful for direct links or cached references.
+- [Delete experiment view override configuration](https://docs.langchain.com/langsmith/smith-api/experiment-view-overrides/delete-experiment-view-override-configuration.md): Permanently deletes an experiment view override configuration for a dataset. This operation removes all column override settings including color gradients, precision configurations, and visibility settings.
+- [Update existing experiment view override configuration](https://docs.langchain.com/langsmith/smith-api/experiment-view-overrides/update-existing-experiment-view-override-configuration.md): Updates an existing experiment view override configuration by completely replacing the column overrides for the specified dataset and override ID.
+
+### Feedback & Annotation
+
+- [List feedback formula ep](https://docs.langchain.com/langsmith/smith-api/feedback/list-feedback-formula-ep.md): List feedback formulas for a given dataset or tracing project
+- [Create feedback formula ep](https://docs.langchain.com/langsmith/smith-api/feedback/create-feedback-formula-ep.md): Create a new feedback formula
+- [Get feedback formula ep](https://docs.langchain.com/langsmith/smith-api/feedback/get-feedback-formula-ep.md): Get a feedback formula by id
+- [Update feedback formula ep](https://docs.langchain.com/langsmith/smith-api/feedback/update-feedback-formula-ep.md): Update a feedback formula
+- [Delete feedback formula endpoint](https://docs.langchain.com/langsmith/smith-api/feedback/delete-feedback-formula-endpoint.md): Delete a feedback formula by id
+- [Read feedback](https://docs.langchain.com/langsmith/smith-api/feedback/read-feedback.md): Get a specific feedback.
+- [Delete feedback](https://docs.langchain.com/langsmith/smith-api/feedback/delete-feedback.md): Delete a feedback.
+- [Update feedback](https://docs.langchain.com/langsmith/smith-api/feedback/update-feedback.md): Replace an existing feedback entry with a new, modified entry.
+- [Read feedbacks](https://docs.langchain.com/langsmith/smith-api/feedback/read-feedbacks.md): List all Feedback by query params.
+- [Create feedback](https://docs.langchain.com/langsmith/smith-api/feedback/create-feedback.md): Create a new feedback.
+- [List feedback ingest tokens](https://docs.langchain.com/langsmith/smith-api/feedback/list-feedback-ingest-tokens.md): List all feedback ingest tokens for a run.
+- [Create feedback ingest token](https://docs.langchain.com/langsmith/smith-api/feedback/create-feedback-ingest-token.md): Create a new feedback ingest token.
+- [Create feedback with token get](https://docs.langchain.com/langsmith/smith-api/feedback/create-feedback-with-token-get.md): Create a new feedback with a token.
+- [Create feedback with token post](https://docs.langchain.com/langsmith/smith-api/feedback/create-feedback-with-token-post.md): Submit feedback for the token's run and key. The token is the credential, so anyone with it can submit feedback.
+- [Get annotation queues](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-annotation-queues.md)
+- [Create annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/create-annotation-queue.md)
+- [Delete annotation queues](https://docs.langchain.com/langsmith/smith-api/annotation-queues/delete-annotation-queues.md): Delete multiple annotation queues with partial success support.
+- [Populate annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/populate-annotation-queue.md): Populate annotation queue with runs from an experiment.
+- [Get annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-annotation-queue.md)
+- [Delete annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/delete-annotation-queue.md)
+- [Update annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/update-annotation-queue.md)
+- [Get runs from annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-runs-from-annotation-queue.md)
+- [Add runs to annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/add-runs-to-annotation-queue.md)
+- [Add runs to annotation queue by key](https://docs.langchain.com/langsmith/smith-api/annotation-queues/add-runs-to-annotation-queue-by-key.md): Self-hosted deployments require LangSmith `v0.16` or later.
+- [Export annotation queue archived runs](https://docs.langchain.com/langsmith/smith-api/annotation-queues/export-annotation-queue-archived-runs.md)
+- [Get run from annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-run-from-annotation-queue.md): Get a run from an annotation queue
+- [Get annotation queues for run](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-annotation-queues-for-run.md)
+- [Delete run from annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/delete-run-from-annotation-queue.md)
+- [Update run in annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/update-run-in-annotation-queue.md)
+- [Delete runs from annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/delete-runs-from-annotation-queue.md)
+- [Get total size from annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-total-size-from-annotation-queue.md)
+- [Get total archived from annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-total-archived-from-annotation-queue.md)
+- [Get size from annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation-queues/get-size-from-annotation-queue.md)
+- [Create identity annotation queue run status](https://docs.langchain.com/langsmith/smith-api/annotation-queues/create-identity-annotation-queue-run-status.md)
+- [Resolve annotation queue run](https://docs.langchain.com/langsmith/smith-api/annotation-queues/resolve-annotation-queue-run.md): Resolve a queue run ID to its section and run data for deep linking.
+- [List feedback configs endpoint](https://docs.langchain.com/langsmith/smith-api/feedback-configs/list-feedback-configs-endpoint.md)
+- [Create feedback config endpoint](https://docs.langchain.com/langsmith/smith-api/feedback-configs/create-feedback-config-endpoint.md)
+- [Delete feedback config endpoint](https://docs.langchain.com/langsmith/smith-api/feedback-configs/delete-feedback-config-endpoint.md): Soft delete one feedback config by id, or every config of a feedback key.
+- [Update feedback config endpoint](https://docs.langchain.com/langsmith/smith-api/feedback-configs/update-feedback-config-endpoint.md)
+- [Create annotation queue item status](https://docs.langchain.com/langsmith/smith-api/annotation_queues/create-annotation-queue-item-status.md): Log the caller's reviewer status for a RUN or THREAD annotation queue item. A null status re-shows the item for this reviewer.
+- [List annotation queue items](https://docs.langchain.com/langsmith/smith-api/annotation_queues/list-annotation-queue-items.md): List RUN and THREAD items in a single annotation queue for one review status section, with opaque cursor pagination. Optional item_type=RUN|THREAD filters the page. Optional min_start_time/max_start_time bound the item's trace start time; items with no start time are excluded when either bound is se…
+- [Add annotation queue items](https://docs.langchain.com/langsmith/smith-api/annotation_queues/add-annotation-queue-items.md): Add RUN or THREAD items to a single annotation queue. RUN items require run_id unless they are created from a suggested example. THREAD items require thread_id and project_id.
+- [Get the annotation queue item count](https://docs.langchain.com/langsmith/smith-api/annotation_queues/get-the-annotation-queue-item-count.md): Returns the number of annotation queue items in one status bucket. The two time windows are independent: start_time/end_time bound when an item was archived, min_start_time/max_start_time bound when its trace ran. Items with no trace start time are excluded when either of the latter is set.
+- [Delete annotation queue items](https://docs.langchain.com/langsmith/smith-api/annotation_queues/delete-annotation-queue-items.md): Remove RUN or THREAD items from a single annotation queue by item ID. Both active and completed items can be removed.
+- [Update an annotation queue item](https://docs.langchain.com/langsmith/smith-api/annotation_queues/update-an-annotation-queue-item.md): Partially update mutable timestamps (added_at, last_reviewed_time) for a RUN or THREAD annotation queue item. Omit a field, or pass JSON null, to leave it unchanged.
+- [Get annotation queue item placement](https://docs.langchain.com/langsmith/smith-api/annotation_queues/get-annotation-queue-item-placement.md): Resolve a RUN or THREAD item to its current review section and zero-based position for deep linking. The returned cursor counts RUN and THREAD items together, so it is only valid for a list request with no item_type or start-time filter.
+- [Add a reviewer to an annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation_queues/add-a-reviewer-to-an-annotation-queue.md): Assigns a single identity as a reviewer for the queue. Idempotent.
+- [Remove a reviewer from an annotation queue](https://docs.langchain.com/langsmith/smith-api/annotation_queues/remove-a-reviewer-from-an-annotation-queue.md): Unassigns an identity as a reviewer for the queue. Idempotent.
+
+### Monitoring
+
+- [Get bulk exports](https://docs.langchain.com/langsmith/smith-api/bulk-exports/get-bulk-exports.md): Get the current workspace's bulk exports
+- [Create bulk export](https://docs.langchain.com/langsmith/smith-api/bulk-exports/create-bulk-export.md): Create a new bulk export
+- [Get bulk export destinations](https://docs.langchain.com/langsmith/smith-api/bulk-exports/get-bulk-export-destinations.md): Get the current workspace's bulk export destinations
+- [Create bulk export destination](https://docs.langchain.com/langsmith/smith-api/bulk-exports/create-bulk-export-destination.md): Create a new bulk export destination
+- [Get bulk export runs filtered](https://docs.langchain.com/langsmith/smith-api/bulk-exports/get-bulk-export-runs-filtered.md): Get bulk export runs for exports that were created from a scheduled bulk export
+- [Get bulk export](https://docs.langchain.com/langsmith/smith-api/bulk-exports/get-bulk-export.md): Get a single bulk export by ID
+- [Cancel bulk export](https://docs.langchain.com/langsmith/smith-api/bulk-exports/cancel-bulk-export.md): Cancel a bulk export by ID
+- [Get bulk export destination](https://docs.langchain.com/langsmith/smith-api/bulk-exports/get-bulk-export-destination.md): Get a single bulk export destination by ID
+- [Delete bulk export destination](https://docs.langchain.com/langsmith/smith-api/bulk-exports/delete-bulk-export-destination.md): Delete a bulk export destination that is not used by any bulk export
+- [Update bulk export destination](https://docs.langchain.com/langsmith/smith-api/bulk-exports/update-bulk-export-destination.md): Update a bulk export destination
+- [Get bulk export runs](https://docs.langchain.com/langsmith/smith-api/bulk-exports/get-bulk-export-runs.md): Get a bulk export's runs
+- [Get bulk export run](https://docs.langchain.com/langsmith/smith-api/bulk-exports/get-bulk-export-run.md): Get a single bulk export's run by ID
+- [Clone section](https://docs.langchain.com/langsmith/smith-api/charts/clone-section.md): Clone a dashboard.
+- [Read sections](https://docs.langchain.com/langsmith/smith-api/charts/read-sections.md): Get all sections for the tenant.
+- [Create section](https://docs.langchain.com/langsmith/smith-api/charts/create-section.md): Create a new section.
+- [Read charts](https://docs.langchain.com/langsmith/smith-api/charts/read-charts.md): Get all charts for the tenant.
+- [Read chart preview](https://docs.langchain.com/langsmith/smith-api/charts/read-chart-preview.md): Get a preview for a chart without actually creating it.
+- [Create chart](https://docs.langchain.com/langsmith/smith-api/charts/create-chart.md): Create a chart or dashboard text block.
+- [Read single chart](https://docs.langchain.com/langsmith/smith-api/charts/read-single-chart.md): Get a single chart or text block by ID.
+- [Delete chart](https://docs.langchain.com/langsmith/smith-api/charts/delete-chart.md): Delete a chart.
+- [Update chart](https://docs.langchain.com/langsmith/smith-api/charts/update-chart.md): Update a chart or text block.
+- [Read single section](https://docs.langchain.com/langsmith/smith-api/charts/read-single-section.md): Get a single section by ID.
+- [Delete section](https://docs.langchain.com/langsmith/smith-api/charts/delete-section.md): Delete a section.
+- [Update section](https://docs.langchain.com/langsmith/smith-api/charts/update-section.md): Update a section.
+- [Org read sections](https://docs.langchain.com/langsmith/smith-api/charts/org-read-sections.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org create section](https://docs.langchain.com/langsmith/smith-api/charts/org-create-section.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org read charts](https://docs.langchain.com/langsmith/smith-api/charts/org-read-charts.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org read chart preview](https://docs.langchain.com/langsmith/smith-api/charts/org-read-chart-preview.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org create chart](https://docs.langchain.com/langsmith/smith-api/charts/org-create-chart.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org read single chart](https://docs.langchain.com/langsmith/smith-api/charts/org-read-single-chart.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org delete chart](https://docs.langchain.com/langsmith/smith-api/charts/org-delete-chart.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org update chart](https://docs.langchain.com/langsmith/smith-api/charts/org-update-chart.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org read single section](https://docs.langchain.com/langsmith/smith-api/charts/org-read-single-section.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org delete section](https://docs.langchain.com/langsmith/smith-api/charts/org-delete-section.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Org update section](https://docs.langchain.com/langsmith/smith-api/charts/org-update-section.md): Deprecated: organization usage charts have been retired (HTTP 410).
+- [Create an alert rule](https://docs.langchain.com/langsmith/smith-api/alert_rules/create-an-alert-rule.md): Creates a new alert rule. The request body must be a JSON-encoded alert rule object that follows the CreateAlertRuleRequest schema.
+- [Test an alert action to determine if configuration is valid](https://docs.langchain.com/langsmith/smith-api/alert_rules/test-an-alert-action-to-determine-if-configuration-is-valid.md): Tests an alert action which will fire a notification to all configured recipients if the configuration is valid.
+- [Get an alert rule](https://docs.langchain.com/langsmith/smith-api/alert_rules/get-an-alert-rule.md): Gets an alert rule.
+- [Delete an alert rule](https://docs.langchain.com/langsmith/smith-api/alert_rules/delete-an-alert-rule.md): Deletes an alert rule
+- [Update an alert rule](https://docs.langchain.com/langsmith/smith-api/alert_rules/update-an-alert-rule.md): Updates an alert rule.
+
+### Prompts & Playground
+
+- [Invoke prompt](https://docs.langchain.com/langsmith/smith-api/prompts/invoke-prompt.md)
+- [List prompt webhooks](https://docs.langchain.com/langsmith/smith-api/prompt-webhooks/list-prompt-webhooks.md): List all prompt webhooks for the current tenant.
+- [Create prompt webhook](https://docs.langchain.com/langsmith/smith-api/prompt-webhooks/create-prompt-webhook.md): Create a new prompt webhook.
+- [Get prompt webhook](https://docs.langchain.com/langsmith/smith-api/prompt-webhooks/get-prompt-webhook.md): Get a specific prompt webhook.
+- [Delete prompt webhook](https://docs.langchain.com/langsmith/smith-api/prompt-webhooks/delete-prompt-webhook.md): Delete a specific prompt webhook.
+- [Update prompt webhook](https://docs.langchain.com/langsmith/smith-api/prompt-webhooks/update-prompt-webhook.md): Update a specific prompt webhook.
+- [Test prompt webhook](https://docs.langchain.com/langsmith/smith-api/prompt-webhooks/test-prompt-webhook.md): Test a specific prompt webhook.
+- [List playground settings](https://docs.langchain.com/langsmith/smith-api/playground-settings/list-playground-settings.md): Get all playground settings for this tenant id.
+- [Create playground settings](https://docs.langchain.com/langsmith/smith-api/playground-settings/create-playground-settings.md): Create playground settings.
+- [Get playground settings](https://docs.langchain.com/langsmith/smith-api/playground-settings/get-playground-settings.md): Get a single playground settings by ID.
+- [Delete playground settings](https://docs.langchain.com/langsmith/smith-api/playground-settings/delete-playground-settings.md): Delete playground settings.
+- [Update playground settings](https://docs.langchain.com/langsmith/smith-api/playground-settings/update-playground-settings.md): Update playground settings.
+- [List commits](https://docs.langchain.com/langsmith/smith-api/commits/list-commits.md): List commits for a repository, with pagination support. This endpoint supports both authenticated and unauthenticated access. Authenticated users can access private repositories; unauthenticated users can only access public repositories. The include_stats parameter controls whether download and view…
+- [Create a commit](https://docs.langchain.com/langsmith/smith-api/commits/create-a-commit.md): Creates a new commit in a repository. Requires authentication and write access to the repository.
+- [Get a commit](https://docs.langchain.com/langsmith/smith-api/commits/get-a-commit.md): Retrieves a specific commit by hash, tag, or "latest" for a repository. This endpoint supports both authenticated and unauthenticated access. Authenticated users can access private repos, while unauthenticated users can only access public repos. Commit resolution logic: - "latest" or empty: Get the…
+- [List hub environments](https://docs.langchain.com/langsmith/smith-api/hub_environments/list-hub-environments.md): Returns the hub environments model for the current tenant. Returns 404 if no custom configuration exists.
+- [Create hub environments model](https://docs.langchain.com/langsmith/smith-api/hub_environments/create-hub-environments-model.md): Creates the hub environments configuration for the current tenant.
+- [Delete hub environments model](https://docs.langchain.com/langsmith/smith-api/hub_environments/delete-hub-environments-model.md): Deletes the hub environments configuration. Tenant reverts to defaults.
+- [Update hub environments model](https://docs.langchain.com/langsmith/smith-api/hub_environments/update-hub-environments-model.md): Replaces the environments array on an existing model.
+- [Get directory contents](https://docs.langchain.com/langsmith/smith-api/directories/get-directory-contents.md): Resolves the flattened file tree for an agent or skill repository at a specific commit, tag, or latest.
+- [Delete directory repository](https://docs.langchain.com/langsmith/smith-api/directories/delete-directory-repository.md): Deletes an agent or skill repository and its owned child file repositories.
+- [Create directory commit](https://docs.langchain.com/langsmith/smith-api/directories/create-directory-commit.md): Creates a new directory commit for an agent or skill repository by applying file/link create, update, and delete operations. Linked directories default to the LATEST selector; use COMMIT to pin one commit. The legacy commit_id write field is deprecated and resolves as LATEST.
+- [Get tag transition history](https://docs.langchain.com/langsmith/smith-api/tag-transitions/get-tag-transition-history.md): Returns the paginated audit log of transitions for a specific tag in a repository. Each entry records a commit change (from_commit → to_commit) along with who performed it.
+
+### Integrations & Tools
+
+- [Get tools](https://docs.langchain.com/langsmith/smith-api/mcp/get-tools.md): Return MCP tools — from cache if fresh, otherwise by fetching from remote.
+- [Invalidate tools cache](https://docs.langchain.com/langsmith/smith-api/mcp/invalidate-tools-cache.md): Invalidate cached MCP tools for a given server URL.
+- [Proxy get](https://docs.langchain.com/langsmith/smith-api/mcp/proxy-get.md)
+- [Proxy](https://docs.langchain.com/langsmith/smith-api/mcp/proxy.md)
+- [Get OAuth2 authorization server metadata](https://docs.langchain.com/langsmith/smith-api/oauth/get-oauth2-authorization-server-metadata.md): Returns OAuth2 authorization server metadata per RFC 8414, including supported endpoints, grant types, and response types.
+- [Get openid connect provider configuration](https://docs.langchain.com/langsmith/smith-api/oauth/get-openid-connect-provider-configuration.md): Returns the OpenID Connect discovery document (OpenID Connect Discovery 1.0), advertising the authorization, token, userinfo, and JWKS endpoints plus supported scopes, response types, and signing algorithms.
+- [List MCP vendors](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/list-mcp-vendors.md): Returns the catalog of available MCP vendors.
+- [Get MCP vendor](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/get-mcp-vendor.md): Returns vendor metadata and current settings.
+- [Get vendor account](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/get-vendor-account.md): Resolves OAuth token and returns the vendor's account info.
+- [List MCP servers for a vendor](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/list-mcp-servers-for-a-vendor.md): Returns the MCP gateways from the vendor for the workspace's configured org/project.
+- [Get vendor settings](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/get-vendor-settings.md): Returns the current vendor-specific settings.
+- [Replace vendor settings](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/replace-vendor-settings.md): Replaces vendor settings.
+- [Create vendor settings](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/create-vendor-settings.md): Initializes vendor settings.
+- [Delete vendor settings](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/delete-vendor-settings.md): Removes vendor settings.
+- [List tools for a vendor](https://docs.langchain.com/langsmith/smith-api/mcp_vendors/list-tools-for-a-vendor.md): Returns the tool catalog for this vendor.
+- [List authorized applications](https://docs.langchain.com/langsmith/smith-api/oauth/list-authorized-applications.md): Lists the third-party applications the authenticated user has authorized to sign in with LangSmith.
+- [Revoke an authorized application](https://docs.langchain.com/langsmith/smith-api/oauth/revoke-an-authorized-application.md): Revokes the authenticated user's authorization for an application and invalidates that application's active tokens for the user.
+- [List oauth clients](https://docs.langchain.com/langsmith/smith-api/oauth/list-oauth-clients.md): Lists the OAuth clients owned by the caller's organization.
+- [Create an oauth client](https://docs.langchain.com/langsmith/smith-api/oauth/create-an-oauth-client.md): Registers a new OAuth 2.0 / OIDC client owned by the caller's organization. For confidential clients the response includes a client_secret that is shown only once.
+- [Get an oauth client](https://docs.langchain.com/langsmith/smith-api/oauth/get-an-oauth-client.md)
+- [Delete an oauth client](https://docs.langchain.com/langsmith/smith-api/oauth/delete-an-oauth-client.md)
+- [Update an oauth client](https://docs.langchain.com/langsmith/smith-api/oauth/update-an-oauth-client.md)
+- [Rotate an oauth client secret](https://docs.langchain.com/langsmith/smith-api/oauth/rotate-an-oauth-client-secret.md): Generates a new client secret for a confidential client, invalidating the previous one. The new secret is shown only once.
+- [List tools](https://docs.langchain.com/langsmith/smith-api/tools/list-tools.md): Returns a paginated list of tools in the workspace.
+- [Create a tool](https://docs.langchain.com/langsmith/smith-api/tools/create-a-tool.md): Creates a new tool in the workspace.
+- [Get a tool by ID](https://docs.langchain.com/langsmith/smith-api/tools/get-a-tool-by-id.md): Returns a tool identified by its UUID.
+- [Delete a tool by ID](https://docs.langchain.com/langsmith/smith-api/tools/delete-a-tool-by-id.md): Deletes a tool identified by its UUID.
+- [Update a tool by ID](https://docs.langchain.com/langsmith/smith-api/tools/update-a-tool-by-id.md): Updates an existing tool identified by its UUID.
+- [Get a tool by handle](https://docs.langchain.com/langsmith/smith-api/tools/get-a-tool-by-handle.md): Returns a tool identified by its handle.
+- [Delete a tool by handle](https://docs.langchain.com/langsmith/smith-api/tools/delete-a-tool-by-handle.md): Deletes a tool identified by its handle.
+- [Update a tool by handle](https://docs.langchain.com/langsmith/smith-api/tools/update-a-tool-by-handle.md): Updates an existing tool identified by its handle.
+- [Initiate OAuth2 authorization](https://docs.langchain.com/langsmith/smith-api/oauth/initiate-oauth2-authorization.md): Validates authorization request parameters and redirects to the frontend consent page per RFC 6749.
+- [Approve OAuth2 authorization request](https://docs.langchain.com/langsmith/smith-api/oauth/approve-oauth2-authorization-request.md): Issues an authorization code after the authenticated user approves the request. Called by the frontend consent page. Requires authentication.
+- [Get public OAuth2 client metadata](https://docs.langchain.com/langsmith/smith-api/oauth/get-public-oauth2-client-metadata.md): Returns the display metadata (name, logo, homepage/terms/privacy links) for a registered OAuth2 client. Used by the consent screen to show a human-readable client identity instead of the raw client_id. Public endpoint; exposes only non-sensitive display fields.
+- [Authorize a device code](https://docs.langchain.com/langsmith/smith-api/oauth/authorize-a-device-code.md): Marks a device code as authorized for the authenticated user. Called by the /activate page when the user enters their user code. Requires authentication.
+- [Request OAuth2 device authorization](https://docs.langchain.com/langsmith/smith-api/oauth/request-oauth2-device-authorization.md): Issues a device code and user code for the device authorization flow per RFC 8628.
+- [Register an OAuth2 dynamic client](https://docs.langchain.com/langsmith/smith-api/oauth/register-an-oauth2-dynamic-client.md): Public RFC 7591 Dynamic Client Registration endpoint. Only mints public clients with allowed loopback, HTTPS, or native client redirect URIs. Body limit 8 KB.
+- [Revoke an OAuth2 token](https://docs.langchain.com/langsmith/smith-api/oauth/revoke-an-oauth2-token.md): Revokes an access token or refresh token per RFC 7009. Always returns 200 regardless of whether the token was found.
+- [Exchange grant for OAuth2 tokens](https://docs.langchain.com/langsmith/smith-api/oauth/exchange-grant-for-oauth2-tokens.md): Token endpoint that dispatches by grant_type: authorization_code, urn:ietf:params:oauth:grant-type:device_code, or refresh_token.
+- [Get openid connect userinfo](https://docs.langchain.com/langsmith/smith-api/oauth/get-openid-connect-userinfo.md): Returns identity claims for the user represented by a LangSmith access token whose audience is the identity resource or the API resource. The token is passed as a Bearer credential in the Authorization header (OpenID Connect Core 1.0 §5.3).
+- [Get agent builder integrations settings](https://docs.langchain.com/langsmith/smith-api/integrations/get-agent-builder-integrations-settings.md): Returns default policy, integration overrides, and known integrations for the current workspace.
+- [Update agent builder integrations settings](https://docs.langchain.com/langsmith/smith-api/integrations/update-agent-builder-integrations-settings.md): Replaces default policy and integration overrides for the current workspace.
+
+### Prompt Hub
+
+- [Get settings](https://docs.langchain.com/langsmith/smith-api/settings/get-settings.md): Get settings.
+- [Set tenant handle](https://docs.langchain.com/langsmith/smith-api/settings/set-tenant-handle.md): Set tenant handle.
+- [List repos](https://docs.langchain.com/langsmith/smith-api/repos/list-repos.md): Get all repos.
+- [Create repo](https://docs.langchain.com/langsmith/smith-api/repos/create-repo.md): Create a repo.
+- [Delete repos](https://docs.langchain.com/langsmith/smith-api/repos/delete-repos.md): Delete multiple repos with partial success support.
+- [Get repo](https://docs.langchain.com/langsmith/smith-api/repos/get-repo.md): Get a repo.
+- [Delete repo](https://docs.langchain.com/langsmith/smith-api/repos/delete-repo.md): Delete a repo.
+- [Update repo](https://docs.langchain.com/langsmith/smith-api/repos/update-repo.md): Update a repo.
+- [Fork repo](https://docs.langchain.com/langsmith/smith-api/repos/fork-repo.md): Fork a repo.
+- [List repo tags](https://docs.langchain.com/langsmith/smith-api/repos/list-repo-tags.md): Get all repo tags.
+- [Optimize prompt job](https://docs.langchain.com/langsmith/smith-api/repos/optimize-prompt-job.md): Optimize prompt
+- [Like repo](https://docs.langchain.com/langsmith/smith-api/likes/like-repo.md): Like a repo.
+- [Get comments](https://docs.langchain.com/langsmith/smith-api/comments/get-comments.md)
+- [Create comment](https://docs.langchain.com/langsmith/smith-api/comments/create-comment.md)
+- [Get sub comments](https://docs.langchain.com/langsmith/smith-api/comments/get-sub-comments.md)
+- [Create sub comment](https://docs.langchain.com/langsmith/smith-api/comments/create-sub-comment.md)
+- [Like comment](https://docs.langchain.com/langsmith/smith-api/comments/like-comment.md)
+- [Unlike comment](https://docs.langchain.com/langsmith/smith-api/comments/unlike-comment.md)
+- [Get tags](https://docs.langchain.com/langsmith/smith-api/tags/get-tags.md)
+- [Create tag](https://docs.langchain.com/langsmith/smith-api/tags/create-tag.md): Create a tag. Requires repo ownership, prompts:tag permission, or ABAC grant.
+- [Get tag](https://docs.langchain.com/langsmith/smith-api/tags/get-tag.md)
+- [Delete tag](https://docs.langchain.com/langsmith/smith-api/tags/delete-tag.md): Delete a tag. Requires repo ownership, prompts:tag permission, or ABAC grant.
+- [Update tag](https://docs.langchain.com/langsmith/smith-api/tags/update-tag.md): Update a tag. Requires repo ownership, prompts:tag permission, or ABAC grant.
+- [List repo owners](https://docs.langchain.com/langsmith/smith-api/ownerships/list-repo-owners.md): List all owners of a repo.
+- [Add repo owner](https://docs.langchain.com/langsmith/smith-api/ownerships/add-repo-owner.md): Add an owner to a repo.
+- [Remove repo owner](https://docs.langchain.com/langsmith/smith-api/ownerships/remove-repo-owner.md): Remove an owner from a repo.
+- [List jobs](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/list-jobs.md): List all prompt optimization jobs.
+- [Create job](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/create-job.md): Create a new prompt optimization job.
+- [Get job](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/get-job.md): Get a specific optimization job.
+- [Delete job](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/delete-job.md): Delete a prompt optimization job.
+- [Update job](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/update-job.md): Replace an existing prompt optimization job with a new, modified job.
+- [List job logs](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/list-job-logs.md): List all logs for a specific prompt optimization job.
+- [Create log](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/create-log.md): Create a new log entry for a prompt optimization job.
+- [Get log](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/get-log.md): Get a specific prompt optimization job log.
+- [Delete log](https://docs.langchain.com/langsmith/smith-api/optimization-jobs/delete-log.md): Delete a prompt optimization job log.
+
+### LLM Gateway
+
+- [List gateway policies](https://docs.langchain.com/langsmith/smith-api/gateway-policies/list-gateway-policies.md): Returns every gateway policy in the current organization. The response includes both admin-created policies and runtime-materialized children of `default_spend_cap` and `default_rate_limit` policies (children carry `parent_policy_id`).
+- [Create a gateway policy](https://docs.langchain.com/langsmith/smith-api/gateway-policies/create-a-gateway-policy.md): Creates a gateway policy for the calling organization.
+- [Search gateway policies by subject value set](https://docs.langchain.com/langsmith/smith-api/gateway-policies/search-gateway-policies-by-subject-value-set.md): Batch variant of GET /v1/platform/gateway-policies for fetching policies that match a set of subject_matcher_values under one subject_matcher_key. Accepts the values in a JSON body so callers can include hundreds of subject ids without bumping into per-server URL-length limits.
+- [Get a gateway policy](https://docs.langchain.com/langsmith/smith-api/gateway-policies/get-a-gateway-policy.md): Returns a single gateway policy by id. Cross-org access is rejected with 404
+- [Delete a gateway policy](https://docs.langchain.com/langsmith/smith-api/gateway-policies/delete-a-gateway-policy.md): Deletes a gateway policy. Subsequent reads return 404.
+- [Update a gateway policy](https://docs.langchain.com/langsmith/smith-api/gateway-policies/update-a-gateway-policy.md): Partially updates a gateway policy. Only fields present in the request body are applied; absent fields are left unchanged. `policy_type` is immutable — to change a policy's type, delete it and create a new one.
+
+### Issues
+
+- [List issues (Beta)](https://docs.langchain.com/langsmith/smith-api/issues/list-issues-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [List issues agent configs (Beta)](https://docs.langchain.com/langsmith/smith-api/issues-agent/list-issues-agent-configs-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [Get issue (Beta)](https://docs.langchain.com/langsmith/smith-api/issues/get-issue-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [Mark issue viewed (Beta)](https://docs.langchain.com/langsmith/smith-api/issues/mark-issue-viewed-beta.md): **Beta:** Records that the current user opened this issue. Idempotent. Drives the Engine tab unread-issues badge.
+- [Get the issues agent config for a session (Beta)](https://docs.langchain.com/langsmith/smith-api/issues-agent/get-the-issues-agent-config-for-a-session-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [Create the issues agent for a session (Beta)](https://docs.langchain.com/langsmith/smith-api/issues-agent/create-the-issues-agent-for-a-session-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [Delete the issues agent for a session (Beta)](https://docs.langchain.com/langsmith/smith-api/issues-agent/delete-the-issues-agent-for-a-session-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [Update the issues agent config for a session (Beta)](https://docs.langchain.com/langsmith/smith-api/issues-agent/update-the-issues-agent-config-for-a-session-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [Save the agent overview for a session (Beta)](https://docs.langchain.com/langsmith/smith-api/issues-agent/save-the-agent-overview-for-a-session-beta.md): **Beta:** This endpoint is in active development and may change without notice.
+- [Roll an issues agent webhook signing secret](https://docs.langchain.com/langsmith/smith-api/issues-agent/roll-an-issues-agent-webhook-signing-secret.md): Replaces the signing secret for the given generic URL issues agent webhook. Slack and Jira destinations do not have signing secrets. The new secret is returned once in this response; future deliveries use it immediately. URL and header values are redacted; only a safe URL display and header names ar…
+- [List viewed issues for a session (Beta)](https://docs.langchain.com/langsmith/smith-api/issues/list-viewed-issues-for-a-session-beta.md): **Beta:** Returns the issues in this session that the current user has opened, with timestamps. Used by the UI to derive the per-row "unread" indicator and the Engine tab badge.
+
+### Threads
+
+- [Get a public shared thread's manifest](https://docs.langchain.com/langsmith/smith-api/threads/get-a-public-shared-threads-manifest.md): Returns the thread and project a share token is scoped to, plus the project's conversations config.
+- [Stream messages for a public shared thread](https://docs.langchain.com/langsmith/smith-api/threads/stream-messages-for-a-public-shared-thread.md): Streams the thread's conversation as server-sent events. SSE only.
+- [Get one run in a public shared thread](https://docs.langchain.com/langsmith/smith-api/threads/get-one-run-in-a-public-shared-thread.md): Returns a single run, including full inputs and outputs, provided its trace root belongs to the shared thread.
+- [Get stats for a public shared thread](https://docs.langchain.com/langsmith/smith-api/threads/get-stats-for-a-public-shared-thread.md): Returns aggregate stats for the thread identified by the share token.
+- [List traces in a public shared thread](https://docs.langchain.com/langsmith/smith-api/threads/list-traces-in-a-public-shared-thread.md): Returns a page of root traces belonging to the thread identified by the share token. The share token supplies the tenant, project, and thread scope.
+- [List runs of one trace in a public shared thread](https://docs.langchain.com/langsmith/smith-api/threads/list-runs-of-one-trace-in-a-public-shared-thread.md): Returns every run in the given trace, provided that trace's root belongs to the shared thread.
+- [Query threads](https://docs.langchain.com/langsmith/smith-api/threads/query-threads.md): GET with body payload — no resources created. Returns the threads in a tracing project matching the query passed as the request payload. Results are filtered by the given time range and optional filters, with cursor-based pagination.
+- [Query thread stats](https://docs.langchain.com/langsmith/smith-api/threads/query-thread-stats.md): GET with body payload — no resources created. Returns aggregate statistics for threads in a tracing project. The response includes the thread counts, run counts, latency percentiles, rates, token totals, and cost totals requested in `select`.
+- [Read a thread's share state](https://docs.langchain.com/langsmith/smith-api/threads/read-a-threads-share-state.md): Returns the share token for a thread. The token is omitted when the thread is not shared. Gated on runs:share so the control's state matches the control's permission.
+- [Share a thread](https://docs.langchain.com/langsmith/smith-api/threads/share-a-thread.md): Mints a public share token for a thread. Idempotent: sharing an already-shared thread returns the existing token.
+- [Unshare a thread](https://docs.langchain.com/langsmith/smith-api/threads/unshare-a-thread.md): Deletes the share token for a thread. Idempotent: returns 204 whether or not a share token existed. Deliberately does not verify the thread still exists.
+- [Query single thread stats](https://docs.langchain.com/langsmith/smith-api/threads/query-single-thread-stats.md): Compute aggregate stats for a single thread (turn count, latency percentiles, token/cost sums, and detail breakdowns) within a project.
+- [Query thread traces](https://docs.langchain.com/langsmith/smith-api/threads/query-thread-traces.md): Retrieve all traces belonging to a specific thread within a project.
+
+### Sandboxes
+
+- [List sandboxes](https://docs.langchain.com/langsmith/smith-api/sandboxes/list-sandboxes.md): List sandboxes for the authenticated tenant, with optional filtering, sorting, and pagination. Page with page_size and cursor: replay the response's next_cursor until it comes back null, which is the only signal that no pages remain. Cursors are opaque and only valid on this endpoint; do not parse o…
+- [Create a sandbox](https://docs.langchain.com/langsmith/smith-api/sandboxes/create-a-sandbox.md): Create a new sandbox from a snapshot. Provide at most one of `snapshot_id` or `snapshot_name`; if neither is provided, the server uses the default snapshot. `snapshot_name` accepts a Docker-style `name` or `name:tag` reference (a bare name resolves to `name:latest`).
+- [Batch delete sandboxes](https://docs.langchain.com/langsmith/smith-api/sandboxes/batch-delete-sandboxes.md): Delete multiple sandboxes by name or UUID in a single request.
+- [Get a sandbox](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-a-sandbox.md): Retrieve a sandbox by name. Stale provisioning sandboxes are auto-failed.
+- [Delete a sandbox](https://docs.langchain.com/langsmith/smith-api/sandboxes/delete-a-sandbox.md): Delete a sandbox by name or UUID. Tears down the sandbox runtime and removes the DB record.
+- [Update a sandbox](https://docs.langchain.com/langsmith/smith-api/sandboxes/update-a-sandbox.md): Update a sandbox's display name, retention, resources, tags, or proxy configuration. The name must be unique within the tenant. Proxy configuration sent to a sandbox that is not running is stored and applied when it next starts.
+- [Generate a sandbox file download link](https://docs.langchain.com/langsmith/smith-api/sandboxes/generate-a-sandbox-file-download-link.md): Generate a tokenized link that downloads a single file from a sandbox with no further authentication. This mints a token rather than creating an addressable resource, so it returns 200 with no Location header. The token pins the sandbox, the file path, the response content type and disposition, and…
+- [Generate a service access token](https://docs.langchain.com/langsmith/smith-api/sandboxes/generate-a-service-access-token.md): Create a short-lived JWT for accessing an HTTP service running on a specific port inside a sandbox. Returns a browser_url (sets auth cookie via redirect), an embed_url (for an iframe; carries the token in the URL fragment, so no server or Referer sees it), a service_url (for use with the X-Langsmith…
+- [List a sandbox's shared service urls](https://docs.langchain.com/langsmith/smith-api/sandboxes/list-a-sandboxs-shared-service-urls.md): Returns one entry per port the sandbox is currently reachable on, so a caller can see what is shared before turning it off. Expired token grants are omitted. Cursors are opaque and only valid on this endpoint; do not parse or construct one.
+- [Stop sharing a sandbox service URL](https://docs.langchain.com/langsmith/smith-api/sandboxes/stop-sharing-a-sandbox-service-url.md): Removes the sharing grant for one port, or for every port when port is omitted. A LangSmith login URL stops working immediately. A previously minted service token is not revoked and stays valid until it expires, but no new one can be issued from the removed grant.
+- [Capture a snapshot from a sandbox](https://docs.langchain.com/langsmith/smith-api/sandboxes/capture-a-snapshot-from-a-sandbox.md): Create a snapshot by capturing the current state of a sandbox or promoting an existing checkpoint.
+- [Start a sandbox](https://docs.langchain.com/langsmith/smith-api/sandboxes/start-a-sandbox.md): Start a stopped or failed sandbox. This endpoint is not idempotent. The optional volumes field is beta and requires sandbox volumes to be enabled for your workspace. Omit it to keep attachments, or send an empty array to detach all volumes. Changing attachments requires a stopped or failed sandbox,…
+- [Get sandbox status](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-sandbox-status.md): Retrieve the lightweight status of a sandbox for polling.
+- [Stop a sandbox](https://docs.langchain.com/langsmith/smith-api/sandboxes/stop-a-sandbox.md): Stop a ready sandbox. This endpoint is not idempotent; the filesystem is preserved for later restart.
+- [Create a browser (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/create-a-browser-beta.md): Beta: create a browser sandbox, which runs one persistent Chrome that other sandboxes attach to. Logins made in it persist across restarts. It keeps its memory when it stops and is never deleted automatically.
+- [Get a browser (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-a-browser-beta.md): Beta: get a browser and the windows attached to it.
+- [Attach a sandbox to a browser (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/attach-a-sandbox-to-a-browser-beta.md): Beta: give a sandbox its own window of the browser, or, with no sandbox, open a window for the person calling (or, with controller "agent", for a client to drive over api_cdp_url). The response's cdp_url is the Chrome DevTools endpoint the sandbox connects to, and api_cdp_url the same endpoint throu…
+- [Detach a sandbox from a browser (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/detach-a-sandbox-from-a-browser-beta.md): Beta: close the window and stop the sandbox from making new connections to the browser.
+- [Resize a browser window (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/resize-a-browser-window-beta.md): Beta: size a window so its page is width by height CSS pixels. The window keeps that size until resized again, through this call or over CDP with Browser.setWindowBounds; the live view scales to fit it rather than resizing it. A browser that is not running cannot be resized.
+- [Set who controls a browser window (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/set-who-controls-a-browser-window-beta.md): Beta: give the window to a person ("user") or back to the attached sandbox ("agent"). It takes effect at once and does not wait for anyone. While a person has control, the attached sandbox's commands that read or act on the page fail with a "human has control" error, and it receives no page content.…
+- [Create links to a browser window (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/create-links-to-a-browser-window-beta.md): Beta: mint a view link and an act link for one window, as every attachment response does, with a chosen lifetime and the origins allowed to embed the window's pages in an iframe. Without embed_origins no page may frame them. view_embed_url and act_embed_url carry the same tokens in the URL fragment,…
+- [Open a tab in a browser window (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/open-a-tab-in-a-browser-window-beta.md): Beta: open a tab in the window, at about:blank when no URL is given.
+- [Close a tab in a browser window (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/close-a-tab-in-a-browser-window-beta.md): Beta: close a tab in the window.
+- [Load a browser's extensions (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/load-a-browsers-extensions-beta.md): Beta: load the unpacked extensions placed in the browser's /var/lib/browserd/extensions (one per directory) that its Chrome does not have yet. Chrome loads them while running, so windows, tabs and connections are left as they are. Extensions already loaded stay loaded, even if removed from the direc…
+- [List registries](https://docs.langchain.com/langsmith/smith-api/sandboxes/list-registries.md): List sandbox registries for pulling private images. Page with page_size and cursor, replaying next_cursor until it is null. Results are ordered newest first, with stable ordering for equal creation times. Keep filters unchanged between pages. Requests without page_size or cursor retain the legacy de…
+- [Create a registry](https://docs.langchain.com/langsmith/smith-api/sandboxes/create-a-registry.md): Create a sandbox registry for pulling private images.
+- [Get a registry](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-a-registry.md): Get a sandbox registry by name.
+- [Delete a registry](https://docs.langchain.com/langsmith/smith-api/sandboxes/delete-a-registry.md): Delete a sandbox registry by name.
+- [Update a registry](https://docs.langchain.com/langsmith/smith-api/sandboxes/update-a-registry.md): Update a sandbox registry's name and/or credentials.
+- [List snapshots](https://docs.langchain.com/langsmith/smith-api/sandboxes/list-snapshots.md): List workspace and published system snapshots, with optional filtering, sorting, and pagination. Page with page_size and cursor: replay the response's next_cursor until it comes back null, which is the only signal that no pages remain. Cursors are opaque and only valid on this endpoint; do not parse…
+- [Create a snapshot](https://docs.langchain.com/langsmith/smith-api/sandboxes/create-a-snapshot.md): Create a snapshot from a Docker image (async build). Names use lowercase registry-style components separated by slashes, up to 255 characters. The system/ namespace is read-only.
+- [Get a snapshot name](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-a-snapshot-name.md): Get a snapshot name and every tag under it, with the snapshot each tag resolves to. To fetch one snapshot, use /api/v2/sandboxes/snapshots/{snapshot_id}.
+- [Get a snapshot](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-a-snapshot.md): Get a sandbox snapshot by ID or a registry-style reference, including system/default:latest. URL-encode references containing slashes. A bare name means name:latest, falling back to the newest ready untagged snapshot of that name. To list the tags under a name, use /api/v2/sandboxes/snapshots-by-nam…
+- [Delete a snapshot](https://docs.langchain.com/langsmith/smith-api/sandboxes/delete-a-snapshot.md): Delete a snapshot by ID or by a Docker-style name[:tag] reference. The underlying storage is reclaimed asynchronously.
+- [Get sandbox resource usage](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-sandbox-resource-usage.md): Get current sandbox resource usage and quota limits for the workspace
+- [List hourly sandbox usage costs](https://docs.langchain.com/langsmith/smith-api/sandboxes/list-hourly-sandbox-usage-costs.md): Returns priced usage per sandbox or snapshot and UTC hour in the half-open requested interval. LCU uses the recorded compute amount for sandboxes; snapshots have zero LCU. LSU allocates the recorded workspace storage amount proportionally to attributed bytes, including checkpoints on their sandbox a…
+- [List volumes (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/list-volumes-beta.md): **Beta:** This API is in active development and may change without notice. Requires sandbox volumes to be enabled for your workspace. List the workspace's sandbox volumes with their current attachments.
+- [Create a volume (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/create-a-volume-beta.md): **Beta:** This API is in active development and may change without notice. Requires sandbox volumes to be enabled for your workspace. Create an empty volume that can be attached to sandboxes at a mount path. The size is rounded up to a whole GiB.
+- [Get a volume (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/get-a-volume-beta.md): **Beta:** This API is in active development and may change without notice. Requires sandbox volumes to be enabled for your workspace. Get a sandbox volume by ID or name, with its current attachments.
+- [Delete a volume (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/delete-a-volume-beta.md): **Beta:** This API is in active development and may change without notice. Requires sandbox volumes to be enabled for your workspace. Delete a volume and its data. A volume attached to any sandbox cannot be deleted. Storage is reclaimed asynchronously. Only the volume's creator, or a role with sandb…
+- [Update a volume (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/update-a-volume-beta.md): **Beta:** This API is in active development and may change without notice. Requires sandbox volumes to be enabled for your workspace. Update a volume's description or labels. Each field sent replaces the stored value; omitted fields are unchanged. Null, an empty description, or an empty labels objec…
+- [Clone a volume (Beta)](https://docs.langchain.com/langsmith/smith-api/sandboxes/clone-a-volume-beta.md): **Beta:** This API is in active development and may change without notice. Requires sandbox volumes to be enabled for your workspace. Create a new volume holding a copy-on-write copy of an existing one. A volume attached read-write to a sandbox that is not stopped cannot be cloned. Only the volume's…
+- [Download a sandbox file](https://docs.langchain.com/langsmith/smith-api/sandboxes/download-a-sandbox-file.md): Download file contents from a sandbox filesystem path. Supports HTTP range requests: send a Range header (for example `bytes=0-1023`) to receive a 206 with only that byte range. Every response carries an ETag; send it back as If-Range to resume safely (a changed file returns 200 with the whole file…
+- [Download a sandbox file](https://docs.langchain.com/langsmith/smith-api/sandboxes/download-a-sandbox-file-1.md): Download file contents from a sandbox filesystem path. Supports HTTP range requests: send a Range header (for example `bytes=0-1023`) to receive a 206 with only that byte range. Every response carries an ETag; send it back as If-Range to resume safely (a changed file returns 200 with the whole file…
+- [Execute a sandbox command](https://docs.langchain.com/langsmith/smith-api/sandboxes/execute-a-sandbox-command.md): Execute a command inside a sandbox and return stdout, stderr, and exit code. Use the streaming execute endpoints for long-running commands that may exceed the synchronous request deadline.
+- [Resume a streamed sandbox command](https://docs.langchain.com/langsmith/smith-api/sandboxes/resume-a-streamed-sandbox-command.md): Continue streaming a command started by the stream start endpoint. The offsets are also the ack for everything below them, which frees the sandbox's output buffer and unpauses a command waiting for room. Attaches only: a command the sandbox no longer has returns 404 rather than running again.
+- [Start a streamed sandbox command](https://docs.langchain.com/langsmith/smith-api/sandboxes/start-a-streamed-sandbox-command.md): Execute a command inside a sandbox and stream stdout/stderr as Server-Sent Events with base64 payloads. Requires a sandbox on the v2 runtime. Passing a command_id reuses a running command instead of starting a second one. The response ends with an ack_required event when the sandbox's output buffer…
+- [Execute a sandbox command over WebSocket](https://docs.langchain.com/langsmith/smith-api/sandboxes/execute-a-sandbox-command-over-websocket.md): Open a WebSocket connection for streaming command execution inside a sandbox.
+- [Glob a sandbox filesystem](https://docs.langchain.com/langsmith/smith-api/sandboxes/glob-a-sandbox-filesystem.md): Find files under a root path matching a glob pattern (supports **). Entries are returned in lexical order by path.
+- [Grep a sandbox filesystem](https://docs.langchain.com/langsmith/smith-api/sandboxes/grep-a-sandbox-filesystem.md): Search files under a root path for a literal text pattern (not a regex).
+- [Open a sandbox TCP tunnel](https://docs.langchain.com/langsmith/smith-api/sandboxes/open-a-sandbox-tcp-tunnel.md): Open a WebSocket tunnel to a specific port inside a sandbox.
+- [Upload a sandbox file](https://docs.langchain.com/langsmith/smith-api/sandboxes/upload-a-sandbox-file.md): Upload a file to a sandbox filesystem path.
+
+## OpenAPI Specs
+
+- [langsmith-platform-openapi](/langsmith/langsmith-platform-openapi.json)

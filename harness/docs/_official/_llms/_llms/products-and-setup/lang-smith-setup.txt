@@ -1,0 +1,257 @@
+# Docs by LangChain: PRODUCTS AND SETUP LangSmith setup
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## LangSmith setup
+
+### Overview
+
+- [LangSmith setup](https://docs.langchain.com/langsmith/langsmith-setup-overview.md): How a LangSmith workspace is organized, where LangSmith runs, and who can do what across your organization.
+
+#### Hosting
+
+- [Set up LangSmith](https://docs.langchain.com/langsmith/platform-setup.md): Host and manage LangSmith infrastructure for observability, evaluation, and prompt engineering.
+
+#### Agent-based workspaces
+
+- [Agent Registry](https://docs.langchain.com/langsmith/agent-registry.md): What LangSmith Agent Registry is, what an agent is, how environments divide an agent's traces, and how an identifier differs from a display name.
+- [Agent environments](https://docs.langchain.com/langsmith/agent-environments.md): How an agent's environments divide its traces, how to select one, and which parts of the set are fixed.
+- [Navigate agents](https://docs.langchain.com/langsmith/navigate-agents.md): How the agent switcher moves between the agent list and a single agent, which sections need an agent, and what the agent Overview shows.
+- [Create an agent](https://docs.langchain.com/langsmith/create-an-agent.md): Register an agent before tracing, choose its identifier, and configure an environment with the UI, Python SDK, or REST API.
+- [Build an agent in the UI](https://docs.langchain.com/langsmith/build-an-agent.md): How the Build tab configures an agent from a form, what each section of that form sets, and where the new agent's traces land.
+- [Deploy to an agent environment](https://docs.langchain.com/langsmith/deploy-to-agent-environment.md): How the LangGraph and Managed Deep Agents CLIs bind a deployment to an agent and an environment, which values each flag takes, and which CLI versions accept them.
+
+### Account
+
+- [Account](https://docs.langchain.com/langsmith/admin.md): Set up your LangSmith account, including API keys, profile configuration, integrations, and pricing tiers.
+- [Create an account and API key](https://docs.langchain.com/langsmith/create-account-api-key.md)
+- [Profile configuration](https://docs.langchain.com/langsmith/profile-configuration.md): Configure LangSmith SDK credentials and endpoints with a local profile file.
+- [LangSmith for Enterprise](https://docs.langchain.com/langsmith/enterprise.md): Hosting options, access control, data privacy, cost controls, and security compliance for Enterprise users.
+
+#### Billing & usage
+
+- [Manage billing in your account](https://docs.langchain.com/langsmith/billing.md)
+- [View usage](https://docs.langchain.com/langsmith/view-usage.md): What usage data is available in LangSmith, what each metric means, and what differs for Self-hosted.
+- [Granular billable usage](https://docs.langchain.com/langsmith/granular-usage.md): Retrieve detailed trace and LangSmith Deployment usage data broken down by workspace, project, user, or API key.
+
+### Cloud
+
+- [Cloud (SaaS)](https://docs.langchain.com/langsmith/cloud.md)
+
+#### Reference
+
+- [LangSmith Cloud changelog](https://docs.langchain.com/langsmith/changelog.md): Weekly updates to LangSmith Cloud
+- [Release stages](https://docs.langchain.com/langsmith/release-stages.md): How LangSmith labels features as alpha, beta, or generally available, and what each stage means for stability, support, and availability
+- [API and SDK deprecation policy](https://docs.langchain.com/langsmith/endpoint-deprecation.md): How LangSmith deprecates and removes API endpoints and SDK methods in cloud and self-hosted deployments.
+- [Migrate to SmithDB-backed SDK methods](https://docs.langchain.com/langsmith/smithdb-sdk-migration.md): Migrate your existing LangSmith SDK methods to their SmithDB-backed equivalents for faster agent observability.
+
+### BYOC
+
+- [Bring Your Own Cloud (BYOC)](https://docs.langchain.com/langsmith/byoc.md): Deploy LangSmith services and store data in your own cloud environment while LangChain operates, scales, and upgrades the infrastructure.
+- [Why BYOC](https://docs.langchain.com/langsmith/byoc-why.md): Compare LangSmith BYOC with self-hosted LangSmith to decide which deployment model fits your organization.
+- [BYOC architecture](https://docs.langchain.com/langsmith/byoc-architecture.md): How a LangSmith BYOC deployment is structured across the LangChain control plane and the data plane in your AWS account.
+- [BYOC shared responsibility model](https://docs.langchain.com/langsmith/byoc-shared-responsibility.md): How LangChain and your organization divide responsibility for a LangSmith BYOC deployment across operations, security, support, and compliance.
+- [BYOC onboarding](https://docs.langchain.com/langsmith/byoc-onboarding.md): Set up a LangSmith BYOC data plane, from enabling BYOC on your organization to creating workspaces and connecting privately.
+- [Bring your own VPC on AWS](https://docs.langchain.com/langsmith/byoc-byovpc.md): Create a customer-managed VPC for LangSmith BYOC, configure a reduced-permission IAM role, and supply your VPC and subnet IDs.
+- [Bring your own IAM roles (AWS)](https://docs.langchain.com/langsmith/byoc-byoiam.md): Create customer-managed IAM roles for LangSmith BYOC, remove IAM management permissions from the provisioning role, and deploy with existing roles.
+- [Migrate to BYOC](https://docs.langchain.com/langsmith/byoc-migration.md): Copy users, datasets, prompts, experiments, Fleet resources, and other data from an existing LangSmith instance into a BYOC data plane.
+- [BYOC usage](https://docs.langchain.com/langsmith/byoc-usage.md): Route tracing and API traffic to a LangSmith BYOC data plane, including tracing to multiple endpoints and the path prefixes for each service.
+- [BYOC operations](https://docs.langchain.com/langsmith/byoc-operations.md): How LangChain upgrades, patches, and maintains a LangSmith BYOC data plane, and when maintenance requires a scheduled window.
+- [BYOC billing](https://docs.langchain.com/langsmith/byoc-billing.md): How LangSmith BYOC is billed across your AWS account and your LangSmith contract, which AWS services carry cost, and the account quotas to check before you deploy.
+- [AWS data plane cost estimate](https://docs.langchain.com/langsmith/byoc-data-plane-cost.md): Rough AWS cost of a LangSmith BYOC data plane running SmithDB, with a legacy estimate for data planes created with ClickHouse.
+- [BYOC FAQ](https://docs.langchain.com/langsmith/byoc-faq.md): Answers to common questions about LangSmith BYOC, covering data residency, access, setup, the data plane model, and ongoing operations.
+
+### Self-hosted
+
+- [Self-hosted LangSmith](https://docs.langchain.com/langsmith/self-hosted.md): Run LangSmith in your own Kubernetes cluster, with Insights and Chat enabled by default and optional features such as Sandboxes, Engine, Fleet, LLM Gateway, and LangSmith Deployment.
+
+#### Get started by cloud provider
+
+- [Self-hosted LangSmith on AWS](https://docs.langchain.com/langsmith/aws-self-hosted.md)
+- [Self-hosted LangSmith on Azure](https://docs.langchain.com/langsmith/azure-self-hosted.md)
+- [Self-hosted LangSmith on GCP](https://docs.langchain.com/langsmith/gcp-self-hosted.md)
+
+#### Deploy with Terraform
+
+- [Deploy LangSmith with Terraform](https://docs.langchain.com/langsmith/self-host-terraform.md): Provision LangSmith self-hosted on AWS, Azure, or GCP using LangChain's production-ready Terraform modules.
+
+##### AWS
+
+- [Deploy LangSmith on AWS with Terraform](https://docs.langchain.com/langsmith/self-host-terraform-aws-deploy.md): End-to-end walkthrough for provisioning LangSmith self-hosted on AWS EKS using the LangChain Terraform modules.
+- [AWS Terraform architecture](https://docs.langchain.com/langsmith/self-host-terraform-aws-architecture.md): Platform layers, services, IRSA roles, networking, and module dependencies for LangSmith self-hosted on AWS EKS.
+- [AWS Terraform variables reference](https://docs.langchain.com/langsmith/self-host-terraform-aws-variables.md): Complete reference of Terraform variables for LangSmith self-hosted on AWS EKS.
+- [AWS Terraform quick reference](https://docs.langchain.com/langsmith/self-host-terraform-aws-quick-reference.md): Make targets, Terraform commands, kubectl, AWS CLI, and Helm operations for LangSmith self-hosted on AWS EKS.
+- [AWS Terraform troubleshooting](https://docs.langchain.com/langsmith/self-host-terraform-aws-troubleshooting.md): Common issues, fixes, and diagnostic commands for LangSmith self-hosted on AWS EKS deployed with the LangChain Terraform modules.
+
+##### GCP
+
+- [Deploy LangSmith on GCP with Terraform](https://docs.langchain.com/langsmith/self-host-terraform-gcp-deploy.md): End-to-end walkthrough for provisioning LangSmith self-hosted on GCP GKE using the LangChain Terraform modules.
+- [GCP Terraform architecture](https://docs.langchain.com/langsmith/self-host-terraform-gcp-architecture.md): Platform layers, services, Workload Identity, networking, and module dependencies for LangSmith self-hosted on GKE.
+- [GCP Terraform variables reference](https://docs.langchain.com/langsmith/self-host-terraform-gcp-variables.md): Complete reference of Terraform variables for LangSmith self-hosted on GCP GKE.
+- [GCP Terraform quick reference](https://docs.langchain.com/langsmith/self-host-terraform-gcp-quick-reference.md): Make targets, Terraform, kubectl, gcloud, and Helm commands for LangSmith self-hosted on GKE.
+- [GCP Terraform troubleshooting](https://docs.langchain.com/langsmith/self-host-terraform-gcp-troubleshooting.md): Common issues, fixes, and diagnostic commands for LangSmith self-hosted on GKE deployed with the LangChain Terraform modules.
+
+##### Azure
+
+- [Deploy LangSmith on Azure with Terraform](https://docs.langchain.com/langsmith/self-host-terraform-azure-deploy.md): End-to-end walkthrough for provisioning LangSmith self-hosted on Azure AKS using the LangChain Terraform modules.
+- [Azure Terraform architecture](https://docs.langchain.com/langsmith/self-host-terraform-azure-architecture.md): Platform layers, services, Workload Identity, networking, ingress options, and module dependencies for LangSmith self-hosted on AKS.
+- [Azure Terraform variables reference](https://docs.langchain.com/langsmith/self-host-terraform-azure-variables.md): Reference of the main Terraform variables for LangSmith self-hosted on Azure AKS.
+- [Azure Terraform quick reference](https://docs.langchain.com/langsmith/self-host-terraform-azure-quick-reference.md): Make targets, Terraform, kubectl, Azure CLI, and Helm commands for LangSmith self-hosted on AKS.
+- [Azure Terraform troubleshooting](https://docs.langchain.com/langsmith/self-host-terraform-azure-troubleshooting.md): Common issues, fixes, and diagnostic commands for LangSmith self-hosted on Azure AKS deployed with the LangChain Terraform modules.
+
+#### Install an instance
+
+- [Minimum versions for self-hosting dependencies](https://docs.langchain.com/langsmith/self-host-dependency-versions.md): Minimum supported versions for the databases, tools, and infrastructure required to self-host LangSmith.
+- [Self-host LangSmith on Kubernetes](https://docs.langchain.com/langsmith/kubernetes.md): Install self-hosted LangSmith and its dependencies in a Kubernetes cluster with Helm, including Insights and Chat.
+- [Configure Insights and Chat on self-hosted LangSmith](https://docs.langchain.com/langsmith/self-host-insights-chat.md): Configure encryption keys and model access for Insights and Chat on self-hosted LangSmith, disable either feature, or upgrade a legacy configuration.
+- [Interact with your self-hosted instance of LangSmith](https://docs.langchain.com/langsmith/self-host-usage.md)
+
+##### Additional features
+
+- [Configure additional self-hosted features](https://docs.langchain.com/langsmith/self-host-additional-features.md): Choose which optional self-hosted LangSmith features to install, such as Sandboxes, Engine, Fleet, and LangSmith Deployment, and in what order.
+- [Enable Fleet on self-hosted LangSmith](https://docs.langchain.com/langsmith/enable-self-hosted-fleet.md): Install Fleet and optionally configure tools and triggers on self-hosted LangSmith.
+- [Enable the LLM Gateway](https://docs.langchain.com/langsmith/llm-gateway-self-hosted.md): Enable the agent-gateway service on a self-hosted LangSmith install using the Helm chart, then make your first gateway call.
+- [Enable LangSmith Deployment](https://docs.langchain.com/langsmith/enable-self-hosted-deployment.md): Add a control plane and data plane to deploy and manage agents on self-hosted LangSmith.
+
+###### Enable Sandboxes
+
+- [Enable Sandboxes on self-hosted LangSmith](https://docs.langchain.com/langsmith/enable-self-hosted-sandboxes.md): Configure Kubernetes nodes, storage, and Helm values for self-hosted LangSmith Sandboxes.
+- [Self-hosted Sandbox architecture](https://docs.langchain.com/langsmith/self-host-sandbox-architecture.md): Understand how self-hosted LangSmith Sandboxes use microVMs, Kubernetes hosts, and shared storage to run and resume workloads.
+- [Run self-hosted Sandboxes in a separate cluster](https://docs.langchain.com/langsmith/self-host-sandbox-separate-cluster.md): Run the self-hosted LangSmith Sandbox runtime in a dedicated Kubernetes cluster with the langsmith-sandbox Helm chart, connected to the LangSmith control plane in another cluster.
+- [Scale self-hosted Sandboxes](https://docs.langchain.com/langsmith/self-host-sandbox-scaling.md): Plan self-hosted Sandbox capacity with host autoscaling, Kubernetes node scaling, memory headroom, and shared filesystem caching.
+- [Operate self-hosted Sandboxes](https://docs.langchain.com/langsmith/self-host-sandbox-operations.md): Plan self-hosted Sandbox upgrades, understand host drains and failure recovery, protect shared storage, and monitor production capacity.
+- [Route self-hosted Sandbox egress through a forward proxy](https://docs.langchain.com/langsmith/self-host-sandbox-egress-proxy.md): Send outbound connections from self-hosted LangSmith Sandboxes through a corporate HTTP or HTTPS forward proxy, with a bypass list, Basic proxy authentication, and custom CA trust.
+
+#### Configure an instance
+
+- [Set up the LLM auth proxy](https://docs.langchain.com/langsmith/llm-auth-proxy-self-hosted.md): Deploy an Envoy-based auth proxy that validates LangSmith-signed JWTs and routes LLM requests to your upstream provider or gateway.
+- [Configure environment variables in the Helm chart](https://docs.langchain.com/langsmith/self-host-environment-variables.md): How to use commonEnv and extraEnv to configure environment variables across LangSmith services in the Helm chart.
+- [Configure LangSmith for scale](https://docs.langchain.com/langsmith/self-host-scale.md): Scale a self-hosted LangSmith instance for trace ingestion, evaluation workloads, and concurrent users, with example configurations for different load patterns.
+- [Enable TTL and data retention](https://docs.langchain.com/langsmith/self-host-ttl.md)
+- [Authenticate Vertex AI with GKE workload identity](https://docs.langchain.com/langsmith/self-host-gke-vertex-ai-workload-identity.md): Configure keyless Vertex AI authentication for Playground, Chat, and Insights on self-hosted LangSmith running on GKE.
+- [Use environment variables for model providers](https://docs.langchain.com/langsmith/self-host-playground-environment-settings.md)
+- [Customize the UI](https://docs.langchain.com/langsmith/self-host-ui-customization.md): Customize your LangSmith self-hosted deployment.
+- [Create an Ingress for installations (Kubernetes)](https://docs.langchain.com/langsmith/self-host-ingress.md)
+- [Egress for billing and operational telemetry](https://docs.langchain.com/langsmith/self-host-egress.md)
+- [Mirror images for your LangSmith installation](https://docs.langchain.com/langsmith/self-host-mirroring-images.md)
+- [FIPS-compliant images](https://docs.langchain.com/langsmith/self-host-fips.md): Run self-hosted LangSmith installation on FIPS 140 compliant container images
+- [Troubleshooting](https://docs.langchain.com/langsmith/troubleshooting.md)
+
+#### Connect external services
+
+- [Enable blob storage](https://docs.langchain.com/langsmith/self-host-blob-storage.md)
+- [Connect to an external ClickHouse database](https://docs.langchain.com/langsmith/self-host-external-clickhouse.md)
+- [LangSmith-managed ClickHouse](https://docs.langchain.com/langsmith/langsmith-managed-clickhouse.md)
+- [Connect to an external PostgreSQL database](https://docs.langchain.com/langsmith/self-host-external-postgres.md)
+- [Connect to an external Redis or Valkey database](https://docs.langchain.com/langsmith/self-host-external-redis.md)
+- [Connect self-hosted and BYOC LangSmith to Slack](https://docs.langchain.com/langsmith/self-host-slack.md): Configure your own Slack app for Engine and alert notifications on self-hosted LangSmith or a BYOC data plane.
+
+#### Platform auth & access control
+
+- [Basic authentication with email and password](https://docs.langchain.com/langsmith/self-host-basic-auth.md)
+- [Set up SSO with OAuth2.0 and OIDC](https://docs.langchain.com/langsmith/self-host-sso.md)
+- [Customize user management](https://docs.langchain.com/langsmith/self-host-user-management.md)
+- [Configure custom TLS certificates](https://docs.langchain.com/langsmith/self-host-custom-tls-certificates.md)
+- [Use an existing secret for your installation (Kubernetes)](https://docs.langchain.com/langsmith/self-host-using-an-existing-secret.md)
+
+#### SmithDB
+
+- [Enable SmithDB on self-hosted LangSmith](https://docs.langchain.com/langsmith/self-host-smithdb.md): Run SmithDB alongside ClickHouse on a self-hosted LangSmith Kubernetes installation.
+- [SmithDB feature availability](https://docs.langchain.com/langsmith/self-host-smithdb-features.md): LangSmith features that are unavailable on self-hosted installations that query ClickHouse, and what still works without SmithDB.
+- [Install LangSmith with SmithDB](https://docs.langchain.com/langsmith/self-host-smithdb-install.md): Enable SmithDB on a self-hosted LangSmith Kubernetes installation through staged Helm updates.
+- [Prepare SmithDB supporting infrastructure](https://docs.langchain.com/langsmith/self-host-smithdb-infrastructure.md): Provide a dedicated PostgreSQL metastore, object storage, and cache storage before enabling SmithDB.
+- [Configure SmithDB for scale](https://docs.langchain.com/langsmith/self-host-smithdb-scale.md): Choose tested SmithDB resource tiers and size Kubernetes workloads and the PostgreSQL metastore.
+- [Configure SmithDB observability](https://docs.langchain.com/langsmith/self-host-smithdb-observability.md): Scrape SmithDB application metrics and export logs and traces to your existing observability stack.
+- [SmithDB metrics reference](https://docs.langchain.com/langsmith/self-host-smithdb-metrics.md): Metrics to watch on each SmithDB component, what they measure, and how to read them.
+- [Migrate ClickHouse history to SmithDB](https://docs.langchain.com/langsmith/self-host-smithdb-migrate.md): Run the historical ClickHouse-to-SmithDB migration for a self-hosted LangSmith installation.
+- [Troubleshoot SmithDB](https://docs.langchain.com/langsmith/self-host-smithdb-troubleshooting.md): Diagnose SmithDB failures, gather troubleshooting context, or disable and reset a SmithDB deployment on self-hosted LangSmith.
+
+#### Manage an instance
+
+- [Upgrade an installation](https://docs.langchain.com/langsmith/self-host-upgrades.md)
+- [Disaster recovery for self-hosted LangSmith](https://docs.langchain.com/langsmith/self-host-disaster-recovery.md)
+- [View trace counts across your organization](https://docs.langchain.com/langsmith/self-host-organization-charts.md)
+
+#### Self-hosted observability
+
+- [Export LangSmith telemetry to your observability backend](https://docs.langchain.com/langsmith/export-backend.md)
+- [Monitor self-hosted LangSmith with Datadog or Grafana](https://docs.langchain.com/langsmith/self-host-observability-dashboards.md): Import tabbed SmithDB and Sandbox dashboards into your own monitoring instance and configure component telemetry collection.
+- [Configure your collector for LangSmith telemetry](https://docs.langchain.com/langsmith/langsmith-collector.md)
+- [Deploy an observability stack for your LangSmith deployment](https://docs.langchain.com/langsmith/observability-stack.md)
+- [Install Mission Control](https://docs.langchain.com/langsmith/self-hosted-mission-control.md): Install Mission Control, an in-cluster console for monitoring, configuring, and operating self-hosted LangSmith on Kubernetes.
+
+#### Hybrid
+
+- [Hybrid](https://docs.langchain.com/langsmith/hybrid.md): A LangSmith Deployment setup where you self-host Agent Servers in your infrastructure and send traces to LangSmith Cloud or a self-hosted LangSmith instance.
+- [Setup guide (legacy)](https://docs.langchain.com/langsmith/hybrid-legacy.md): Legacy hybrid deployment model with a LangChain-managed control plane and a self-managed data plane.
+
+#### Scripts
+
+- [Delete workspaces](https://docs.langchain.com/langsmith/script-delete-a-workspace.md)
+- [Delete organizations](https://docs.langchain.com/langsmith/script-delete-an-organization.md)
+- [Delete traces](https://docs.langchain.com/langsmith/script-delete-traces.md)
+- [Generate ClickHouse stats](https://docs.langchain.com/langsmith/script-generate-clickhouse-stats.md)
+- [Generate query stats](https://docs.langchain.com/langsmith/script-generate-query-stats.md)
+- [Run support queries against PostgreSQL](https://docs.langchain.com/langsmith/script-running-pg-support-queries.md)
+- [Run support queries against ClickHouse](https://docs.langchain.com/langsmith/script-running-ch-support-queries.md)
+
+#### Reference
+
+- [Self-hosted LangSmith changelog](https://docs.langchain.com/langsmith/self-hosted-changelog.md)
+- [Release policy](https://docs.langchain.com/langsmith/release-versions.md): Release channels, cadence, and version support for self-hosted LangSmith.
+- [API and SDK deprecation policy](https://docs.langchain.com/langsmith/endpoint-deprecation.md): How LangSmith deprecates and removes API endpoints and SDK methods in cloud and self-hosted deployments.
+- [Migrate to SmithDB-backed SDK methods](https://docs.langchain.com/langsmith/smithdb-sdk-migration.md): Migrate your existing LangSmith SDK methods to their SmithDB-backed equivalents for faster agent observability.
+
+### Govern
+
+- [Govern](https://docs.langchain.com/langsmith/govern-overview.md): Administer users, access control, organizational structure, and compliance policies for your LangSmith organization.
+
+#### Organization
+
+- [Overview](https://docs.langchain.com/langsmith/administration-overview.md)
+- [Tunnels](https://docs.langchain.com/langsmith/tunnels.md): Reach services on your private network from LangSmith through an outbound-only connector, without exposing them to the public internet.
+- [Relays](https://docs.langchain.com/langsmith/relays.md): Send a sandbox's outbound connections to hosts you choose through a connector in your network, so they reach private services and leave from your network's IP address.
+- [Manage your organization using the API](https://docs.langchain.com/langsmith/manage-organization-by-api.md)
+- [Manage LangSmith with Terraform](https://docs.langchain.com/langsmith/manage-with-terraform.md): Use the official LangSmith Terraform provider to manage workspaces, access controls, resource tags, evaluators, run rules, and alert rules as code.
+
+##### Workspace setup
+
+- [Set up hierarchy](https://docs.langchain.com/langsmith/set-up-hierarchy.md)
+- [Workload isolation](https://docs.langchain.com/langsmith/workload-isolation.md)
+- [How agent-based workspaces differ](https://docs.langchain.com/langsmith/migrate-to-agent-based-workspaces.md): What changes when a workspace moves from organizing traces by tracing project to organizing them by agent and environment.
+- [Set up resource tags](https://docs.langchain.com/langsmith/set-up-resource-tags.md): Create and manage resource tags to organize projects, datasets, prompts, and other resources within a LangSmith workspace.
+- [Manage model configurations](https://docs.langchain.com/langsmith/model-configurations.md): Manage model configurations and control their availability across LangSmith features.
+
+#### Users & access control
+
+- [User management](https://docs.langchain.com/langsmith/user-management.md)
+- [Role-based access control](https://docs.langchain.com/langsmith/rbac.md)
+- [Attribute-based access control](https://docs.langchain.com/langsmith/abac.md)
+- [Teams](https://docs.langchain.com/langsmith/teams.md): Group organization members into teams, then give each team a role and access policies in the workspaces it can access.
+- [Organization and workspace operations reference](https://docs.langchain.com/langsmith/organization-workspace-operations.md)
+- [Authentication methods](https://docs.langchain.com/langsmith/authentication-methods.md)
+- [Manage user access in SSO organizations](https://docs.langchain.com/langsmith/jit-invite-sso.md)
+
+#### Tools
+
+- [LangSmith Chat](https://docs.langchain.com/langsmith/chat.md): Use Chat in LangSmith to analyze traces, threads, prompts, and evaluations.
+- [LangSmith CLI](https://docs.langchain.com/langsmith/langsmith-cli.md): Query and manage agent traces, runs, datasets, evaluators, experiments, insights, and threads from the terminal
+- [LangSmith skills](https://docs.langchain.com/langsmith/skills.md): Use Agent Skills to work with LangSmith traces, datasets, and evaluators from your coding agent.
+
+#### Auditing
+
+- [Audit logs](https://docs.langchain.com/langsmith/audit-logs.md): Track and review administrative actions across your LangSmith organization for security, compliance, and operational visibility.
+
+#### Data & compliance
+
+- [LangSmith shared responsibility model](https://docs.langchain.com/langsmith/shared-responsibility-model.md): Overview of how LangChain and customers share security responsibilities for the LangSmith platform.
+- [Data storage and privacy](https://docs.langchain.com/langsmith/data-storage-and-privacy.md)
+- [Data purging for compliance](https://docs.langchain.com/langsmith/data-purging-compliance.md)
+- [Scalability & resilience](https://docs.langchain.com/langsmith/scalability-and-resilience.md)
+
+#### Additional resources
+
+##### FAQ
+
+- [Frequently asked questions](https://docs.langchain.com/langsmith/faq.md)
+- [Regions FAQ](https://docs.langchain.com/langsmith/regions-faq.md)

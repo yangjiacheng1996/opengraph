@@ -1,0 +1,8 @@
+# Docs by LangChain: AGENT DEVELOPMENT LIFECYCLE Build
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## Build
+
+- [AGENT DEVELOPMENT LIFECYCLE / Build / Python (234 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/build/python.txt): Documentation for AGENT DEVELOPMENT LIFECYCLE / Build / Python.
+- [AGENT DEVELOPMENT LIFECYCLE / Build / TypeScript (241 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/build/type-script.txt): Documentation for AGENT DEVELOPMENT LIFECYCLE / Build / TypeScript.

@@ -1,0 +1,22 @@
+# Docs by LangChain: AGENT DEVELOPMENT LIFECYCLE Monitor Reference
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## Reference
+
+- [LangSmith reference](https://docs.langchain.com/langsmith/reference.md)
+- [AGENT DEVELOPMENT LIFECYCLE / Monitor / Reference / LangSmith REST API (579 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/monitor/reference/lang-smith-rest-api.txt): Documentation for AGENT DEVELOPMENT LIFECYCLE / Monitor / Reference / LangSmith REST API.
+
+### SmithDB SDK migration
+
+- [Migrate to SmithDB-backed SDK methods](https://docs.langchain.com/langsmith/smithdb-sdk-migration.md): Migrate your existing LangSmith SDK methods to their SmithDB-backed equivalents for faster agent observability.
+- [Migrate run queries to SmithDB](https://docs.langchain.com/langsmith/smithdb-sdk-migration-query-runs.md): Migrate the LangSmith SDK run query methods to their SmithDB-backed equivalents.
+- [Migrate run retrieval to SmithDB](https://docs.langchain.com/langsmith/smithdb-sdk-migration-runs.md): Migrate the LangSmith SDK methods that retrieve a single run or build a run URL.
+- [Migrate trace methods to SmithDB](https://docs.langchain.com/langsmith/smithdb-sdk-migration-traces.md): Migrate the LangSmith SDK trace methods to their SmithDB-backed equivalents.
+- [Migrate thread methods to SmithDB](https://docs.langchain.com/langsmith/smithdb-sdk-migration-threads.md): Migrate the LangSmith SDK thread methods to their SmithDB-backed equivalents.
+- [Migrate dataset experiment runs to SmithDB](https://docs.langchain.com/langsmith/smithdb-sdk-migration-experiments.md): Migrate the LangSmith SDK dataset experiment run methods to their SmithDB-backed equivalents.
+- [Migrate feedback and sharing methods to SmithDB](https://docs.langchain.com/langsmith/smithdb-sdk-migration-feedback.md): Migrate the LangSmith SDK feedback, annotation queue, and public run methods to their SmithDB-backed equivalents.
+
+## OpenAPI Specs
+
+- [langsmith-platform-openapi](/langsmith/langsmith-platform-openapi.json)

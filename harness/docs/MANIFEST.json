@@ -1,0 +1,2432 @@
+{
+  "source": "https://docs.langchain.com",
+  "synced_at": "2026-10-31T15:40:12Z",
+  "page_count": 303,
+  "total_bytes": 5906646,
+  "pages": [
+    {
+      "url": "https://docs.langchain.com/langsmith/deployment",
+      "path": "langsmith/deployment.md",
+      "sha256": "5349948d0e05f7f679576ad1092851fd8db943a41ac2db7c2f11e61b55b61361",
+      "bytes": 7724,
+      "title": "deployment",
+      "description": "LangSmith Deployment is framework-agnostic which means you can deploy agents built with:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/deployment-quickstart",
+      "path": "langsmith/deployment-quickstart.md",
+      "sha256": "982d6ba50a48344818e81a617af0ebe70357327a84f911470294e75b07fc8036",
+      "bytes": 10190,
+      "title": "deployment-quickstart",
+      "description": "This quickstart shows you how to deploy an application to LangSmith Cloud in GCP using the [`langgraph deploy`](https://docs.langchain.com/langsmith/cli#deploy) command. Any app that exports a graph from a [`langgraph.json`](https://docs.langchain.com/langsmith/application-structure#configuration-file-concepts) config deploys the same way, regardless of which framework you used to author the agent."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/deployment-revisions",
+      "path": "langsmith/deployment-revisions.md",
+      "sha256": "befd76ebe9bfe90ae63e1512859f196fe0ac6739c2eb10c8a76e78c9fb47c1e6",
+      "bytes": 3422,
+      "title": "deployment-revisions",
+      "description": "A revision deploys a version of your application to an existing Cloud deployment. Create a revision to release code changes without creating another deployment."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/evaluation",
+      "path": "langsmith/evaluation.md",
+      "sha256": "fd9c061c93d0b9e05145c1ebd46e76c185fb563456520d3a50d534483294f635",
+      "bytes": 6724,
+      "title": "evaluation",
+      "description": "LangSmith's testing tools help you measure agent quality, iterate on prompts, and debug live in an interactive environment. Evaluation is the core of testing: it scores your agent's outputs against datasets and criteria so you can benchmark versions, catch regressions, and track quality over time."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/evaluation-approaches",
+      "path": "langsmith/evaluation-approaches.md",
+      "sha256": "577cbf0070369edfc407e0f6390a658261fed719b8a402f3b0c15074224aa7f4",
+      "bytes": 13789,
+      "title": "evaluation-approaches",
+      "description": "Below, we will discuss evaluation of a few popular types of LLM applications."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/evaluation-async",
+      "path": "langsmith/evaluation-async.md",
+      "sha256": "8164351af23777a62f6ecf541b93bb910b1850060bb6053f9c93190944b488af",
+      "bytes": 3624,
+      "title": "evaluation-async",
+      "description": "We can run evaluations asynchronously via the SDK using [aevaluate()](https://reference.langchain.com/python/langsmith/evaluation/_arunner/aevaluate), which accepts all of the same arguments as [evaluate()](https://reference.langchain.com/python/langsmith/evaluation/_runner/evaluate) but expects the application function to be asynchronous. To learn more, see [how to use the `evaluate()` function](https://docs.langchain.com/langsmith/evaluate-llm-application)."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/evaluation-concepts",
+      "path": "langsmith/evaluation-concepts.md",
+      "sha256": "383f98f259c247ee91d86076cfbb7cc515d1ee6176bdec2e95eddecbaf82ab50",
+      "bytes": 21102,
+      "title": "evaluation-concepts",
+      "description": "LLM outputs are non-deterministic, which makes response quality hard to assess. Evaluations (evals) are a way to breakdown what \"good\" looks like and measure it. LangSmith Evaluation provides a framework for measuring quality throughout the application lifecycle, from pre-deployment testing to production monitoring."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/evaluation-quickstart",
+      "path": "langsmith/evaluation-quickstart.md",
+      "sha256": "95dc5a6147014b8dae097e71f753b172a299214af61bde8f3cf0a591edee0411",
+      "bytes": 24204,
+      "title": "evaluation-quickstart",
+      "description": "Running an evaluation in LangSmith requires three key components:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/evaluation-types",
+      "path": "langsmith/evaluation-types.md",
+      "sha256": "038f7332e6ea737ad8f358cb16c7ef71a212136a7e2547f08ae6d0d9a4f24e08",
+      "bytes": 11733,
+      "title": "evaluation-types",
+      "description": "This page covers two aspects of evaluation in LangSmith:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet",
+      "path": "langsmith/fleet.md",
+      "sha256": "22123159497ebfe4b7e9613c75ba59a3c6bfe83a73e59987a8f4011b411b67d9",
+      "bytes": 4446,
+      "title": "fleet",
+      "description": "LangSmith Fleet is a no-code platform for creating and managing AI agents. It allows you to create agents from templates, connect your accounts, and let the agent handle routine work while you stay in control."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/access-and-oversight",
+      "path": "langsmith/fleet/access-and-oversight.md",
+      "sha256": "0b10ebf63f0b4870961fa0986b7e371cc633757e743cc95554ab37bec3a44d2a",
+      "bytes": 10922,
+      "title": "access-and-oversight",
+      "description": "Fleet gives you the control layer for scaling agents across your organization: tiered permissions, credential management, human-in-the-loop oversight, and an audit trail for agent actions."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/agent-identity",
+      "path": "langsmith/fleet/agent-identity.md",
+      "sha256": "09a6c49636783f25b14177da61b17266fddbe2c8f802cae50ef5f5e4e39e964e",
+      "bytes": 2626,
+      "title": "agent-identity",
+      "description": "Agent identity controls whose [credentials](https://docs.langchain.com/langsmith/fleet/workspace-admin.md) the agent uses when it interacts with apps and services."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/arcade",
+      "path": "langsmith/fleet/arcade.md",
+      "sha256": "d605d4cf80b9c286c106cdea3eb0693321df484493f3b72d66fa5a3357e02065",
+      "bytes": 5675,
+      "title": "arcade",
+      "description": "When you connect Arcade to your workspace, a workspace admin selects an Arcade organization and project, then installs MCP gateways from that project. Each user connects their own Arcade account so that tool calls authenticate with their individual credentials."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/auth-format",
+      "path": "langsmith/fleet/auth-format.md",
+      "sha256": "39285c032ed0b4b7aca71a224b22e872d37b79c6ca0b0ab63b2122ade0c3cd81",
+      "bytes": 1944,
+      "title": "auth-format",
+      "description": "Some [tools](https://docs.langchain.com/langsmith/fleet/tools.md) require user authorization (for example, Google, Slack, GitHub). LangSmith Fleet includes middleware to detect when a tool needs authorization and to pause the run with a clear prompt to the user. After the user completes auth, the same tool call is retried automatically."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/changelog",
+      "path": "langsmith/fleet/changelog.md",
+      "sha256": "9f0fe6effe593c007de6cc36aa3b4332e2e49dd4d33d8f77c82c5b1b7ddcdb34",
+      "bytes": 52662,
+      "title": "changelog",
+      "description": "Weekly updates to [LangSmith Fleet](https://docs.langchain.com/langsmith/fleet.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/channels",
+      "path": "langsmith/fleet/channels.md",
+      "sha256": "d469a12ed840a4d692377ca29d8599806cbab5d16748163cbd2632199db90b0f",
+      "bytes": 3722,
+      "title": "channels",
+      "description": "Channels define when your agent starts running. Connect your agent to external events so it responds automatically to messages, emails, or other events."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/code",
+      "path": "langsmith/fleet/code.md",
+      "sha256": "ababa7c4e3588c14493854ac4c79b7abef41aa5acabb38b8951384ff78a65bd4",
+      "bytes": 26214,
+      "title": "code",
+      "description": "There are two main ways to use Fleet agents programmatically:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/comparison",
+      "path": "langsmith/fleet/comparison.md",
+      "sha256": "b5f4d49835b10e4f8553f0b3259c455877ce065b64de27617fca8b75d9c73a45",
+      "bytes": 13479,
+      "title": "comparison",
+      "description": "Of the platforms compared here, only Fleet works with any OpenAI- or Anthropic-compatible API endpoint regardless of cloud provider."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/computer-use",
+      "path": "langsmith/fleet/computer-use.md",
+      "sha256": "4a7e7b1d28ac421edeb4429e1350886199599fce16fd4e891f234e6f041c0468",
+      "bytes": 6050,
+      "title": "computer-use",
+      "description": "Computer use gives your Fleet agent access to an isolated virtual computer. The agent can write and execute code, manage files, install packages, and call authenticated external APIs without exposing credentials to the language model."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/essentials",
+      "path": "langsmith/fleet/essentials.md",
+      "sha256": "5395d7fe0b1832da35acbd0bf12a63aac1779daf8a576aab7f63cd17181f8064",
+      "bytes": 13751,
+      "title": "essentials",
+      "description": "LangSmith Fleet essentials are the core features that make up the foundation of your agents. They include tools, channels, memory, sub-agents, and approvals."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/index",
+      "path": "langsmith/fleet/index.md",
+      "sha256": "22123159497ebfe4b7e9613c75ba59a3c6bfe83a73e59987a8f4011b411b67d9",
+      "bytes": 4446,
+      "title": "No-code agents with LangSmith Fleet",
+      "description": "Create helpful AI agents without code. Start from a template, connect your accounts, and let the agent handle routine work while you stay in control"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/manage-agent-settings",
+      "path": "langsmith/fleet/manage-agent-settings.md",
+      "sha256": "8c5faa8371990c2b3535498868a013f8c9bdc51d09765cee990a01b38efd4ad1",
+      "bytes": 6571,
+      "title": "manage-agent-settings",
+      "description": "This page explains how to manage the settings for your agents in LangSmith Fleet."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/mcp-framework",
+      "path": "langsmith/fleet/mcp-framework.md",
+      "sha256": "2ecb1058324cede6ba80b986188a6afad161297f248c489bd6b8a199846e0875",
+      "bytes": 6813,
+      "title": "mcp-framework",
+      "description": "The LangSmith Tool Server is a standalone MCP framework for building and deploying tools with built-in authentication and authorization. Use the Tool Server when you want to:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/quickstart",
+      "path": "langsmith/fleet/quickstart.md",
+      "sha256": "4972caf887268978e4959cf1e756cde6474e1c399d45a0edcf253e73f18f254c",
+      "bytes": 7862,
+      "title": "quickstart",
+      "description": "By the end of this quickstart, you will have an Executive Assistant that labels the Gmail messages needing your attention and pauses for approval before acting, all set up without code or a model API key and controlled through chat."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/remote-mcp-servers",
+      "path": "langsmith/fleet/remote-mcp-servers.md",
+      "sha256": "caa8bbe5673a14d8895f4da36a8c9dc3956c1633d08690a27f9096aa7a587d4a",
+      "bytes": 9817,
+      "title": "remote-mcp-servers",
+      "description": "You can connect LangSmith Fleet to remote MCP servers to extend your agents with additional tools and integrations. This page covers how to add custom MCP servers and provides configuration details for popular remote servers."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/salesforce",
+      "path": "langsmith/fleet/salesforce.md",
+      "sha256": "14af76cb5000af7df516ad6f0b3ff34513352b900ce58504f615fb6a3ba1928f",
+      "bytes": 6317,
+      "title": "salesforce",
+      "description": "The Salesforce integration gives your agents read-only access to data in your Salesforce org. Once connected, an agent can:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/schedules",
+      "path": "langsmith/fleet/schedules.md",
+      "sha256": "1e3d9c71b9e62c3c48ee8b7e88f2f1f63e3c6f98b1674d432f3634972022d046",
+      "bytes": 1976,
+      "title": "schedules",
+      "description": "Schedules run your agent on a recurring time-based schedule. Use schedules when your agent needs to do work proactively, not just in response to a message or event."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/skills",
+      "path": "langsmith/fleet/skills.md",
+      "sha256": "6aa480ef9f7e9988d11fa26f3e7256f8abe13b9fbfa1f86693fa2dd39f15e320",
+      "bytes": 9021,
+      "title": "skills",
+      "description": "Skills are reusable capabilities that provide specialized workflows and domain knowledge to your agent. Each skill is stored in the agent's long-term memory at `memories/skills/<skill-name>`. The skill's name and description is loaded when the agent starts. Based on this info the agent can decide to use the skill. The full skill file is only loaded when the agent determines it is relevant to the current task. Any referenced additional resources may be loaded by the agent if they become relevant."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/slack-app",
+      "path": "langsmith/fleet/slack-app.md",
+      "sha256": "9ed48935dad026e84cad93f59a20b4e39a7b78154a6ebff8bbdacb778fce01e9",
+      "bytes": 16418,
+      "title": "slack-app",
+      "description": "Fleet turns any agent into a Slack teammate your team can tag in a channel or message directly. The bot is the agent, not a relay in front of it: it runs with the agent's own instructions, tools, and permissions. Every agent can have its own Slack app, so a single Slack workspace can run as many Slack bots as you have agents: one triaging support, one watching the on-call rotation, one digging through research."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/teams-app",
+      "path": "langsmith/fleet/teams-app.md",
+      "sha256": "5eee9f414b80472e466032665185cafa165d9b921beca5f7cd3450d6af5fb42c",
+      "bytes": 8110,
+      "title": "teams-app",
+      "description": "With LangSmith Fleet, you can connect your agents to Microsoft Teams by registering a custom Azure Bot. Once connected, your agents can:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/templates",
+      "path": "langsmith/fleet/templates.md",
+      "sha256": "8e86c304e6bb1942add1db0157b56a7b93b47973b545fd68b18779319ccbcc43",
+      "bytes": 3284,
+      "title": "templates",
+      "description": "LangSmith Fleet includes [starter templates](https://www.langchain.com/templates) to help you create agents quickly. Templates include predefined instructions, [tools](https://docs.langchain.com/langsmith/fleet/tools.md), and [channels](https://docs.langchain.com/langsmith/fleet/essentials.md#channels) (if applicable) for common use cases. You can use templates as-is, or as a baseline to customize."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/tools",
+      "path": "langsmith/fleet/tools.md",
+      "sha256": "318c05a868e9f49942b9e063fbfb67fdcec0c4eea49ded494f41e026b2579a81",
+      "bytes": 4344,
+      "title": "tools",
+      "description": "You can access a variety of tools in LangSmith Fleet. Use tool integrations and [MCP servers](https://docs.langchain.com/langsmith/fleet/remote-mcp-servers.md) to give your agents access to email, calendars, chat, project management, code hosting, spreadsheets/BI, search, social, and general web utilities."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/webhooks",
+      "path": "langsmith/fleet/webhooks.md",
+      "sha256": "484e3fc619133af6f1c07f145dfb7cbe92b935cbb020cc7059a7389484965c69",
+      "bytes": 7997,
+      "title": "webhooks",
+      "description": "When triggered, a webhook sends a complete package of your agent's configuration and files to the specified endpoint."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/fleet/workspace-admin",
+      "path": "langsmith/fleet/workspace-admin.md",
+      "sha256": "0339745d1860b995bb7ecf8613555dc01ee2af4b13ef38257ed31d150f0ceae9",
+      "bytes": 5454,
+      "title": "workspace-admin",
+      "description": "Configure workspace secrets and manage spend limits for Fleet agents and users."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/manage-contexts-sdk",
+      "path": "langsmith/manage-contexts-sdk.md",
+      "sha256": "3fba85426f4e9c85bc65ba4eb9abb20120d726f50b8fbccaa4d9e0672a8d73e6",
+      "bytes": 13632,
+      "title": "manage-contexts-sdk",
+      "description": "Use the LangSmith [Python](https://docs.langchain.com/langsmith/smith-python-sdk.md) and [TypeScript](https://docs.langchain.com/langsmith/smith-js-ts-sdk.md) SDKs to manage **agent repos** and **skill repos** in the [Context Hub](https://docs.langchain.com/langsmith/use-the-context-hub.md) programmatically. [Push](#push-an-agent) new versions from CI, [pull](#pull-an-agent) the latest or a pinned commit at runtime to inject context into your agent, and use additional methods to [check existence](#check-whether-a-repo-exists), [list and search](#list-agents-and-skills) repos, and [delete](#delete-an-agent-or-skill) what you no longer need."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/observability",
+      "path": "langsmith/observability.md",
+      "sha256": "cad110088a260df089a66b62a332e871f4380ea344339298b3fe21e5a2273571",
+      "bytes": 3866,
+      "title": "observability",
+      "description": "LangSmith Observability provides full visibility into your LLM application: from individual traces to production-wide performance metrics. Traces are the record of what your agents did in production. Use them to debug failures, monitor quality, and build the datasets you evaluate against."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/observability-concepts",
+      "path": "langsmith/observability-concepts.md",
+      "sha256": "a992c99554a263c8ca5bbd2ac61c365bb9add085477cbc146f3f620f1438677c",
+      "bytes": 9305,
+      "title": "observability-concepts",
+      "description": "LangSmith Observability lets you record, inspect, and analyze every step your AI agent takes. This page explains how that data is structured and visualized in LangSmith as well as how to start sending traces."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/observability-llm-tutorial",
+      "path": "langsmith/observability-llm-tutorial.md",
+      "sha256": "4e8a6f6f20171d3ddc417c7820f6fecc748df9d480119f18a33020695f9f37d4",
+      "bytes": 24555,
+      "title": "observability-llm-tutorial",
+      "description": "In this tutorial, you will build a customer support chatbot using retrieval-augmented generation (RAG) and add LangSmith observability at each stage of development, from early prototyping through production."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/observability-quickstart",
+      "path": "langsmith/observability-quickstart.md",
+      "sha256": "02ce1f69315e9f32f80a5c76446041293f2548c2ec858a471d71d65c2986856c",
+      "bytes": 24359,
+      "title": "observability-quickstart",
+      "description": "LangSmith gives you end-to-end visibility into your agent by capturing [*traces*](https://docs.langchain.com/langsmith/observability-concepts.md#traces); a complete record of every step that ran during a request, from the inputs passed in to the final output returned."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/observability-stack",
+      "path": "langsmith/observability-stack.md",
+      "sha256": "cb9f4ab4df8aca009f5a5b6286dd0ae72942d0d5ba2b15f5231aae9ce433f604",
+      "bytes": 12915,
+      "title": "observability-stack",
+      "description": "LangSmith applications expose telemetry data that can be sent to the backend of your choice. If you don’t already have an observability stack, or prefer to keep LangSmith telemetry separate from your main application, you can use the LangSmith Observability Helm chart to deploy a basic observability stack."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/observability-studio",
+      "path": "langsmith/observability-studio.md",
+      "sha256": "eacef6487f8a5c155e0ff5a139fe2e002be2ea51123f566f59ff078b97e089f4",
+      "bytes": 11644,
+      "title": "observability-studio",
+      "description": "LangSmith [Studio](https://docs.langchain.com/langsmith/studio.md) provides tools to inspect, debug, and improve your app beyond execution. By working with traces, datasets, and prompts, you can see how your application behaves in detail, measure its performance, and refine its outputs:"
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-agent-definition",
+      "path": "langsmith/python/managed-deep-agents-agent-definition.md",
+      "sha256": "832f048d04349dd895f21fb979ea9260ac0223a7debaa3910425b61b70aeac0d",
+      "bytes": 14364,
+      "title": "managed-deep-agents-agent-definition",
+      "description": "The agent definition selects the model and core capabilities of a managed deep agent."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-agent-owned-interrupts",
+      "path": "langsmith/python/managed-deep-agents-agent-owned-interrupts.md",
+      "sha256": "bf43d54f812107b4a5ade198ff831642b03dff624201cdfd6e710bb4610caac2",
+      "bytes": 14575,
+      "title": "managed-deep-agents-agent-owned-interrupts",
+      "description": "An agent-owned interrupt is a pause that your own code creates. A tool posts a Slack message or modal that you design in [Block Kit](https://api.slack.com/block-kit), then calls `interrupt()`. When the user presses a button or submits the modal, Managed Deep Agents delivers the answer to the deployment as a `user_prompt_response` channel event and resumes the paused run with it. You can ask a user for structured input mid-run, such as an approval, a choice, or a set of form fields, without building a Slack app or a webhook of your own."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-browser-use",
+      "path": "langsmith/python/managed-deep-agents-browser-use.md",
+      "sha256": "bb6060203c80d68230abe1a62b691e5ebca6d0a80af2386c5d126cb2fb3f8edd",
+      "bytes": 8865,
+      "title": "managed-deep-agents-browser-use",
+      "description": "Give a managed deep agent a browser to act on websites without a public API, such as booking a restaurant reservation, research a topic by following links across sites, or test an app through its UI after changing its code. The agent can navigate, click, fill forms, and inspect the result. Managed Deep Agents manages the browser and its tools."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-channels",
+      "path": "langsmith/python/managed-deep-agents-channels.md",
+      "sha256": "af243bb591d5ea8a48e5f17f1b3c4fbe6b5bc9b47cd539b97dcc54c331f4ceca",
+      "bytes": 4759,
+      "title": "managed-deep-agents-channels",
+      "description": "A channel makes a managed deep agent available in an external messaging service. Messages from the service can start agent runs, and the agent's final responses return through the same service."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-channels-http",
+      "path": "langsmith/python/managed-deep-agents-channels-http.md",
+      "sha256": "f62caaa29bc8c8c2828f824ecea8e9f942fd8b30a4156cdc1e198086e1717cae",
+      "bytes": 16240,
+      "title": "managed-deep-agents-channels-http",
+      "description": "An HTTP channel turns a managed deep agent into an HTTP endpoint that any external service can call. Use it for a provider that Managed Deep Agents does not support directly, such as an order system, a support tool, or your own application."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-channels-slack",
+      "path": "langsmith/python/managed-deep-agents-channels-slack.md",
+      "sha256": "a784a7b872a93a9f73d541f0ec60cca3fd9b10a2f1e758f2aadd95d77644fae1",
+      "bytes": 12438,
+      "title": "managed-deep-agents-channels-slack",
+      "description": "A Slack channel lets people invoke a managed deep agent through app mentions, direct messages, and replies in an active Slack thread. Managed Deep Agents verifies Slack events, maps each conversation to a thread, runs the agent as the resolved caller, and posts the response back to Slack."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-cli",
+      "path": "langsmith/python/managed-deep-agents-cli.md",
+      "sha256": "b2c645bd5f4982b3ed934e545734e944a85914b0dbcc66f147909ff70a9a9b2e",
+      "bytes": 20047,
+      "title": "managed-deep-agents-cli",
+      "description": "The `mda` CLI compiles and deploys code-first [Managed Deep Agents](https://docs.langchain.com/langsmith/python/managed-deep-agents-overview.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections",
+      "path": "langsmith/python/managed-deep-agents-connections.md",
+      "sha256": "c6ef21ace255c77f78c5cfe5d69cec8aaaabe9686dcb95241e68aed55fd9dabd",
+      "bytes": 37627,
+      "title": "managed-deep-agents-connections",
+      "description": "A connection links a managed deep agent to an external service such as GitHub, Notion, or Tavily. The credential lives in your LangSmith workspace. Use `connections.get(...)` in an authored tool or MCP server definition to resolve it at runtime."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-context-hub",
+      "path": "langsmith/python/managed-deep-agents-context-hub.md",
+      "sha256": "e8c4a07e22c5ed6fdc1373bda9a5737c6ae04109a56286d11e64e5f3a6f61398",
+      "bytes": 7516,
+      "title": "managed-deep-agents-context-hub",
+      "description": "Managed Deep Agents stores deploy-owned instructions and skills, and optional durable memory, in [LangSmith Context Hub](https://docs.langchain.com/langsmith/use-the-context-hub.md). That split lets you change agent behavior without rebuilding application code, while the project remains the source of truth for lasting instruction and skill updates."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-custom-frontend",
+      "path": "langsmith/python/managed-deep-agents-custom-frontend.md",
+      "sha256": "2b85f1ebdbeeb1ad9c75c70a0cd937e614e4956f807ab156bb81d15b53e30497",
+      "bytes": 14009,
+      "title": "managed-deep-agents-custom-frontend",
+      "description": "A custom frontend is any application you write that calls a deployment directly instead of reaching the agent through a [channel](https://docs.langchain.com/langsmith/python/managed-deep-agents-channels.md) or [LangSmith Studio](https://docs.langchain.com/langsmith/python/managed-deep-agents-local-development.md#start-local-studio). Use one when the agent belongs inside a product surface you control, such as a support console, an internal dashboard, or a customer-facing chat page."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-deploy",
+      "path": "langsmith/python/managed-deep-agents-deploy.md",
+      "sha256": "ecfd8f7ee3f9108e922e1d49bff8fe21f5428af9a48ec17d62ead7b7cd4dd401",
+      "bytes": 9928,
+      "title": "managed-deep-agents-deploy",
+      "description": "Deploying a Managed Deep Agent compiles a code-first project into a managed LangGraph app, syncs deploy-owned context to [Context Hub](https://docs.langchain.com/langsmith/python/managed-deep-agents-context-hub.md), uploads the compiled source, and triggers a LangSmith hosted deployment build. The result is an [Agent Server](https://docs.langchain.com/langsmith/agent-server-overview.md) deployment, including the Agent Server API and [MCP endpoint](https://docs.langchain.com/langsmith/python/managed-deep-agents-mcp-endpoint.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-evals",
+      "path": "langsmith/python/managed-deep-agents-evals.md",
+      "sha256": "dd088348191eee650cc7036dcd95377385c1b0c252e81bce1d9f47cd62629900",
+      "bytes": 7665,
+      "title": "managed-deep-agents-evals",
+      "description": "Managed Deep Agents evals are [Harbor](https://www.harborframework.com/docs/tasks) tasks. Use a coding agent with the [`eval-engineering` skill](https://github.com/langchain-ai/langchain-skills/blob/main/config/skills/eval-engineering/SKILL.md) to inspect the project, draft a Task Spec for your review, and write complete tasks under `evals/`."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-identity",
+      "path": "langsmith/python/managed-deep-agents-identity.md",
+      "sha256": "f33930986087f1c4ac93b0e07686f56dd645fae410733b16226f06184e491a10",
+      "bytes": 12171,
+      "title": "managed-deep-agents-identity",
+      "description": "Identity controls who can invoke your managed deep agent, such as apps and SDK clients that start runs or send messages."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-instructions",
+      "path": "langsmith/python/managed-deep-agents-instructions.md",
+      "sha256": "5e463cbf0fad427ffd043b4100ae0e40d0cfbebd73d9d793c42405e2fdfaa523",
+      "bytes": 2840,
+      "title": "managed-deep-agents-instructions",
+      "description": "Instructions define always-on agent behavior. They form the core of the agent's system prompt."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-local-development",
+      "path": "langsmith/python/managed-deep-agents-local-development.md",
+      "sha256": "f0ba7a345caba943b178d719dc71884f6cea7d335c769810efe2dc34d3924e52",
+      "bytes": 3966,
+      "title": "managed-deep-agents-local-development",
+      "description": "Install the project dependencies and add the model provider credentials to `.env`."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-mcp-connectors",
+      "path": "langsmith/python/managed-deep-agents-mcp-connectors.md",
+      "sha256": "240daa0e5c4fbe9679392db98f83911432d637e4022d54b37af83e0130198c14",
+      "bytes": 6656,
+      "title": "managed-deep-agents-mcp-connectors",
+      "description": "Connect a managed deep agent to remote [Model Context Protocol (MCP)](https://docs.langchain.com/oss/python/deepagents/mcp.md) servers to add their tools to the agent. Managed Deep Agents creates the MCP client and loads the tools."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-mcp-endpoint",
+      "path": "langsmith/python/managed-deep-agents-mcp-endpoint.md",
+      "sha256": "47c326eb7ba145844f018ffa184d0f67b5733869bf21bd5644b8fea6eb00aa6d",
+      "bytes": 8370,
+      "title": "managed-deep-agents-mcp-endpoint",
+      "description": "Managed Deep Agents deployments run on [LangSmith Agent Server](https://docs.langchain.com/langsmith/agent-server-overview.md), so every deployment serves the Agent Server [Model Context Protocol](https://modelcontextprotocol.io/introduction) (MCP) endpoint at `/mcp`. Any MCP client that supports the Streamable HTTP transport can call the deployed agent as a tool, so another assistant or agent can delegate work to it without calling the deployment API directly."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-memory",
+      "path": "langsmith/python/managed-deep-agents-memory.md",
+      "sha256": "88e0e3aca064b867d476c012dba0501bd8f3855c92ba808e9679d571c275e388",
+      "bytes": 14040,
+      "title": "managed-deep-agents-memory",
+      "description": "Normally, a managed deep agent's conversational memory is scoped to a thread or session. Durable memory is optional knowledge that an agent can retain across threads, sessions, and deployments. Managed Deep Agents do not have durable memory by default."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-middleware",
+      "path": "langsmith/python/managed-deep-agents-middleware.md",
+      "sha256": "706b95ad7802493b09c2996b760caf3c04e5cd90ac52b352eb94d85910fe2dcb",
+      "bytes": 5764,
+      "title": "managed-deep-agents-middleware",
+      "description": "Middleware adds behavior around model calls, tool calls, and the agent lifecycle. Like [custom tools](https://docs.langchain.com/langsmith/python/managed-deep-agents-tools.md), MDA does not discover middleware automatically. Import it and pass it to the agent definition."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-migrate",
+      "path": "langsmith/python/managed-deep-agents-migrate.md",
+      "sha256": "99ca9c3723ee75b5cbca8c71d06c3e26cc78f6173f1a62ae908eb43a1722e7a8",
+      "bytes": 19300,
+      "title": "managed-deep-agents-migrate",
+      "description": "Managed Deep Agents runs the same [Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview.md) harness you already build against, so moving an existing agent is a repackaging job rather than a rewrite. Your tools, middleware, and subagents carry over as they are. The agent entry changes, and the system prompt, skills, and memory move into project files."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-overview",
+      "path": "langsmith/python/managed-deep-agents-overview.md",
+      "sha256": "79b1b60265b814732eb788fcbc9abb915f84bf2b8c93492d77b286b9a3984b58",
+      "bytes": 11607,
+      "title": "managed-deep-agents-overview",
+      "description": "Managed Deep Agents (MDA) is the simplest way to build and deploy production agents. You focus on what your agent does. MDA runs it. There are no servers to run and no infrastructure to wire together."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-project-structure",
+      "path": "langsmith/python/managed-deep-agents-project-structure.md",
+      "sha256": "f24a135b77471dc69e20d207d528e2be27a5a4b198c247b69a95e48d6bba065d",
+      "bytes": 6573,
+      "title": "managed-deep-agents-project-structure",
+      "description": "A Managed Deep Agents project is a normal Python package with one required root agent entry. Other paths are either ordinary modules you import, or files and directories that MDA discovers to enable managed capabilities."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-quickstart",
+      "path": "langsmith/python/managed-deep-agents-quickstart.md",
+      "sha256": "1a47bad2a6131a99fd1d87ff511da04a1c83457a07c9042f77d7fe5f011dc4fb",
+      "bytes": 12563,
+      "title": "managed-deep-agents-quickstart",
+      "description": "Create and deploy your first Managed Deep Agent: scaffold a project, configure the model and instructions, add search, test in [LangSmith Studio](https://docs.langchain.com/langsmith/studio.md), and deploy with the [`mda` CLI](https://docs.langchain.com/langsmith/python/managed-deep-agents-cli). Managed Deep Agents supplies the [Deep Agents harness](https://docs.langchain.com/oss/python/deepagents/overview.md) and hosted runtime."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-runtime",
+      "path": "langsmith/python/managed-deep-agents-runtime.md",
+      "sha256": "59fecbdd9f7a1fda2e4931e6b19ed166a69f4dbcb9d67002b56b5da51a3c2421",
+      "bytes": 11242,
+      "title": "managed-deep-agents-runtime",
+      "description": "Agent factories, tools, and middleware hooks each receive a runtime. It is the native LangChain or LangGraph runtime with three managed fields added. Context, state, and the store work as they do in [LangChain](https://docs.langchain.com/oss/python/langchain/runtime.md), and your type checker sees your own context type."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-sandboxes",
+      "path": "langsmith/python/managed-deep-agents-sandboxes.md",
+      "sha256": "f20e1b010fa4e16a13f13f1f793243b89f9e12e75242871f3aebe9ff1c5884fe",
+      "bytes": 14288,
+      "title": "managed-deep-agents-sandboxes",
+      "description": "A sandbox gives a managed deep agent an isolated filesystem and shell for working with files, running code, and executing commands."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-schedules",
+      "path": "langsmith/python/managed-deep-agents-schedules.md",
+      "sha256": "14e04b67dd299a93c7be06e8e0b9a2175f714409eb009ca32f3d6b9cd767c6b5",
+      "bytes": 14315,
+      "title": "managed-deep-agents-schedules",
+      "description": "Managed Deep Agents can run agents on a cron schedule. When you deploy the project, `mda deploy` provisions each schedule as a LangSmith cron after the deployment is live."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-search",
+      "path": "langsmith/python/managed-deep-agents-search.md",
+      "sha256": "70a7b6727cbe3ccc5571c6ac3f3d8588bdad50ad681096eb136b681261ec1758",
+      "bytes": 3492,
+      "title": "managed-deep-agents-search",
+      "description": "LangSmith manages the search infrastructure, so you can add search without hosting a service or creating a separate Parallel account or API key. The integration offers zero data retention."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-skills",
+      "path": "langsmith/python/managed-deep-agents-skills.md",
+      "sha256": "6644e6cf33f9ce672f07588bc736f55807ff949cc93ae2a34fb16e543c64d698",
+      "bytes": 4184,
+      "title": "managed-deep-agents-skills",
+      "description": "Skills package task-specific procedures and supporting files into reusable directories. MDA discovers them automatically. The agent loads a skill's full contents only when the task matches the description in the frontmatter."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-subagents",
+      "path": "langsmith/python/managed-deep-agents-subagents.md",
+      "sha256": "6f21c2e2af7bd031b8e7a586e827d6b0e475b104e2ebf9afedf5e536acf6625a",
+      "bytes": 11522,
+      "title": "managed-deep-agents-subagents",
+      "description": "Give a managed deep agent subagents to delegate specialized or context-heavy work, such as researching a topic, reviewing a change, or running a long task in the background with an async subagent while the agent keeps talking to the user. Each subagent has its own prompt and context window. It can also use its own model and tools."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-tools",
+      "path": "langsmith/python/managed-deep-agents-tools.md",
+      "sha256": "f88022bd7e5f77af7234346f63905f20e316123870928f0ce9437e11bd62c41e",
+      "bytes": 7614,
+      "title": "managed-deep-agents-tools",
+      "description": "Custom tools are application code the agent can call for fetching real-time data, querying databases, executing code, and taking actions. Unlike [instructions](https://docs.langchain.com/langsmith/python/managed-deep-agents-instructions.md) and [skills](https://docs.langchain.com/langsmith/python/managed-deep-agents-skills.md), MDA does not discover them automatically."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-tutorial",
+      "path": "langsmith/python/managed-deep-agents-tutorial.md",
+      "sha256": "911d9bcf51685c0aaa1940605327337a694c585f311f824dd044e24f2e74ebda",
+      "bytes": 7897,
+      "title": "managed-deep-agents-tutorial",
+      "description": "This tutorial continues from the [quickstart](https://docs.langchain.com/langsmith/python/managed-deep-agents-quickstart.md). Use the `research-assistant` project you created there, with your model, instructions, and a working `mda dev` setup."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/studio",
+      "path": "langsmith/studio.md",
+      "sha256": "b58399e177ba180de8b6b7f41ff3c4bd3b66beac5b1f784ee1a15bfa6a342ab4",
+      "bytes": 3797,
+      "title": "studio",
+      "description": "Studio is a specialized agent IDE that enables visualization, interaction, and debugging of agentic systems that implement the Agent Server API protocol. Studio also integrates with [tracing](https://docs.langchain.com/langsmith/observability-concepts.md), [evaluation](https://docs.langchain.com/langsmith/evaluation.md), and [prompt engineering](https://docs.langchain.com/langsmith/prompt-context-hub.md#prompts)."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/trace-claude-agent-sdk",
+      "path": "langsmith/trace-claude-agent-sdk.md",
+      "sha256": "abb7b2a151ed702aa419b15bce5a1712342528fcf72bb6244fbfcd9752a6ec7a",
+      "bytes": 7378,
+      "title": "trace-claude-agent-sdk",
+      "description": "The [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview) is an SDK for building agents with Claude. LangSmith provides native integration with the Claude Agent SDK to automatically trace your agent executions, tool calls, and interactions with Claude models."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/trace-claude-code",
+      "path": "langsmith/trace-claude-code.md",
+      "sha256": "0020ddb1c14cdcf56d513cd02ecd916a1b0206f3b367fc72b3b0af9f1da15a4c",
+      "bytes": 10808,
+      "title": "trace-claude-code",
+      "description": "The LangSmith tracing plugin sends your [Claude Code](https://code.claude.com/docs/en/overview) conversations to LangSmith so you can see what the agent did. Each message becomes a trace, and a session's messages are grouped into a thread."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/trace-deep-agents",
+      "path": "langsmith/trace-deep-agents.md",
+      "sha256": "e3e40f427e78ff1dad25862a398e4c350ffae47da1768d1387af625209c559f3",
+      "bytes": 14244,
+      "title": "trace-deep-agents",
+      "description": "This guide shows you how to enable LangSmith tracing for Deep Agents, view traces in the LangSmith UI, and (optionally) customize trace configuration for more advanced use cases."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/trace-with-codex",
+      "path": "langsmith/trace-with-codex.md",
+      "sha256": "552e1fa660dcec2ba5da7987fa75bbcffaa04bd69109577af02a4d397f22b9f2",
+      "bytes": 9914,
+      "title": "trace-with-codex",
+      "description": "The LangSmith tracing plugin sends your [OpenAI Codex](https://developers.openai.com/codex) sessions to LangSmith so you can see what the agent did. Each turn becomes a trace, and a session's turns are grouped into a thread."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/trace-with-langchain",
+      "path": "langsmith/trace-with-langchain.md",
+      "sha256": "b681b3b30906942742a194849e95e610b2186d6faa6eba14d25131a56149f6d6",
+      "bytes": 32113,
+      "title": "trace-with-langchain",
+      "description": "LangSmith integrates seamlessly with LangChain (Python and JavaScript), the popular open-source framework for building agents."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/trace-with-langgraph",
+      "path": "langsmith/trace-with-langgraph.md",
+      "sha256": "229ff177e374ae8bcf2ea35bab6f6720e89da50ca2c8e6b24ab5d94daccf3e69",
+      "bytes": 19155,
+      "title": "trace-with-langgraph",
+      "description": "LangSmith smoothly integrates with LangGraph (Python and JS) to help you trace agents, whether you're using LangChain modules or other SDKs."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/trace-with-opencode",
+      "path": "langsmith/trace-with-opencode.md",
+      "sha256": "df3c05c9fd03ed43d4f772d65f67bd25ce23e4218b5d44f1dfd17901494c3f9c",
+      "bytes": 8054,
+      "title": "trace-with-opencode",
+      "description": "The `@langchain/langsmith-opencode` plugin sends [OpenCode](https://opencode.ai/) session traces to LangSmith. Use it to inspect agent turns, model metadata, token usage, tool calls, tool errors, attachments, and subagent activity from your OpenCode workflows."
+    },
+    {
+      "url": "https://docs.langchain.com/langsmith/use-the-context-hub",
+      "path": "langsmith/use-the-context-hub.md",
+      "sha256": "0a3708784b28a7dddc82701f6b3554b4df9d56f6f231486a129f9785ebbb940d",
+      "bytes": 5615,
+      "title": "use-the-context-hub",
+      "description": "The **Context Hub** gives your team version-controlled, environment-aware management of the instructions and tools your agents use in production. A *context* is a versioned bundle of agent instructions and tools, either a skill or a full agent, that you manage in LangSmith."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/approval-modes",
+      "path": "oss/deepagents/code/approval-modes.md",
+      "sha256": "fe6bfabded171344d39a77cfae85eab8be3c6fa6a9a617d8fba5e7a7e91c5486",
+      "bytes": 10765,
+      "title": "approval-modes",
+      "description": "By default, Deep Agents Code asks for your approval before running potentially consequential actions. These are called **gated actions** and include things like:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/cli-reference",
+      "path": "oss/deepagents/code/cli-reference.md",
+      "sha256": "decf6df310b1d28475f222ad9bba78fa54aa99fe810864be0fcf2459314cc050",
+      "bytes": 38640,
+      "title": "cli-reference",
+      "description": "Deep Agents Code (`dcode`) accepts command-line flags at launch and exposes management subcommands for tools, agents, sessions, skills, credentials, and configuration. Use this page as a reference when you need to override defaults from the shell, run non-interactive tasks in scripts, or automate administration without opening a session. For installation and daily interactive use, see [Quickstart](https://docs.langchain.com/oss/deepagents/code/quickstart.md). For how CLI flags fit into the broader configuration model, see [Configuration](https://docs.langchain.com/oss/deepagents/code/configuration)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/config-file",
+      "path": "oss/deepagents/code/config-file.md",
+      "sha256": "4e7604f336ee44411be9571ad8865d1b6cf447109ee051e193cd1f3cecce076c",
+      "bytes": 48373,
+      "title": "config-file",
+      "description": "default = \"ollama:qwen3:4b\"             # your intentional long-term preference"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/configuration",
+      "path": "oss/deepagents/code/configuration.md",
+      "sha256": "4204a9e432bd7948ba001d36bded036d6f8e13b1e334cfbbe282bed5ac14227e",
+      "bytes": 51848,
+      "title": "configuration",
+      "description": "Deep Agents Code stores user configuration in its profile directory, which defaults to `~/.deepagents/`, and in project-level dotfiles. Administrators can enforce settings from a fixed system path with [`managed_config.toml`](#managed-configuration). For the full directory tree, session storage, and skill paths, see [Data locations](https://docs.langchain.com/oss/deepagents/code/configuration#data-locations)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/credentials",
+      "path": "oss/deepagents/code/credentials.md",
+      "sha256": "ec2d522b0f68475674a0b96ec456de2b0351af6e0ba1f6dce21571af2b5968bf",
+      "bytes": 10521,
+      "title": "credentials",
+      "description": "Deep Agents Code needs an API key for each model provider you use. The recommended way to add one is the [`/auth`](#use-%2Fauth-recommended) credential manager. For non-interactive runs, manage the same stored keys from the shell with [`dcode auth`](#manage-credentials-from-the-shell-dcode-auth) or set [environment variables](#environment-variables-ci-and-headless) instead."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/extensions",
+      "path": "oss/deepagents/code/extensions.md",
+      "sha256": "6c32d86d4d21bdfdebfc543e63b93510fb21e3a96bd7395e97399bff7ef4c180",
+      "bytes": 10379,
+      "title": "extensions",
+      "description": "Python extensions customize the dcode agent server without modifying dcode itself. Use them to register model tools, LangChain middleware, virtual storage routes."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/goals-and-rubrics",
+      "path": "oss/deepagents/code/goals-and-rubrics.md",
+      "sha256": "cdd009400b5d2e5d7f2a278e0ccc3162328b6dc00b4edd493be133b3e716483a",
+      "bytes": 6460,
+      "title": "goals-and-rubrics",
+      "description": "Goals and rubrics help Deep Agents Code check whether its work satisfies the criteria you care about. Use a goal for objective-driven work where the agent should help define acceptance criteria, and use a rubric when you already know the criteria."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/hooks",
+      "path": "oss/deepagents/code/hooks.md",
+      "sha256": "28eab00cbd4f6ef292ca3940fc52e08fd15ef00aa4cb3dadd5c70d8708edbcbb",
+      "bytes": 23229,
+      "title": "hooks",
+      "description": "Hooks let external programs observe and control Deep Agents Code lifecycle events."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/mcp-tools",
+      "path": "oss/deepagents/code/mcp-tools.md",
+      "sha256": "fa7d94d212ae19402734c39b61caa107f1a202791472bf970899542fbf8ce92a",
+      "bytes": 27776,
+      "title": "mcp-tools",
+      "description": "Add MCP servers by adding a `.mcp.json` config file to your project for project-level scope, or at user-level to apply to all projects."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/memory-and-skills",
+      "path": "oss/deepagents/code/memory-and-skills.md",
+      "sha256": "5b6c9e660013f760bc3c814171e61e001405b54fd04bef6967b5ccb7485f805b",
+      "bytes": 9805,
+      "title": "memory-and-skills",
+      "description": "There are two primary ways to customize an agent in Deep Agents Code:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/overview",
+      "path": "oss/deepagents/code/overview.md",
+      "sha256": "96cb8086fef7f3dfcf7dcca9a459cccb77a5465446fd9cb3d1f9dde5a2e73bdc",
+      "bytes": 3583,
+      "title": "overview",
+      "description": "Deep Agents Code (`dcode`) is an open source coding agent built on the [Deep Agents SDK](https://docs.langchain.com/oss/python/deepagents/quickstart.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/plugins",
+      "path": "oss/deepagents/code/plugins.md",
+      "sha256": "60640c15a32d5e05112cc8ff3f890cb18727eeb4e20d4313e385e45d26dece47",
+      "bytes": 12497,
+      "title": "plugins",
+      "description": "Plugins extend dcode with reusable [skills](https://docs.langchain.com/oss/deepagents/code/memory-and-skills.md), [MCP servers](https://docs.langchain.com/oss/deepagents/code/mcp-tools.md), [hooks](https://docs.langchain.com/oss/deepagents/code/hooks.md), and [Python extensions](https://docs.langchain.com/oss/deepagents/code/extensions.md). Marketplaces provide catalogs for discovering and installing plugins across projects or teams. dcode supports Claude- and Codex-style plugin manifests and marketplace catalogs, as described in [Create a plugin](#create-a-plugin) and [Create a marketplace](#create-a-marketplace)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/providers",
+      "path": "oss/deepagents/code/providers.md",
+      "sha256": "26d4779bf102e9f14dda856b46326265370a1a2df6601c11f515e83094364eec",
+      "bytes": 24732,
+      "title": "providers",
+      "description": "Deep Agents Code supports any [chat model provider compatible with LangChain](https://docs.langchain.com/oss/python/integrations/chat.md), unlocking use for virtually any LLM that supports tool calling. Any service that exposes an OpenAI-compatible or Anthropic-compatible API also works out of the box—see [Compatible APIs](https://docs.langchain.com/oss/deepagents/code/config-file.md#compatible-apis)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/quickstart",
+      "path": "oss/deepagents/code/quickstart.md",
+      "sha256": "99228ecda829f0f8f7c35b7d8f95e5d5d3a4d07e2d9cb583ab79c56b3572db89",
+      "bytes": 23424,
+      "title": "quickstart",
+      "description": "Deep Agents Code (`dcode`) is a terminal coding agent built on the [Deep Agents SDK](https://docs.langchain.com/oss/python/deepagents/quickstart.md). This guide covers installation, your first task, daily interactive use, automation with piping, and LangSmith tracing. For a feature overview, see [Deep Agents Code overview](https://docs.langchain.com/oss/deepagents/code/overview.md). For `config.toml` and provider settings, see [Configuration](https://docs.langchain.com/oss/deepagents/code/configuration)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/remote-sandboxes",
+      "path": "oss/deepagents/code/remote-sandboxes.md",
+      "sha256": "545ae8e0a67cbc7d7bf9c406127215077ed3eb7b60f7d4a08cd65cc6340132fe",
+      "bytes": 15332,
+      "title": "remote-sandboxes",
+      "description": "Deep Agents Code uses the [sandbox as tool](https://docs.langchain.com/oss/python/deepagents/sandboxes.md#sandbox-as-tool-pattern) pattern: the `dcode` process (LLM loop, memory, tool dispatch) runs on your machine, but agent tool calls (`read_file`, `write_file`, `execute`, etc.) target the remote sandbox, not your local filesystem. To get files into the sandbox, use a [setup script](#setup-scripts) or the provider's file transfer APIs (see [Working with files](https://docs.langchain.com/oss/python/deepagents/sandboxes.md#working-with-files))."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/deepagents/code/subagents",
+      "path": "oss/deepagents/code/subagents.md",
+      "sha256": "a9022dbe6d39a28520372c3eb04005769d9c3aba40e0b5b1483316f7a579846a",
+      "bytes": 5010,
+      "title": "subagents",
+      "description": "Define custom synchronous [subagents](https://docs.langchain.com/oss/python/deepagents/subagents.md) as markdown files so Deep Agents Code can delegate specialized tasks to them."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/automate-updates",
+      "path": "oss/openwiki/automate-updates.md",
+      "sha256": "035eee70dbae28645cfb3800ff7fe8a05bf0dc199243c7891189329c08e67231",
+      "bytes": 3864,
+      "title": "automate-updates",
+      "description": "OpenWiki can refresh repository documentation on a schedule and open a pull request or merge request when the wiki changes. Example workflows ship in the [OpenWiki repository](https://github.com/langchain-ai/openwiki/tree/main/examples)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/cli-reference",
+      "path": "oss/openwiki/cli-reference.md",
+      "sha256": "644be9298a8c2a85bc080d3ae6b489e3547b0d2e4a80425dd954c55ae4d19331",
+      "bytes": 7421,
+      "title": "cli-reference",
+      "description": "OpenWiki ships as a single `openwiki` binary for interactive chat and one-shot documentation runs. For installation and first use, see [Quickstart](https://docs.langchain.com/oss/openwiki/quickstart.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/code-mode",
+      "path": "oss/openwiki/code-mode.md",
+      "sha256": "a71aa667d50e5e9bf98bf7a5a509a817b521d0a4fd2e1c1437490ade7858e8fe",
+      "bytes": 11684,
+      "title": "code-mode",
+      "description": "Code mode builds a repository wiki in `openwiki/` with durable details such as architecture, integrations, and workflows. Coding agents use that wiki as context so they can work in the package more efficiently, with less rediscovery and fewer tokens. Humans can read the same Markdown, but agents are the primary audience. Agents discover the wiki through the pointer OpenWiki maintains in `AGENTS.md`, and through an `@AGENTS.md` import in `CLAUDE.md` when that file already exists."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/customize",
+      "path": "oss/openwiki/customize.md",
+      "sha256": "cc4d7d8e4a7f75f1bd00344848d10d7a23aa768f1ab310cc55efdf653e98aa5a",
+      "bytes": 5575,
+      "title": "customize",
+      "description": "Customize OpenWiki with ignore rules, wiki briefs, agent instruction pointers, and telemetry."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/integrations",
+      "path": "oss/openwiki/integrations.md",
+      "sha256": "115b0ead74e7fdbc7fda3e7ad8aa00aca00822f7dad4410224e22438cee1b1a6",
+      "bytes": 5196,
+      "title": "integrations",
+      "description": "OpenWiki can run inside an existing coding agent instead of launching its own model. The coding agent investigates the repository, plans the wiki, and writes each assigned page with its native repository tools. OpenWiki owns the durable page-job lifecycle, Claims validation and persistence, source-drift handling, and deterministic finalization."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/overview",
+      "path": "oss/openwiki/overview.md",
+      "sha256": "492edaa677788d66839dcdc5e3d06dd63f15ea84cefd31b537ec9b15ba2e5951",
+      "bytes": 4697,
+      "title": "overview",
+      "description": "OpenWiki is an open source CLI that writes and maintains a Markdown wiki about your codebase or personal knowledge. The wiki captures details such as architecture, integrations, evals, and workflows so [coding agents](https://docs.langchain.com/oss/python/deepagents/overview.md) can use it as durable context instead of rediscovering the repository on every task."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/personal-mode",
+      "path": "oss/openwiki/personal-mode.md",
+      "sha256": "ea1a2edf7649651c304f3ee71709debd707d809a8fcab08bb78e33e0ae6538c2",
+      "bytes": 7087,
+      "title": "personal-mode",
+      "description": "Personal mode builds a local personal brain wiki in `~/.openwiki/wiki` from configured sources such as local repositories, Custom MCP, Gmail, Notion, web search, Hacker News, Slack, and X/Twitter."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/providers",
+      "path": "oss/openwiki/providers.md",
+      "sha256": "2e014257d2ef4e82911fb729c349d20e3c7d2056143bdafb0313b21c1a33a634",
+      "bytes": 14760,
+      "title": "providers",
+      "description": "OpenWiki supports the following providers:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/quickstart",
+      "path": "oss/openwiki/quickstart.md",
+      "sha256": "b597583998823409c4145bd982e3215cd0e8d72f4de09b0c631b59ce72c56713",
+      "bytes": 6717,
+      "title": "quickstart",
+      "description": "OpenWiki is a CLI that writes and maintains a Markdown wiki for your codebase or personal knowledge. Coding agents use that wiki as durable context, so they spend less time and fewer tokens rediscovering architecture, integrations, and other repository details. Humans can read the same docs, but agents are the primary audience. This guide covers installation, provider setup, and your first documentation run. For a feature overview, see [OpenWiki overview](https://docs.langchain.com/oss/openwiki/overview.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/search-and-link",
+      "path": "oss/openwiki/search-and-link.md",
+      "sha256": "0a7e4da52fb3b504bf1e1a330ead8b398479771624f9c2d709560e16a98a6bdd",
+      "bytes": 3908,
+      "title": "search-and-link",
+      "description": "OpenWiki exposes local, read-only retrieval tools so coding agents can answer concrete questions from an existing wiki without starting a generation run. Use `openwiki link` to group related repository wikis into a named workspace, then search and read across that workspace."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/openwiki/visualize",
+      "path": "oss/openwiki/visualize.md",
+      "sha256": "02ff754ccf61d8ee619509b7316cb0c2f2d34ccf68ba55624b92e7bf99c9c59a",
+      "bytes": 3323,
+      "title": "visualize",
+      "description": "For exploring OpenWiki Markdown wikis, `openwiki visualize` serves a local interactive node graph beside a live Markdown reader in your browser. You can also export the same graph and reader as a static directory for hosting."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/common-errors",
+      "path": "oss/python/common-errors.md",
+      "sha256": "b93c6a31e07a4d92532b2764e8aea0dee9fa09dd015d6bb742fc04488e96a5c1",
+      "bytes": 2181,
+      "title": "common-errors",
+      "description": "This page contains guides around resolving common errors you may find while building with LangChain and LangGraph."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/concepts/context",
+      "path": "oss/python/concepts/context.md",
+      "sha256": "2c6cf5db94db552cac53fa0086687a2cbdf76b28e64ac6d3afd869c4b04ac2be",
+      "bytes": 8830,
+      "title": "context",
+      "description": "1. By **mutability**:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/concepts/human-in-the-loop",
+      "path": "oss/python/concepts/human-in-the-loop.md",
+      "sha256": "ff21bfba90ebeed582970a24e2fbc764a2559fdcf8b440015280793fbdae3465",
+      "bytes": 10106,
+      "title": "human-in-the-loop",
+      "description": "Human-in-the-loop (HITL) pauses an agent before a tool call runs so a person can review it. The reviewer approves the call, edits its arguments, rejects it with feedback, or answers in place of the tool. Use it for actions that are hard to undo or that need sign-off, such as deleting records, sending email, or writing files."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/concepts/memory",
+      "path": "oss/python/concepts/memory.md",
+      "sha256": "7cba0710f88942a51b1b5024a27825270afb951db98727035a1a10cdd6583922",
+      "bytes": 20191,
+      "title": "memory",
+      "description": "This conceptual guide covers two types of memory, based on their recall scope:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/concepts/products",
+      "path": "oss/python/concepts/products.md",
+      "sha256": "0afd27d39a1df48f9aa117d9f76e22603f21ad4c057874e6cd7ee36090cb6b37",
+      "bytes": 9082,
+      "title": "products",
+      "description": "LangChain maintains several open source packages to help you build agents. Each serves a different purpose in the agent development stack. Understanding the distinctions between [agent frameworks](#agent-frameworks-like-langchain), [agent runtimes](#agent-runtimes-like-langgraph), and [agent harnesses](#agent-harnesses-like-the-deep-agents-sdk) helps you choose the right tool for your needs."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/concepts/providers-and-models",
+      "path": "oss/python/concepts/providers-and-models.md",
+      "sha256": "2b033af100488da2a642e925cedc8e5f128bab4704868099000e33246db31ab2",
+      "bytes": 9209,
+      "title": "providers-and-models",
+      "description": "LangChain gives you a single, unified API to work with models from any provider. Install a provider package, pick a model name, and start building—the same code works whether you use OpenAI, Anthropic, Google, or any other supported provider."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/acp",
+      "path": "oss/python/deepagents/acp.md",
+      "sha256": "45ae9478dad83c83b1a74e16252488a61f0d9e64258cf7cc8af532e44d79dc2d",
+      "bytes": 9311,
+      "title": "acp",
+      "description": "With the ACP protocol, you can make use of your custom deep agents with any ACP-compatible client, allowing your code editor to provide project context and receive rich updates."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/ag-ui",
+      "path": "oss/python/deepagents/ag-ui.md",
+      "sha256": "638d0e495ebc61e4a4e7978548d88e7b6676d67c9bdb2e98c3e388d80f4418a3",
+      "bytes": 9977,
+      "title": "ag-ui",
+      "description": "Exposing a deep agent over AG-UI turns its run into a typed event stream (messages, tool calls, reasoning, state, and lifecycle) that any AG-UI client can consume, so you can drive a frontend without coupling it to LangGraph internals."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/async-subagents",
+      "path": "oss/python/deepagents/async-subagents.md",
+      "sha256": "b669008e1a73a565949dd8dc8f394adf96c5b5345c0a290967c28f4624adcdd0",
+      "bytes": 23647,
+      "title": "async-subagents",
+      "description": "Async subagents let a supervisor agent launch background tasks that return immediately, so the supervisor can continue interacting with the user while subagents work concurrently. The supervisor can check progress, send follow-up instructions, or cancel tasks at any point."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/backends",
+      "path": "oss/python/deepagents/backends.md",
+      "sha256": "6f1ab90ea150e3f90f8f06a47a8429253574457dbc59c6405133b6c172e5381f",
+      "bytes": 53867,
+      "title": "backends",
+      "description": "Deep Agents expose a filesystem surface to the agent via tools like `ls`, `read_file`, `write_file`, `edit_file`, `delete`, `glob`, and `grep`. These tools operate through a pluggable backend. The `read_file` tool natively supports image files (`.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`) across all backends, returning them as multimodal content blocks."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/browser-use",
+      "path": "oss/python/deepagents/browser-use.md",
+      "sha256": "23f69c6a9d0053f70d6d7875738a311e6c80092a694eca93dd1986aa00f37fb3",
+      "bytes": 15542,
+      "title": "browser-use",
+      "description": "Browser use gives a deep agent a browser that it controls through tools. The agent opens pages, reads what renders, clicks, types, and takes screenshots. Use it for work that happens on the web:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/comparison",
+      "path": "oss/python/deepagents/comparison.md",
+      "sha256": "c0f227c7def8db3cbb5145124e25a8f434a2e45e36f0313aff6806b04c7e2bfa",
+      "bytes": 9953,
+      "title": "comparison",
+      "description": "This page explains how [Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview.md) compares to the [Claude Agent SDK](https://platform.anthropic.com/docs/en/agent-sdk/overview). Both are harnesses for building custom agents, but they make different tradeoffs around execution environments, deployment, and vendor coupling."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/content-builder",
+      "path": "oss/python/deepagents/content-builder.md",
+      "sha256": "6187f822e0993002bc7055f1ed938b7d69e2da5a11e2ea74418c8b944339317f",
+      "bytes": 52446,
+      "title": "content-builder",
+      "description": "This guide shows how to build a content writing agent with [Deep Agents](https://docs.langchain.com/oss/python/deepagents.md). The agent loads brand voice and skills, delegates research to a subagent, drafts blog or social content, and generates companion images."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/context-engineering",
+      "path": "oss/python/deepagents/context-engineering.md",
+      "sha256": "151367d739dbe728bd6c76b5439b58bc28b1395347d8353aab838823a5b7ec27",
+      "bytes": 51613,
+      "title": "context-engineering",
+      "description": "Context engineering is providing the right information and tools in the right format so your deep agent can accomplish tasks reliably."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/customization",
+      "path": "oss/python/deepagents/customization.md",
+      "sha256": "07c9836389d3f0e8f6565087cb532a1d50d15f09a46227a78ed5897ea1c48832",
+      "bytes": 144673,
+      "title": "customization",
+      "description": "Build the harness around your goal. `create_deep_agent` gives you a production-ready foundation: connect it to your data, shape its behavior, and add the capabilities your use case needs."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/data-analysis",
+      "path": "oss/python/deepagents/data-analysis.md",
+      "sha256": "eceb8784e23ca39b3525efc46322589167461d6aa7a8abba2d86dab1b377ba51",
+      "bytes": 37007,
+      "title": "data-analysis",
+      "description": "This guide demonstrates how to build a data analysis agent using a [deep agent](https://docs.langchain.com/oss/python/deepagents.md). Data analysis tasks typically require multi-step reasoning, code execution, and working with artifacts such as scripts, reports, and plots—capabilities that deep agents are designed to handle."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/deep-research",
+      "path": "oss/python/deepagents/deep-research.md",
+      "sha256": "5cdd09357d141e497cb29712499a28ffda06ffabf48f0d74758462d1ab5a27f4",
+      "bytes": 37537,
+      "title": "deep-research",
+      "description": "This guide shows how to build a multi-step web research agent with [Deep Agents](https://docs.langchain.com/oss/python/deepagents.md). The agent decomposes research questions into focused tasks, delegates them to specialized sub-agents, and synthesizes findings into a comprehensive report."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/dynamic-subagents",
+      "path": "oss/python/deepagents/dynamic-subagents.md",
+      "sha256": "b666d3242581ecb5f72498558d2f22c7001d497d0f6b49a2a5b8c02a4e18f153",
+      "bytes": 59658,
+      "title": "dynamic-subagents",
+      "description": "Dynamic subagents let an agent dispatch [subagents](https://docs.langchain.com/oss/python/deepagents/subagents.md) from interpreter code. Instead of asking the model to choose one subagent call at a time, the agent can use JavaScript loops, branches, and parallel batches to route work across configured subagents and synthesize the results."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/event-streaming",
+      "path": "oss/python/deepagents/event-streaming.md",
+      "sha256": "c130eca53d18c468a3c1aaaaf241a0bd2462f628e82c25aa636faba85512dc8d",
+      "bytes": 9888,
+      "title": "event-streaming",
+      "description": "This page covers streaming concerns specific to Deep Agents—most importantly, streaming from delegated subagents via `stream.subagents`. For general agent streaming (`stream.messages`, `stream.values`, tool calls, custom updates), see [LangChain Event Streaming](https://docs.langchain.com/oss/python/langchain/event-streaming.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/fault-tolerance",
+      "path": "oss/python/deepagents/fault-tolerance.md",
+      "sha256": "9139c8feae35c09bbf0a31d5c971ecbdc6cbcab89de20e9021ee7f67516130bf",
+      "bytes": 13300,
+      "title": "fault-tolerance",
+      "description": "Fault tolerance middleware keeps your deep agent running when things go wrong. Not all errors should be handled the same way: transient failures (network timeouts, rate limits) should be retried automatically, errors the LLM can recover from (bad tool output, parsing failures) should be fed back to the model, and errors that need human input should pause the agent."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/frontend/overview",
+      "path": "oss/python/deepagents/frontend/overview.md",
+      "sha256": "606be896fff8944346c51ab763304a5dd57080e9b23d37f21df13d1be6812abd",
+      "bytes": 6223,
+      "title": "overview",
+      "description": "Build frontends that visualize deep agent workflows in real time. These patterns"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/frontend/sandbox",
+      "path": "oss/python/deepagents/frontend/sandbox.md",
+      "sha256": "1ffc986b99462a7e0a7a2095f6e94ec005c466548ff477f5d5725b4ea2ad200e",
+      "bytes": 33615,
+      "title": "sandbox",
+      "description": "Coding agents need more than a chat window. They need a file browser, a code"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/frontend/subagent-streaming",
+      "path": "oss/python/deepagents/frontend/subagent-streaming.md",
+      "sha256": "8d376dc4deb32bf3f836621a444fafac813a27c0c282f53679c90f1b1b8881e5",
+      "bytes": 14529,
+      "title": "subagent-streaming",
+      "description": "When a coordinator agent spawns specialist subagents (a researcher, an"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/frontend/todo-list",
+      "path": "oss/python/deepagents/frontend/todo-list.md",
+      "sha256": "97c2e7475256c4e13d2925c052d2c4cb8b2b8e36845b6e2577f04d802bd20b10",
+      "bytes": 15609,
+      "title": "todo-list",
+      "description": "Not every agent interaction is a chat. Sometimes the agent is executing a"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/going-to-production",
+      "path": "oss/python/deepagents/going-to-production.md",
+      "sha256": "b66b7febb73a64d8a8e69474f245817c6242855c0d19032bba44dfa126a80a36",
+      "bytes": 49074,
+      "title": "going-to-production",
+      "description": "This guide covers considerations for taking a deep agent from a local prototype to a production deployment with the SDK. To run production agents without having to manage infrastructure, start with [Managed Deep Agents](https://docs.langchain.com/langsmith/python/managed-deep-agents-overview.md) or [migrate to Managed Deep Agents](https://docs.langchain.com/langsmith/python/managed-deep-agents-migrate.md) instead. The rest of this page walks through scoping memory, configuring execution environments, adding guardrails, and connecting a frontend when you host agents yourself or run a custom [LangSmith Deployment](https://docs.langchain.com/langsmith/deployment.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/human-in-the-loop",
+      "path": "oss/python/deepagents/human-in-the-loop.md",
+      "sha256": "d6fa9981eb6be3dc8c6377a2ca61077a8bc35d4bb5e11724e3969010a2db432d",
+      "bytes": 35284,
+      "title": "human-in-the-loop",
+      "description": "Some tool operations may be sensitive and require human approval before execution. Deep Agents support human-in-the-loop workflows through LangGraph's interrupt capabilities. You can configure which tools require approval using the `interrupt_on` parameter. When `interrupt_on` is set, `HumanInTheLoopMiddleware` is added to the [Deep Agents stack](https://docs.langchain.com/oss/python/deepagents/customization.md#deep-agents-stack). If a run is cancelled or interrupted before a tool returns a result, [`PatchToolCallsMiddleware`](https://reference.langchain.com/python/deepagents/middleware/patch_tool_calls/PatchToolCallsMiddleware) in the same stack repairs the message history automatically."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/interpreters",
+      "path": "oss/python/deepagents/interpreters.md",
+      "sha256": "62f88228cf838fc5259ce93d5c133c897de0c055a0a2550b2710e2fff253120d",
+      "bytes": 25507,
+      "title": "interpreters",
+      "description": "Interpreters give agents a programmable, **in-memory** workspace inside the agent loop. The agent writes code to complete a task, and the runtime executes it and returns only the relevant results. Intermediate results do not become part of the model context."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/memory",
+      "path": "oss/python/deepagents/memory.md",
+      "sha256": "f9ec0c8ce57fee8bc13a265393d4b8740b33056e4e405a7eba3adb70df57d6c4",
+      "bytes": 25847,
+      "title": "memory",
+      "description": "Memory lets your agent learn and improve across conversations. Deep Agents makes memory first class with filesystem-backed memory: the agent reads and writes memory as files, and you control where those files are stored using [backends](https://docs.langchain.com/oss/python/deepagents/backends.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/models",
+      "path": "oss/python/deepagents/models.md",
+      "sha256": "d9d8aee4fc60bf916c643935dadd4c1bd472ca4d2977efc1b1c03c2f011a67fc",
+      "bytes": 17782,
+      "title": "models",
+      "description": "Deep Agents work with any [LangChain chat model](https://docs.langchain.com/oss/python/langchain/models.md) that supports [tool calling](https://docs.langchain.com/oss/python/langchain/models.md#tool-calling)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/multimodal",
+      "path": "oss/python/deepagents/multimodal.md",
+      "sha256": "e5b4be0df31b9adefe0d484e74a1584b4ee87d8d65cbb76ad9b56a83829ad385",
+      "bytes": 7158,
+      "title": "multimodal",
+      "description": "Deep Agents supports multimodal workflows when you use a [Large Language Model](https://docs.langchain.com/oss/python/integrations/chat.md) that accepts multimodal inputs and tool results or returns multimodal outputs. You can attach images and other media to user messages, read non-text files with the built-in `read_file` tool, and return multimodal content from custom tools."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/overview",
+      "path": "oss/python/deepagents/overview.md",
+      "sha256": "1b82867ee21f11b8a10db46fabc96e3c61b64f3eb1d23b397f37fbd906c49988",
+      "bytes": 30528,
+      "title": "overview",
+      "description": "Deep Agents is the [agent harness](https://docs.langchain.com/oss/python/concepts/products.md#agent-harnesses-like-the-deep-agents-sdk) for complex, multi-step work. It adds planning, a virtual filesystem for context, subagent spawning, and long-term memory on top of LangChain and LangGraph."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/permissions",
+      "path": "oss/python/deepagents/permissions.md",
+      "sha256": "4fc112ac12c0952dc054adb70301c36e01322a4ee7dfb121877c22dcf7d0b3d9",
+      "bytes": 12950,
+      "title": "permissions",
+      "description": "Control which files and directories an agent can read or write to using declarative permission rules. Pass a list of rules to `permissions=` and the agent's built-in filesystem tools respect them."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/profiles",
+      "path": "oss/python/deepagents/profiles.md",
+      "sha256": "15fe981d7b7f769644a2175af22aed48eca48983f47fcce1fbd3d6d3544bc76c",
+      "bytes": 15375,
+      "title": "profiles",
+      "description": "Deep Agents includes **built-in harness profiles** with default settings for specific providers and models."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/quickstart",
+      "path": "oss/python/deepagents/quickstart.md",
+      "sha256": "6e8380a57952c5c1154a494b5190a0dc530774f941a2f20ba82875991669f742",
+      "bytes": 20152,
+      "title": "quickstart",
+      "description": "This guide walks you through creating your first deep agent with the Deep Agents SDK. Use the SDK for maximum flexibility and host agents yourself or run a custom [LangSmith Deployment](https://docs.langchain.com/langsmith/deployment.md). To run agents in production without having to manage infrastructure, see the [Managed Deep Agents quickstart](https://docs.langchain.com/langsmith/python/managed-deep-agents-quickstart.md) instead."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/rag",
+      "path": "oss/python/deepagents/rag.md",
+      "sha256": "cb298dd7f87385d53d532e5075fb56ac0afcdaf2958a0307664872cae1b68002",
+      "bytes": 56265,
+      "title": "rag",
+      "description": "One of the most powerful LLM-based applications are sophisticated question-answering (Q\\&A) chatbots which augment LLMs by providing it with inference-time access to a set of data."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/retrieval",
+      "path": "oss/python/deepagents/retrieval.md",
+      "sha256": "6d1682eda969a20f36c719cafe56b77a0fa79f727f487348a5421c0835df5e93",
+      "bytes": 14941,
+      "title": "retrieval",
+      "description": "Large Language Models (LLMs) are powerful, but they have two key limitations:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/rubric",
+      "path": "oss/python/deepagents/rubric.md",
+      "sha256": "9a81ce095c098bc8145e71f4275cd78ef8f715ddbf8eb379b76ddb16c7d65cc3",
+      "bytes": 37218,
+      "title": "rubric",
+      "description": "Some agent tasks have a clear definition of \"done\" that the working model alone cannot reliably hit on the first try: a haiku in the right syllable pattern, a refactor with all tests passing, or a report that hits every required section. `RubricMiddleware` lets you declare *what done looks like* as a rubric and have the agent **self-evaluate and iterate** until the rubric is satisfied, or until a configured maximum iteration cap is hit."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/sandboxes",
+      "path": "oss/python/deepagents/sandboxes.md",
+      "sha256": "f6400c5ad69f26063acaa61fd5f6a1307be02fada582aece3f57ecf47a4cf767",
+      "bytes": 59666,
+      "title": "sandboxes",
+      "description": "Agents generate code, interact with filesystems, and run shell commands. Because you can't predict what an agent might do, it's important that its environment is isolated so it can't access credentials, files, or the network. Sandboxes provide this isolation by creating a boundary between the agent's execution environment and your host system."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/skills",
+      "path": "oss/python/deepagents/skills.md",
+      "sha256": "2736b0a72e6ee2adde8dec70562e63d561759dffffa14d0b9e516c9d2721de1b",
+      "bytes": 92530,
+      "title": "skills",
+      "description": "Skills package domain expertise, such as workflows, best practices, scripts, reference docs, and templates, into reusable directories. The agent gets a summary of the contents on startup and discovers and reads the contained files only when relevant."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/streaming",
+      "path": "oss/python/deepagents/streaming.md",
+      "sha256": "37f02340354df39dc933786d1889a7013ab0e3ab1eb19d6572bc8d19e7143159",
+      "bytes": 50622,
+      "title": "streaming",
+      "description": "Deep Agents build on LangGraph's streaming infrastructure with first-class support for subagent streams. When a deep agent delegates work to subagents, you can stream updates from each subagent independently—tracking progress, LLM tokens, and tool calls in real time."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/subagents",
+      "path": "oss/python/deepagents/subagents.md",
+      "sha256": "062e1e1922ce8308cd65c72d1c2c95b2335bfed33237f39d55bba087cce21961",
+      "bytes": 105139,
+      "title": "subagents",
+      "description": "A deep agent can create subagents to delegate work. You can specify custom subagents in the `subagents` parameter. Subagents are useful for [context quarantine](https://www.dbreunig.com/2025/06/26/how-to-fix-your-context.html#context-quarantine) (keeping the main agent's context clean) and for providing specialized instructions."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/deepagents/tools",
+      "path": "oss/python/deepagents/tools.md",
+      "sha256": "67b61540b054f8d2431f9bc8bfb7e249f572410b3aa71e37b685ba7a3414fab9",
+      "bytes": 16559,
+      "title": "tools",
+      "description": "Deep Agents can call any tool you define, any [LangChain tool](https://docs.langchain.com/oss/python/langchain/tools.md), and tools from any [MCP server](#mcp-tools)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/backends",
+      "path": "oss/python/integrations/backends.md",
+      "sha256": "23416d53413407e3fe111fe17e270a199c88141abeca6412cb48d8f8a4253645",
+      "bytes": 2660,
+      "title": "backends",
+      "description": "Browse available filesystem backends for Deep Agents or contribute your own to the ecosystem. Learn more about how backends work in the [backends docs](https://docs.langchain.com/oss/python/deepagents/backends.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/backends/index",
+      "path": "oss/python/integrations/backends/index.md",
+      "sha256": "23416d53413407e3fe111fe17e270a199c88141abeca6412cb48d8f8a4253645",
+      "bytes": 2660,
+      "title": "Backend integrations",
+      "description": "Filesystem backends for Deep Agents"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/chat",
+      "path": "oss/python/integrations/chat.md",
+      "sha256": "10c7043abccbfd32475c986c28418c227ece33e4a9adb5d8361f3ecfc3d0bbd6",
+      "bytes": 28626,
+      "title": "chat",
+      "description": "Integration components"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/chat/index",
+      "path": "oss/python/integrations/chat/index.md",
+      "sha256": "10c7043abccbfd32475c986c28418c227ece33e4a9adb5d8361f3ecfc3d0bbd6",
+      "bytes": 28626,
+      "title": "Chat model integrations",
+      "description": "Integrate with chat models using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/checkpointers",
+      "path": "oss/python/integrations/checkpointers.md",
+      "sha256": "dced751003e0656a092d0990bd964530cab0b27b2ac675c344e46705b0caba1f",
+      "bytes": 5918,
+      "title": "checkpointers",
+      "description": "Checkpointers enable [persistence](https://docs.langchain.com/oss/python/langgraph/persistence.md) in LangGraph, allowing agents to save and resume state across interactions."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/checkpointers/index",
+      "path": "oss/python/integrations/checkpointers/index.md",
+      "sha256": "dced751003e0656a092d0990bd964530cab0b27b2ac675c344e46705b0caba1f",
+      "bytes": 5918,
+      "title": "Checkpointer integrations",
+      "description": "Integrate with checkpointer backends for LangGraph persistence"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/document_loaders",
+      "path": "oss/python/integrations/document_loaders.md",
+      "sha256": "d64c4329b110fa93df265f46a47eef08c4511173843d7ea294fdbe32124ece9d",
+      "bytes": 27359,
+      "title": "document_loaders",
+      "description": "Document loaders provide a **standard interface** for reading data from different sources (such as Slack, Notion, or Google Drive) into LangChain’s [Document](https://reference.langchain.com/python/langchain-core/documents/base/Document) format."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/document_loaders/index",
+      "path": "oss/python/integrations/document_loaders/index.md",
+      "sha256": "d64c4329b110fa93df265f46a47eef08c4511173843d7ea294fdbe32124ece9d",
+      "bytes": 27359,
+      "title": "Document loader integrations",
+      "description": "Integrate with document loaders using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/embeddings",
+      "path": "oss/python/integrations/embeddings.md",
+      "sha256": "3172d47492f7646547b810a7262dc5fc4a27572bfb3efa71ddec795400390dad",
+      "bytes": 27020,
+      "title": "embeddings",
+      "description": "Embedding models transform raw text—such as a sentence, paragraph, or tweet—into a fixed-length vector of numbers that captures its **semantic meaning**. These vectors allow machines to compare and search text based on meaning rather than exact words."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/embeddings/index",
+      "path": "oss/python/integrations/embeddings/index.md",
+      "sha256": "3172d47492f7646547b810a7262dc5fc4a27572bfb3efa71ddec795400390dad",
+      "bytes": 27020,
+      "title": "Embedding model integrations",
+      "description": "Integrate with embedding models using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/long-term-memory",
+      "path": "oss/python/integrations/long-term-memory.md",
+      "sha256": "53c596ae265abaa5d18e89a77d6835c20a1069816a35415e891ccc2fcd7b506f",
+      "bytes": 3934,
+      "title": "long-term-memory",
+      "description": "Stores enable [long-term memory](https://docs.langchain.com/oss/python/langgraph/stores.md) in LangGraph, allowing agents to persist and retrieve information across threads."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/long-term-memory/index",
+      "path": "oss/python/integrations/long-term-memory/index.md",
+      "sha256": "53c596ae265abaa5d18e89a77d6835c20a1069816a35415e891ccc2fcd7b506f",
+      "bytes": 3934,
+      "title": "Store integrations",
+      "description": "Integrate with store backends for LangGraph long-term memory"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/middleware",
+      "path": "oss/python/integrations/middleware.md",
+      "sha256": "0ab53b88a83a848c3eb836c8a6a30ccd9766ffbe5cd806f0b6b958f8a8bdfa52",
+      "bytes": 32803,
+      "title": "middleware",
+      "description": "Browse available middleware for different providers or contribute your own to the ecosystem. Learn more about how middleware works in the [middleware overview](https://docs.langchain.com/oss/python/langchain/middleware/overview.md) and how to use middleware with Deep Agents in the [Deep Agents docs](https://docs.langchain.com/oss/python/deepagents/customization.md#middleware)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/middleware/index",
+      "path": "oss/python/integrations/middleware/index.md",
+      "sha256": "0ab53b88a83a848c3eb836c8a6a30ccd9766ffbe5cd806f0b6b958f8a8bdfa52",
+      "bytes": 32803,
+      "title": "Middleware integrations",
+      "description": "Integrate with middleware using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/all_providers",
+      "path": "oss/python/integrations/providers/all_providers.md",
+      "sha256": "84d97136c6e4df1ff6040c21ffc400b417a72bf1bfe329fd5c5b8e3c1c929cc6",
+      "bytes": 96806,
+      "title": "all_providers",
+      "description": "Browse the complete collection of integrations available for Python. LangChain Python offers the most extensive ecosystem with 1000+ integrations across LLMs, chat models, retrievers, vector stores, document loaders, and more."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/anthropic",
+      "path": "oss/python/integrations/providers/anthropic.md",
+      "sha256": "97e0707521123ef40524db5289cb2eeee73ac2cf7b6d24db934a03fa1a05a523",
+      "bytes": 1170,
+      "title": "anthropic",
+      "description": "This page covers all LangChain integrations with [Anthropic](https://www.anthropic.com/), the makers of Claude."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/aws",
+      "path": "oss/python/integrations/providers/aws.md",
+      "sha256": "37373a9d9034fe3cdab80e5aee85ca89bded3f70645def0e72879257f9067b54",
+      "bytes": 15950,
+      "title": "aws",
+      "description": "This page covers all LangChain integrations with the [Amazon Web Services (AWS)](https://aws.amazon.com/) platform."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/browserbase",
+      "path": "oss/python/integrations/providers/browserbase.md",
+      "sha256": "184e3f3dd7ccbaff64bdc13ae97596ef4c0882b5dc164b6fbaa9b8de2bd3449e",
+      "bytes": 4938,
+      "title": "browserbase",
+      "description": "This page covers using Browserbase with [Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview.md): a Stagehand-driven cloud browser, plus Search and Fetch as agent tools."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/fireworks",
+      "path": "oss/python/integrations/providers/fireworks.md",
+      "sha256": "03346587018ac3b1d3fb867ee7dc3718f7a7b1122e1de0441bbfaf6b9e071078",
+      "bytes": 1504,
+      "title": "fireworks",
+      "description": "pip install langchain-fireworks"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/google",
+      "path": "oss/python/integrations/providers/google.md",
+      "sha256": "78c8c4257faf5c3b7ff12709b2f43853974b586c4668c0b0904a0236f77537b4",
+      "bytes": 17584,
+      "title": "google",
+      "description": "This page covers all LangChain integrations with [Google Gemini](https://ai.google.dev/gemini-api/docs), [Google Cloud](https://cloud.google.com/), and other Google products (such as Google Maps, YouTube, and [more](#other-google-products))."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/groq",
+      "path": "oss/python/integrations/providers/groq.md",
+      "sha256": "839faf450d060e606959f479db1a71494c270f35204f800b6acad9c2cbb36740",
+      "bytes": 1060,
+      "title": "groq",
+      "description": ""
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/huggingface",
+      "path": "oss/python/integrations/providers/huggingface.md",
+      "sha256": "57a6885c94afd1f901365aad28d54641c05d995214e27c53afed753d6d33642b",
+      "bytes": 3965,
+      "title": "huggingface",
+      "description": "This page covers all LangChain integrations with [Hugging Face Hub](https://huggingface.co/) and libraries like [transformers](https://huggingface.co/docs/transformers/index), [sentence transformers](https://sbert.net/), and [datasets](https://huggingface.co/docs/datasets/index)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/microsoft",
+      "path": "oss/python/integrations/providers/microsoft.md",
+      "sha256": "2fc82f666ca085327c959feb27522dbbcfb791787cf936364fbbbb4eb7e058c5",
+      "bytes": 44725,
+      "title": "microsoft",
+      "description": "This page covers all LangChain integrations with [Microsoft Azure](https://portal.azure.com) and other [Microsoft](https://www.microsoft.com) products."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/nvidia",
+      "path": "oss/python/integrations/providers/nvidia.md",
+      "sha256": "cc126ffce1437f095fd5aee67d8a836ad190af43931bff44290fc8a3b5fa7a6b",
+      "bytes": 19263,
+      "title": "nvidia",
+      "description": "LangChain and NVIDIA have partnered across the agent stack:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/ollama",
+      "path": "oss/python/integrations/providers/ollama.md",
+      "sha256": "0bae1a8618485f05743c2cbbab6f4dccf839d0887df49a944eefe0a1fd8aee29",
+      "bytes": 1301,
+      "title": "ollama",
+      "description": "This page covers all LangChain integrations with [Ollama](https://ollama.com/)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/openai",
+      "path": "oss/python/integrations/providers/openai.md",
+      "sha256": "ef0bb21933197959a9ae904ea052da055b01ed07653e9c739176e0a1d81eb452",
+      "bytes": 1949,
+      "title": "openai",
+      "description": "This page covers all LangChain integrations with [OpenAI](https://en.wikipedia.org/wiki/OpenAI)"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/providers/overview",
+      "path": "oss/python/integrations/providers/overview.md",
+      "sha256": "7f38c682b7c3d8537f159e38f8ea4f48421e33144deea20a838946f6fa8e16ea",
+      "bytes": 24092,
+      "title": "overview",
+      "description": "LangChain offers an extensive ecosystem with 1000+ integrations across chat & embedding models, tools & toolkits, document loaders, vector stores, and more."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/retrievers",
+      "path": "oss/python/integrations/retrievers.md",
+      "sha256": "93d18f79af745888514a92095b96dbab8c4a3b8e5d0434ce9361fec0c445f479",
+      "bytes": 32555,
+      "title": "retrievers",
+      "description": "A [retriever](https://docs.langchain.com/oss/python/deepagents/retrieval.md#building-blocks) is an interface that returns documents given an unstructured query."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/retrievers/index",
+      "path": "oss/python/integrations/retrievers/index.md",
+      "sha256": "93d18f79af745888514a92095b96dbab8c4a3b8e5d0434ce9361fec0c445f479",
+      "bytes": 32555,
+      "title": "Retriever integrations",
+      "description": "Integrate with retrievers using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/sandboxes",
+      "path": "oss/python/integrations/sandboxes.md",
+      "sha256": "afc4ffee72c7dd71b4c30accb5ea8655af6ab7f1eb4c532ec4444d077f0b31a0",
+      "bytes": 5608,
+      "title": "sandboxes",
+      "description": "Sandboxes provide isolated execution environments for running agent-generated code safely. Learn more about [sandboxes](https://docs.langchain.com/oss/python/deepagents/sandboxes.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/sandboxes/index",
+      "path": "oss/python/integrations/sandboxes/index.md",
+      "sha256": "afc4ffee72c7dd71b4c30accb5ea8655af6ab7f1eb4c532ec4444d077f0b31a0",
+      "bytes": 5608,
+      "title": "Sandbox integrations",
+      "description": "Integrate with sandbox providers using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/splitters",
+      "path": "oss/python/integrations/splitters.md",
+      "sha256": "ad4dae40be18b097925453202e4752b08285fb4eba8f900d4d638cda3643450c",
+      "bytes": 5197,
+      "title": "splitters",
+      "description": "pip install -U langchain-text-splitters"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/splitters/index",
+      "path": "oss/python/integrations/splitters/index.md",
+      "sha256": "ad4dae40be18b097925453202e4752b08285fb4eba8f900d4d638cda3643450c",
+      "bytes": 5197,
+      "title": "Text splitter integrations",
+      "description": "Integrate with text splitters using LangChain"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/tools",
+      "path": "oss/python/integrations/tools.md",
+      "sha256": "317ce192d7253d756371ca5e24b27fb24c20cdb1db9ac9feae9e170b23787a05",
+      "bytes": 88219,
+      "title": "tools",
+      "description": "A toolkit is a collection of tools meant to be used together."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/tools/index",
+      "path": "oss/python/integrations/tools/index.md",
+      "sha256": "317ce192d7253d756371ca5e24b27fb24c20cdb1db9ac9feae9e170b23787a05",
+      "bytes": 88219,
+      "title": "Tool integrations",
+      "description": "Integrate with tools using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/vectorstores",
+      "path": "oss/python/integrations/vectorstores.md",
+      "sha256": "a995aa2753a63e84fb2f9f33e654b214691b4bf60fe169a8cd234affc0407dad",
+      "bytes": 52534,
+      "title": "vectorstores",
+      "description": "A vector stores [embedded](https://docs.langchain.com/oss/python/integrations/embeddings.md) data and performs similarity search."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/integrations/vectorstores/index",
+      "path": "oss/python/integrations/vectorstores/index.md",
+      "sha256": "a995aa2753a63e84fb2f9f33e654b214691b4bf60fe169a8cd234affc0407dad",
+      "bytes": 52534,
+      "title": "Vector store integrations",
+      "description": "Integrate with vector stores using LangChain Python"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/agents",
+      "path": "oss/python/langchain/agents.md",
+      "sha256": "c2dce17f8580004554acdae45607b4474c3e624069518273cd22f0d12b5905f8",
+      "bytes": 66508,
+      "title": "agents",
+      "description": "An agent is a model calling tools in a loop until a given task is complete."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/component-architecture",
+      "path": "oss/python/langchain/component-architecture.md",
+      "sha256": "1f64975f2fad8ecef4fff91ed82d73e03245ca9d83b5796707a28731a0c9e573",
+      "bytes": 6302,
+      "title": "component-architecture",
+      "description": "LangChain's power comes from how its components work together to create sophisticated AI applications. This page provides diagrams showcasing the relationships between different components."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/context-engineering",
+      "path": "oss/python/langchain/context-engineering.md",
+      "sha256": "d2d7cca2f0c8540653e479ec7db0bbc9707bb36433e7f1f145324504ba4c29df",
+      "bytes": 42299,
+      "title": "context-engineering",
+      "description": "The hard part of building agents (or any LLM application) is making them reliable enough. While they may work for a prototype, they often fail in real-world use cases."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/deep-agent-from-scratch",
+      "path": "oss/python/langchain/deep-agent-from-scratch.md",
+      "sha256": "4b3dc0147fba6f343035c21bb45f7c5f6a8a077b5392a856714406e1d658d456",
+      "bytes": 35703,
+      "title": "deep-agent-from-scratch",
+      "description": "This guide builds a data analysis agent from first principles using `create_agent` and Deep Agents middleware."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/deploy",
+      "path": "oss/python/langchain/deploy.md",
+      "sha256": "ea78ce8fdba1a90356e96ac9f3f091745f6e3f72e552a8b86eae6503405772c9",
+      "bytes": 5398,
+      "title": "deploy",
+      "description": "When you are ready to deploy your LangChain agent to production, choose a hosting model that fits your stack. **[LangSmith Cloud](https://docs.langchain.com/langsmith/deploy-to-cloud.md)** provides fully managed infrastructure for stateful, long-running agents with persistent state and background execution."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/event-streaming",
+      "path": "oss/python/langchain/event-streaming.md",
+      "sha256": "92a13b88291a025e75d6b79e45326a6301febcc33d88e0b0497290fcea0b37d6",
+      "bytes": 12426,
+      "title": "event-streaming",
+      "description": "LangChain agents are built on LangGraph, so they support the same streaming stack with agent-focused projections for messages, tool calls, state, and custom updates."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/branching-chat",
+      "path": "oss/python/langchain/frontend/branching-chat.md",
+      "sha256": "7e2edbe897326616848eec31bda43fb84fb08f9f7749bf16656a80abb90613bf",
+      "bytes": 9906,
+      "title": "branching-chat",
+      "description": "Conversations with AI agents are rarely linear. You may want to rephrase a"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/controlled-generative-ui",
+      "path": "oss/python/langchain/frontend/controlled-generative-ui.md",
+      "sha256": "ba5f4bba5822421161ab3b238a650dbfa3ea8e0041bc1daf4dc833506e0d04e7",
+      "bytes": 4786,
+      "title": "controlled-generative-ui",
+      "description": "Controlled generative UI is at the author-controlled end of the"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/declarative-generative-ui",
+      "path": "oss/python/langchain/frontend/declarative-generative-ui.md",
+      "sha256": "17ec41b116e9b8a44962d4519a238333ddaa2f5e2b6b8f5ba76a68248e9faab1",
+      "bytes": 14070,
+      "title": "declarative-generative-ui",
+      "description": "Declarative generative UI is in the middle of the"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/generative-ui-overview",
+      "path": "oss/python/langchain/frontend/generative-ui-overview.md",
+      "sha256": "f5cf5c24ed87c82d4e1f0e7ca19f376686354db6e15cba06f5e415c6e9f54b69",
+      "bytes": 6459,
+      "title": "generative-ui-overview",
+      "description": "Generative UI is any pattern where an agent's output presents a user interface"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/headless-tools",
+      "path": "oss/python/langchain/frontend/headless-tools.md",
+      "sha256": "fe713fb2c9242ab15afa3086f58d1e5ad6ddb955527036061c4a8391bb1bc674",
+      "bytes": 11572,
+      "title": "headless-tools",
+      "description": "Headless tools let your agent call tools whose real execution must happen in the"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/human-in-the-loop",
+      "path": "oss/python/langchain/frontend/human-in-the-loop.md",
+      "sha256": "91077e75a5ab5aee05c4f32236a6273f7a4f2ec6b4bfdda010c8159b68e9021e",
+      "bytes": 21145,
+      "title": "human-in-the-loop",
+      "description": "Not every agent action should run unsupervised. When an agent is about to send"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/integrations/ai-elements",
+      "path": "oss/python/langchain/frontend/integrations/ai-elements.md",
+      "sha256": "7cfdfaa9beacdb6cac28bf69ac897d55fd5c37225af37117a9e2267ed17f2c6e",
+      "bytes": 6238,
+      "title": "ai-elements",
+      "description": "1. **Install components as source files:** AI Elements ships via a CLI that adds components directly to your project (shadcn/ui registry style)"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/integrations/assistant-ui",
+      "path": "oss/python/langchain/frontend/integrations/assistant-ui.md",
+      "sha256": "6cea6d2d932f0125b42ec48d6d6746ec239b7a171acc18c894ee2b4ba3de046f",
+      "bytes": 6603,
+      "title": "assistant-ui",
+      "description": "1. **Stream with [`useStream`](https://reference.langchain.com/javascript/langchain-react/index/useStream)**: connect to your agent and get reactive messages, loading state, and submit/cancel callbacks"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/integrations/copilotkit",
+      "path": "oss/python/langchain/frontend/integrations/copilotkit.md",
+      "sha256": "5292c7ce21efb8d639e0145b1d076f817b6aed1ae5ef594bf9ce1bd229216294",
+      "bytes": 30472,
+      "title": "copilotkit",
+      "description": "In this pattern, your LangGraph deployment serves the graph API and an AG-UI FastAPI bridge. A small Node CopilotKit runtime sits in front of that bridge and is what the React client calls."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/integrations/openui",
+      "path": "oss/python/langchain/frontend/integrations/openui.md",
+      "sha256": "d6c01d5a317710f9aa3c30d8645f88d85c7ccc8f3441d039460b2212b63c4914",
+      "bytes": 27246,
+      "title": "openui",
+      "description": "This integration is well-suited for data-rich outputs like reports, dashboards, and data explorers, where the model is both the data analyst and the UI designer."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/integrations/overview",
+      "path": "oss/python/langchain/frontend/integrations/overview.md",
+      "sha256": "53b0dfc7ad276e39bca8b25e6f7f7c749429dff18ea7d72849735040a7f3c6cc",
+      "bytes": 3753,
+      "title": "overview",
+      "description": "Each library fits a slightly different integration model. The choice depends on what kind of UI you're building:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/join-rejoin",
+      "path": "oss/python/langchain/frontend/join-rejoin.md",
+      "sha256": "a22f791432a1ffdb73f6870b1bb21560234c5b6407a216a5a69c36d29eb02b63",
+      "bytes": 10262,
+      "title": "join-rejoin",
+      "description": "Join and rejoin lets you disconnect from a running agent stream without stopping the agent, then reconnect to it later. The agent continues executing server-side while the client is away, and you pick up the stream exactly where you left off."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/markdown-messages",
+      "path": "oss/python/langchain/frontend/markdown-messages.md",
+      "sha256": "34f5d4a3190b56182a414bc6ea7beb40290bfec1d5b9c3aae724fefe33262d9a",
+      "bytes": 10405,
+      "title": "markdown-messages",
+      "description": "LLMs naturally produce markdown-formatted text, including headings, lists, code blocks,"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/message-queues",
+      "path": "oss/python/langchain/frontend/message-queues.md",
+      "sha256": "4547f0c391ea621e36a9bacd67d78031f6a5f005d26f69f91f90d519410de586",
+      "bytes": 12689,
+      "title": "message-queues",
+      "description": "Message queuing lets users send multiple messages in rapid succession without waiting for the agent to finish processing the current one. Each message is accepted immediately, queued for the active thread, and processed sequentially, giving you full visibility and control over the pending work."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/open-ended-generative-ui",
+      "path": "oss/python/langchain/frontend/open-ended-generative-ui.md",
+      "sha256": "aa759008096e0c2d15c1a697806917cce33191fec64c8c1f993edae3f24933f5",
+      "bytes": 3607,
+      "title": "open-ended-generative-ui",
+      "description": "Open-ended generative UI is at the agent-created end of the"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/overview",
+      "path": "oss/python/langchain/frontend/overview.md",
+      "sha256": "ee420cc1b02f80ad2647fc56a8025499aafd2d7ca8d6ee6692f0c522f1af3f3b",
+      "bytes": 10913,
+      "title": "overview",
+      "description": "Build rich, interactive frontends for agents created with `createAgent`. These"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/reasoning-tokens",
+      "path": "oss/python/langchain/frontend/reasoning-tokens.md",
+      "sha256": "eb3dd53472d7288783d5a11782445cd25720b85d5cc02477f3847ded5edb266c",
+      "bytes": 11387,
+      "title": "reasoning-tokens",
+      "description": "Reasoning tokens expose the internal thought process of advanced models like OpenAI's GPT-5 and Anthropic's Claude with extended thinking. These models produce structured content blocks that separate reasoning from the final answer, letting you build UIs that show *how* the model arrived at its response."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/structured-output",
+      "path": "oss/python/langchain/frontend/structured-output.md",
+      "sha256": "9c3a90ee4433284a541980ddc2888f0ff7dd835969a1937e909652621a428eea",
+      "bytes": 11846,
+      "title": "structured-output",
+      "description": "Structured output lets the agent return typed, machine-readable data instead of plain text. Instead of rendering a single string, you get a structured object you can map to any UI: cards, tables, charts, step-by-step breakdowns, or domain-specific renderers."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/time-travel",
+      "path": "oss/python/langchain/frontend/time-travel.md",
+      "sha256": "24712c9b8be48e6f9aa8b15853509adc4ad366771f5c82b73d1c10ab238c128e",
+      "bytes": 17277,
+      "title": "time-travel",
+      "description": "A [checkpoint](https://docs.langchain.com/oss/python/langgraph/persistence.md#checkpoints) is a saved snapshot of a"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/frontend/tool-calling",
+      "path": "oss/python/langchain/frontend/tool-calling.md",
+      "sha256": "7924c64ed08bddd3a46b710c07abfda5b8578077b1230a9c54178b43bcbbf300",
+      "bytes": 11248,
+      "title": "tool-calling",
+      "description": "Agents can invoke external tools like weather APIs, calculators, web search,"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/get-help",
+      "path": "oss/python/langchain/get-help.md",
+      "sha256": "70805ae24ba24bf912e8b4793c7ad4c135aef59c8a86a2353bb3bde930e2b99f",
+      "bytes": 2244,
+      "title": "get-help",
+      "description": "Connect with the LangChain community, access learning resources, and get the support you need to build with confidence."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/guardrails",
+      "path": "oss/python/langchain/guardrails.md",
+      "sha256": "f455edbdbdd60bc40a4de1f6fb3a508731b6146425fb0e285d928d79272cc6df",
+      "bytes": 16268,
+      "title": "guardrails",
+      "description": "Guardrails help you build safe, compliant AI applications by validating and filtering content at key points in your agent's execution. They can detect sensitive information, enforce content policies, validate outputs, and prevent unsafe behaviors before they cause problems."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/human-in-the-loop",
+      "path": "oss/python/langchain/human-in-the-loop.md",
+      "sha256": "9ab6cf660b92e791827c2c4467f6362015278deb24685976099788800e7c4ecd",
+      "bytes": 39352,
+      "title": "human-in-the-loop",
+      "description": "The Human-in-the-Loop (HITL) [middleware](https://docs.langchain.com/oss/python/langchain/middleware/built-in.md#human-in-the-loop) lets you add human oversight to agent tool calls."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/install",
+      "path": "oss/python/langchain/install.md",
+      "sha256": "e90b95877cc6d9a9decd1adab80d875c299083c0145ece6f85bdea7df3fc7fe5",
+      "bytes": 2294,
+      "title": "install",
+      "description": "To install the LangChain package:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/knowledge-base",
+      "path": "oss/python/langchain/knowledge-base.md",
+      "sha256": "22326514af8d83d05f3263ff009fc196be6ea585ace88a066e3dfc6c477f60f4",
+      "bytes": 34273,
+      "title": "knowledge-base",
+      "description": "Build a semantic search engine over a PDF with LangChain [embeddings](https://docs.langchain.com/oss/python/integrations/embeddings.md) and [vector stores](https://docs.langchain.com/oss/python/integrations/vectorstores.md). Use it to retrieve passages similar to a query, then plug the retriever into [retrieval-augmented generation (RAG)](https://docs.langchain.com/oss/python/deepagents/retrieval.md) or other LLM workflows."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/long-term-memory",
+      "path": "oss/python/langchain/long-term-memory.md",
+      "sha256": "75c8399bf029c3aa82528716be39fc87356b1e0db2aeb502a31b2f4e5bc2b81b",
+      "bytes": 34314,
+      "title": "long-term-memory",
+      "description": "Long-term memory lets your agent store and recall information across different conversations and sessions."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/mcp",
+      "path": "oss/python/langchain/mcp.md",
+      "sha256": "013212b627275092effe509438c783892edbe1647b1e4a9e0480a0741b66a544",
+      "bytes": 7138,
+      "title": "mcp",
+      "description": "Install LangChain with the `mcp` extra, which pulls in FastMCP:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/mcp/auth",
+      "path": "oss/python/langchain/mcp/auth.md",
+      "sha256": "c9e866f9e703d0298da87a94e5e8065e82ed0feb0c83023213f75af8fc19e612",
+      "bytes": 7203,
+      "title": "auth",
+      "description": "Most remote MCP servers require authentication. [`MCPAdapter`](https://reference.langchain.com/python/langchain/mcp/adapter/MCPAdapter) delegates auth to FastMCP, so any credential a `fastmcp.Client` accepts works: a static [bearer token](#bearer-token), a full [OAuth 2.1](#oauth-authentication) flow, or any [`httpx.Auth`](https://www.python-httpx.org/advanced/authentication/). Pass the credential on a prebuilt client and hand that client to the adapter. When one agent talks to several servers, use [per-server authentication](#per-server-authentication); in a deployment, use [per-user authentication](#per-user-authentication) so each run reaches the server as the caller."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/mcp/connections",
+      "path": "oss/python/langchain/mcp/connections.md",
+      "sha256": "eb38c7e7a7d4dcb4ecd197809d1aba7b01897d93c3589ffb9b9e42b43b2cb6e4",
+      "bytes": 15090,
+      "title": "connections",
+      "description": "Prefer the [default lifecycle](#connection-lifecycle) unless you are connecting to several servers or deploying many concurrent runs. For what a single target can be (URL, script path, in-process server), see [Transports](https://docs.langchain.com/oss/python/langchain/mcp.md#transports)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/mcp/index",
+      "path": "oss/python/langchain/mcp/index.md",
+      "sha256": "013212b627275092effe509438c783892edbe1647b1e4a9e0480a0741b66a544",
+      "bytes": 7138,
+      "title": "Model Context Protocol (MCP)",
+      "description": "Connect LangChain agents to MCP servers with MCPAdapter"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/mcp/tools",
+      "path": "oss/python/langchain/mcp/tools.md",
+      "sha256": "d122a41ded6f81accfa0384fc4ead4c5187796c8483f3fe02cdbb0ed1f94b92e",
+      "bytes": 18025,
+      "title": "tools",
+      "description": "This page covers what is specific to that bridge: identifying MCP tools, controlling their execution, handling their outputs, and responding when a server needs input during a call. For the runnable discovery-and-agent example, see the [MCP quickstart](https://docs.langchain.com/oss/python/langchain/mcp.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/messages",
+      "path": "oss/python/langchain/messages.md",
+      "sha256": "b7f38b7e48ccc156936113a5549fd709555a3e28c0f74d7796536a4605cdc4bd",
+      "bytes": 32864,
+      "title": "messages",
+      "description": "Messages are the fundamental unit of context for models in LangChain. They represent the input and output of models, carrying both the content and metadata needed to represent the state of a conversation when interacting with an LLM."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/middleware/built-in",
+      "path": "oss/python/langchain/middleware/built-in.md",
+      "sha256": "b15fd27f3adb0d959dba2577f0b01637ddb7860763b5c1587ddd63ebd5143fc3",
+      "bytes": 68938,
+      "title": "built-in",
+      "description": "LangChain provides prebuilt middleware for common use cases. Each middleware is production-ready and configurable for your specific needs."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/middleware/custom",
+      "path": "oss/python/langchain/middleware/custom.md",
+      "sha256": "00ad6d313c725f312c4b9ca136c6a3f9ccbcb475e2d1f9aba61018f897c43b59",
+      "bytes": 36706,
+      "title": "custom",
+      "description": "Build custom middleware by implementing hooks that run at specific points in the agent execution flow."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/middleware/overview",
+      "path": "oss/python/langchain/middleware/overview.md",
+      "sha256": "705ec8bb764414e1b118e2e5a63be45ff3ca0b6ec5dced6e55cf9ceb54b19954",
+      "bytes": 5260,
+      "title": "overview",
+      "description": "Middleware provides a way to more tightly control what happens inside the agent. Middleware is useful for the following:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/models",
+      "path": "oss/python/langchain/models.md",
+      "sha256": "9d0550deccd70d1cc58ea2232b48648045f4d6c7090a69eb6b0c0db63a45968e",
+      "bytes": 75581,
+      "title": "models",
+      "description": "In addition to text generation, many models support:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent",
+      "path": "oss/python/langchain/multi-agent.md",
+      "sha256": "38c77fe11e0579dadb50b3f6262a543f81fc3f052ab1ca1c22e0dc31673cfaf5",
+      "bytes": 16376,
+      "title": "multi-agent",
+      "description": "Multi-agent systems coordinate specialized components to tackle complex workflows. However, not every complex task requires this approach—a single agent with the right (sometimes dynamic) tools and prompt can often achieve similar results."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/custom-workflow",
+      "path": "oss/python/langchain/multi-agent/custom-workflow.md",
+      "sha256": "11720da1744c2981fe078e0e1f05a5500b10cba4cdd3ec16a2d0a6c5fa4353bf",
+      "bytes": 9143,
+      "title": "custom-workflow",
+      "description": "In the **custom workflow** architecture, you define your own bespoke execution flow using [LangGraph](https://docs.langchain.com/oss/python/langgraph/overview.md). You have complete control over the graph structure—including sequential steps, conditional branches, loops, and parallel execution."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs",
+      "path": "oss/python/langchain/multi-agent/handoffs.md",
+      "sha256": "6fef4ebf57083eedc81af9798b22deb28054a72087196a6aa3bc36c401ff960d",
+      "bytes": 19124,
+      "title": "handoffs",
+      "description": "In the **handoffs** architecture, behavior changes dynamically based on state. The core mechanism: [tools](https://docs.langchain.com/oss/python/langchain/tools.md) update a state variable (e.g., `current_step` or `active_agent`) that persists across turns, and the system reads this variable to adjust behavior—either applying different configuration (system prompt, tools) or routing to a different [agent](https://docs.langchain.com/oss/python/langchain/agents.md). This pattern supports both handoffs between distinct agents and dynamic configuration changes within a single agent."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs-customer-support",
+      "path": "oss/python/langchain/multi-agent/handoffs-customer-support.md",
+      "sha256": "ad14120d18606de7aa4a8bd126a33a54048f18122e77903f18cdfea208e13524",
+      "bytes": 35835,
+      "title": "handoffs-customer-support",
+      "description": "The [state machine pattern](https://docs.langchain.com/oss/python/langchain/multi-agent/handoffs.md) describes workflows where an agent's behavior changes as it moves through different states of a task. This tutorial shows how to implement a state machine by using tool calls to dynamically change a single agent's configuration—updating its available tools and instructions based on the current state. The state can be determined from multiple sources: the agent's past actions (tool calls), external state (such as API call results), or even initial user input (for example, by running a classifier to determine user intent)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/index",
+      "path": "oss/python/langchain/multi-agent/index.md",
+      "sha256": "38c77fe11e0579dadb50b3f6262a543f81fc3f052ab1ca1c22e0dc31673cfaf5",
+      "bytes": 16376,
+      "title": "Multi-agent",
+      "description": "Multi-agent systems coordinate specialized components to tackle complex workflows. However, not every complex task requires this approach—a single agent with the right (sometimes dynamic) tools and prompt can often achieve similar results."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/router",
+      "path": "oss/python/langchain/multi-agent/router.md",
+      "sha256": "29169997ad0bb7dce50d504c40aad496943929879a7879feec674daeaa3acc94",
+      "bytes": 7163,
+      "title": "router",
+      "description": "In the **router** architecture, a routing step classifies input and directs it to specialized [agents](https://docs.langchain.com/oss/python/langchain/agents.md). This is useful when you have distinct **verticals** (separate knowledge domains that each require their own agent)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/router-knowledge-base",
+      "path": "oss/python/langchain/multi-agent/router-knowledge-base.md",
+      "sha256": "14080b04c2e1593202d9c988b68bc88fec804a14c965807a5ca70e2b4684b890",
+      "bytes": 37664,
+      "title": "router-knowledge-base",
+      "description": "The **router pattern** is a [multi-agent](https://docs.langchain.com/oss/python/langchain/multi-agent.md) architecture where a routing step classifies input and directs it to specialized agents, with results synthesized into a combined response. This pattern excels when your organization's knowledge lives across distinct **verticals** (separate knowledge domains that each require their own agent with specialized tools and prompts)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/skills",
+      "path": "oss/python/langchain/multi-agent/skills.md",
+      "sha256": "11ca6bf4be4e6ac6ee2467b569baaeafba27ce8c2135a5f51c0139a1ab8b7835",
+      "bytes": 5426,
+      "title": "skills",
+      "description": "In the **skills** architecture, specialized capabilities are packaged as invocable \"skills\" that augment an [agent's](https://docs.langchain.com/oss/python/langchain/agents.md) behavior. Skills are primarily prompt-driven specializations that an agent can invoke on-demand."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/skills-sql-assistant",
+      "path": "oss/python/langchain/multi-agent/skills-sql-assistant.md",
+      "sha256": "6e94f5058953b3c24be21b987bf85ff3af484871872f97b73f6d10c4eb14acb3",
+      "bytes": 46671,
+      "title": "skills-sql-assistant",
+      "description": "This tutorial shows how to use **progressive disclosure** - a context management technique where the agent loads information on-demand rather than upfront - to implement **skills** (specialized prompt-based instructions). The agent loads skills via tool calls, rather than dynamically changing the system prompt, discovering and loading only the skills it needs for each task."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/subagents",
+      "path": "oss/python/langchain/multi-agent/subagents.md",
+      "sha256": "d1cfabed53d0e6edcf89589c2c332001e423d585256255da1d0d9d0730aa3a32",
+      "bytes": 25066,
+      "title": "subagents",
+      "description": "In the **subagents** architecture, a central main [agent](https://docs.langchain.com/oss/python/langchain/agents.md) (often referred to as a **supervisor**) coordinates subagents by calling them as [tools](https://docs.langchain.com/oss/python/langchain/tools.md). The main agent decides which subagent to invoke, what input to provide, and how to combine results. By default, subagents are stateless—they don't remember past interactions, with all conversation memory maintained by the main agent. This provides [context](https://docs.langchain.com/oss/python/langchain/context-engineering.md) isolation: each subagent invocation works in a clean context window, preventing context bloat in the main conversation."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/multi-agent/subagents-personal-assistant",
+      "path": "oss/python/langchain/multi-agent/subagents-personal-assistant.md",
+      "sha256": "f5ef95cc91ae872fc1149040310cf3c755758a30b456fc996b3a81efeb215072",
+      "bytes": 44106,
+      "title": "subagents-personal-assistant",
+      "description": "The **supervisor pattern** is a [multi-agent](https://docs.langchain.com/oss/python/langchain/multi-agent.md) architecture where a central supervisor agent coordinates specialized worker agents. This approach excels when tasks require different types of expertise. Rather than building one agent that manages tool selection across domains, you create focused specialists coordinated by a supervisor who understands the overall workflow."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/observability",
+      "path": "oss/python/langchain/observability.md",
+      "sha256": "66ad3ce986d7346913712e8804d13a1eb5a6cde15c38a25bfb423a4055ad8bbc",
+      "bytes": 6325,
+      "title": "observability",
+      "description": "As you build and run agents with LangChain, you need visibility into how they behave: which [tools](https://docs.langchain.com/oss/python/langchain/tools.md) they call, what prompts they generate, and how they make decisions. LangChain agents built with [`create_agent`](https://reference.langchain.com/python/langchain/agents/factory/create_agent) automatically support tracing through [LangSmith](https://docs.langchain.com/langsmith/observability.md), a platform for capturing, debugging, evaluating, and monitoring agent behavior."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/overview",
+      "path": "oss/python/langchain/overview.md",
+      "sha256": "220606a250c3aa7d3891e5aa323e4fbdf3aa6a7326a4baab49e3c91649f3528b",
+      "bytes": 10712,
+      "title": "overview",
+      "description": "This example demonstrates how to create a simple LangChain agent with a custom tool:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/philosophy",
+      "path": "oss/python/langchain/philosophy.md",
+      "sha256": "c8127c5cc5c2d000d0c6326e123443b7fa6dc1c6dee9df9e6224be0e9ab62d5b",
+      "bytes": 8139,
+      "title": "philosophy",
+      "description": "LangChain is driven by a few core beliefs:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/quickstart",
+      "path": "oss/python/langchain/quickstart.md",
+      "sha256": "fd8979e45c5c6396b94a5f6d00fb9a04f81d6dcea8528748fac7f4ce7961a49f",
+      "bytes": 36326,
+      "title": "quickstart",
+      "description": "This quickstart shows you how to create a fully functional AI agent in just a few minutes."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/runtime",
+      "path": "oss/python/langchain/runtime.md",
+      "sha256": "eb45ae930e8f5e498aef27a8a9caed8482e7fb7351af96039a5f7106e8c2184a",
+      "bytes": 8099,
+      "title": "runtime",
+      "description": "LangChain's [`create_agent`](https://reference.langchain.com/python/langchain/agents/factory/create_agent) runs on LangGraph's runtime under the hood."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/short-term-memory",
+      "path": "oss/python/langchain/short-term-memory.md",
+      "sha256": "47d8f788e7de11aacef2dad422adc79084574f83ecca22312d25d59751860fc9",
+      "bytes": 31967,
+      "title": "short-term-memory",
+      "description": "Memory is a system that remembers information about previous interactions. For AI agents, memory is crucial because it lets them remember previous interactions, learn from feedback, and adapt to user preferences. As agents tackle more complex tasks with numerous user interactions, this capability becomes essential for both efficiency and user satisfaction."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/sql-agent",
+      "path": "oss/python/langchain/sql-agent.md",
+      "sha256": "5c2846fdcb5e89a8f89fa011dfdee4ed836c13401724911858e0e0fa7e31e83f",
+      "bytes": 36833,
+      "title": "sql-agent",
+      "description": "In this tutorial, you will learn how to build an agent that can answer questions about a SQL database using LangChain [agents](https://docs.langchain.com/oss/python/langchain/agents.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/streaming",
+      "path": "oss/python/langchain/streaming.md",
+      "sha256": "5c6e315a40190fff8e6e3da92140a3fe6769c136006e4bbe747fc9014707f863",
+      "bytes": 54159,
+      "title": "streaming",
+      "description": "LangChain implements a streaming system to surface real-time updates."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/structured-output",
+      "path": "oss/python/langchain/structured-output.md",
+      "sha256": "f18d99f9bf1a64f910b2c9305b4b2fa9b07f9dd91b71ae73cb866a3c2648820e",
+      "bytes": 30041,
+      "title": "structured-output",
+      "description": "Structured output allows agents to return data in a specific, predictable format. Instead of parsing natural language responses, you get structured data in the form of JSON objects, [Pydantic models](https://docs.pydantic.dev/latest/concepts/models/#basic-model-usage), or dataclasses that your application can use directly."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/studio",
+      "path": "oss/python/langchain/studio.md",
+      "sha256": "eb1fb2f91309315ddab16245f7e8235a75262026d8ce4b835dbfab84bc33e10d",
+      "bytes": 7865,
+      "title": "studio",
+      "description": "When building agents with LangChain locally, it's helpful to visualize what's happening inside your agent, interact with it in real-time, and debug issues as they occur. **LangSmith Studio** is a free visual interface for developing and testing your LangChain agents from your local machine."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/test",
+      "path": "oss/python/langchain/test.md",
+      "sha256": "ca94abe13f68df9f53e8873e67c412cb55fcb01604244da4d3cbe3824c8b043b",
+      "bytes": 2514,
+      "title": "test",
+      "description": "Agentic applications let an LLM decide its own next steps to solve a problem. That flexibility is powerful, but the model's black-box nature makes it hard to predict how a tweak in one part of your agent will affect the whole. To build production-ready agents, thorough testing is essential."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/test/evals",
+      "path": "oss/python/langchain/test/evals.md",
+      "sha256": "dcc8a383c651159e607d18e675234103620cac67cddda9104dfca6d1d288c373",
+      "bytes": 15051,
+      "title": "evals",
+      "description": "Evaluations (\"evals\") measure how well your agent performs by assessing its execution trajectory, the sequence of messages and tool calls it produces. Unlike [integration tests](https://docs.langchain.com/oss/python/langchain/test/integration-testing.md) that verify basic correctness, evals score agent behavior against a reference or rubric, making them useful for catching regressions when you change prompts, tools, or models."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/test/index",
+      "path": "oss/python/langchain/test/index.md",
+      "sha256": "ca94abe13f68df9f53e8873e67c412cb55fcb01604244da4d3cbe3824c8b043b",
+      "bytes": 2514,
+      "title": "Test",
+      "description": "Strategies for testing LangChain agents, including unit tests, integration tests, and trajectory evaluations"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/test/integration-testing",
+      "path": "oss/python/langchain/test/integration-testing.md",
+      "sha256": "2e09e1a9e251d2d19d8eccb0548e1ab80b8b6210dd11af54641406d3b89fcfae",
+      "bytes": 8635,
+      "title": "integration-testing",
+      "description": "Integration tests verify that your agent works correctly with model APIs and external services. Unlike [unit tests](https://docs.langchain.com/oss/python/langchain/test/unit-testing.md) that use fakes and mocks, integration tests make actual network calls to confirm that components work together, credentials are valid, and latency is acceptable."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/test/unit-testing",
+      "path": "oss/python/langchain/test/unit-testing.md",
+      "sha256": "43376fc446e0aa41bea7d5f624b1eaf9d5ab0f2fe90c8f7510066b2c7f04ed9f",
+      "bytes": 7467,
+      "title": "unit-testing",
+      "description": "Unit tests exercise small, deterministic pieces of your agent in isolation. By replacing the real LLM with an in-memory fake (AKA fixture), you can script exact responses (text, tool calls, and errors) so tests are fast, free, and repeatable without API keys."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/tools",
+      "path": "oss/python/langchain/tools.md",
+      "sha256": "a23b423582a78c2570007ff73ad05e080edc97dd88460d7223ce015b6a97fcfc",
+      "bytes": 51672,
+      "title": "tools",
+      "description": "Tools extend what [agents](https://docs.langchain.com/oss/python/langchain/agents.md) can do—letting them fetch real-time data, execute code, query external databases, and take actions in the world."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/ui",
+      "path": "oss/python/langchain/ui.md",
+      "sha256": "a2c11160cc97ef350519d6c61e4d347ba187854e1d76a9aeadb8cbedf68a32e6",
+      "bytes": 3458,
+      "title": "ui",
+      "description": "Agent Chat UI is open source and can be adapted to your application needs."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langchain/voice-agent",
+      "path": "oss/python/langchain/voice-agent.md",
+      "sha256": "b9566e5e577ffc577900ca966707c34717ff8009499db1b8e66d6da262d36bbf",
+      "bytes": 20986,
+      "title": "voice-agent",
+      "description": "Chat interfaces have dominated how we interact with AI, but recent breakthroughs in multimodal AI are opening up exciting new possibilities. High-quality generative models and expressive text-to-speech (TTS) systems now make it possible to build agents that feel less like tools and more like conversational partners."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/add-memory",
+      "path": "oss/python/langgraph/add-memory.md",
+      "sha256": "4490d0c46a26d937196c27663eaee1acdd3a8e45a27b0fd2be3666ebf536f015",
+      "bytes": 80760,
+      "title": "add-memory",
+      "description": "AI applications need [memory](https://docs.langchain.com/oss/python/concepts/memory.md) to share context across multiple interactions. In LangGraph, you can add two types of memory:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/agentic-rag",
+      "path": "oss/python/langgraph/agentic-rag.md",
+      "sha256": "8a936698ed4adb5b1fdbb0705133bf466d40c06af54b3ccbb939992dd7b03f38",
+      "bytes": 23058,
+      "title": "agentic-rag",
+      "description": "Build a [retrieval](https://docs.langchain.com/oss/python/deepagents/retrieval.md) agent with LangGraph that decides when to search a vector store versus answering the user directly."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/application-structure",
+      "path": "oss/python/langgraph/application-structure.md",
+      "sha256": "43a833472d92b6fb97db79bca418ebb06a570511b4810781b0ff140b7825a86f",
+      "bytes": 5898,
+      "title": "application-structure",
+      "description": "A LangGraph application consists of one or more graphs, a configuration file (`langgraph.json`), a file that specifies dependencies, and an optional `.env` file that specifies environment variables."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/backward-compatibility",
+      "path": "oss/python/langgraph/backward-compatibility.md",
+      "sha256": "0e31a8ce2803b5526ace0f0182815c73ff2945372ca025e1a49f603a8263fa5d",
+      "bytes": 12189,
+      "title": "backward-compatibility",
+      "description": "Software needs to change in production. New requirements, bug fixes, and refactors all eventually land in your graph code. Because LangGraph runs the latest deployed graph against state that has been [persisted](https://docs.langchain.com/oss/python/langgraph/persistence.md) for existing threads, every change you ship is effectively a backward-compatible API change with respect to your existing checkpoints."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/case-studies",
+      "path": "oss/python/langgraph/case-studies.md",
+      "sha256": "338926f634d93a1ac24084de414d2c8c75b4101e2112a78df8684cbce807417d",
+      "bytes": 9093,
+      "title": "case-studies",
+      "description": "This list of companies using LangGraph and their success stories is compiled from public sources. If your company uses LangGraph, we'd love for you to share your story and add it to the list. You’re also welcome to contribute updates based on publicly available information from other companies, such as blog posts or press releases."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/checkpointers",
+      "path": "oss/python/langgraph/checkpointers.md",
+      "sha256": "89725122773f2bd8dc6af39ca2a2ab88bc23cebe8e9b7e33624a116f7f93aec5",
+      "bytes": 47425,
+      "title": "checkpointers",
+      "description": "A checkpointer saves a snapshot of graph state at each super-step, organized into **threads**. Compile a graph with a checkpointer to enable human-in-the-loop workflows, time travel debugging, fault-tolerant execution, and conversational memory."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/choosing-apis",
+      "path": "oss/python/langgraph/choosing-apis.md",
+      "sha256": "36b6328cb6d15836e19106b6e9cfffc5cf25be5f56b7578af2a48277125ae4c1",
+      "bytes": 11621,
+      "title": "choosing-apis",
+      "description": "LangGraph provides two different APIs to build agent workflows: the **Graph API** and the **Functional API**. Both APIs share the same underlying runtime and can be used together in the same application, but they are designed for different use cases and development preferences."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/deploy",
+      "path": "oss/python/langgraph/deploy.md",
+      "sha256": "af06c80763be785e6af7fdf67a88b452094eea0583e774360b1b2ae5f5d9bdc9",
+      "bytes": 5085,
+      "title": "deploy",
+      "description": "When you are ready to deploy your LangGraph agent to production, choose a hosting model that fits your stack. **[LangSmith Cloud](https://docs.langchain.com/langsmith/deploy-to-cloud.md)** provides fully managed infrastructure for stateful, long-running agents with persistent state and background execution."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/event-streaming",
+      "path": "oss/python/langgraph/event-streaming.md",
+      "sha256": "b810a77dd07b829d06dc9af531a80a32c2b8b76d344385d73b41c3db1f3dfc43",
+      "bytes": 24068,
+      "title": "event-streaming",
+      "description": "Event streaming is the recommended in-process streaming model for most LangGraph application code. It returns a run stream object that can be consumed in multiple ways at the same time."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/fault-tolerance",
+      "path": "oss/python/langgraph/fault-tolerance.md",
+      "sha256": "9c85a69fb709c5d23397470498121afbec7273f1428acc8e2799bc94e4248d44",
+      "bytes": 27443,
+      "title": "fault-tolerance",
+      "description": "When a node fails—from a slow external API, a transient network error, or an unhandled exception—LangGraph gives you three composable mechanisms to respond:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/frontend/custom-stream-channels",
+      "path": "oss/python/langgraph/frontend/custom-stream-channels.md",
+      "sha256": "62e50999d3d915d46263aab80f0d92c2566792a596fc724c66df8b97133c44b3",
+      "bytes": 12872,
+      "title": "custom-stream-channels",
+      "description": "LangGraph agents stream more than messages and tool calls. A server-side"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/frontend/graph-execution",
+      "path": "oss/python/langgraph/frontend/graph-execution.md",
+      "sha256": "4c1168e4303940c9a97adb49860257dd8fd3752fe8765f07460b1468b724a57a",
+      "bytes": 15182,
+      "title": "graph-execution",
+      "description": "LangGraph agents aren't black boxes. Every graph is composed of **named nodes**"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/frontend/overview",
+      "path": "oss/python/langgraph/frontend/overview.md",
+      "sha256": "ce69ba407681db64b8fe42ea5eeb1ac7a0202eb1d6f8e1e403818f4a72a5f0fd",
+      "bytes": 6150,
+      "title": "overview",
+      "description": "Build frontends that visualize LangGraph pipelines in real time. These patterns"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/functional-api",
+      "path": "oss/python/langgraph/functional-api.md",
+      "sha256": "df14ce645bc1f65b9b35bbcfa77faf81464e1bcf113a4aa1bab68778f0270dfc",
+      "bytes": 30438,
+      "title": "functional-api",
+      "description": "The **Functional API** allows you to add LangGraph's key features ([persistence](https://docs.langchain.com/oss/python/langgraph/persistence.md), [memory](https://docs.langchain.com/oss/python/langgraph/add-memory.md), [human-in-the-loop](https://docs.langchain.com/oss/python/langgraph/interrupts.md), and [streaming](https://docs.langchain.com/oss/python/langgraph/streaming.md)) to your applications with minimal changes to your existing code."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+      "path": "oss/python/langgraph/graph-api.md",
+      "sha256": "51820ce13a780815243a656bb350f3cb302e1b3b790c25fb79deedd394e1d6b7",
+      "bytes": 60171,
+      "title": "graph-api",
+      "description": "At its core, LangGraph models agent workflows as graphs. You define the behavior of your agents using three key components:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/install",
+      "path": "oss/python/langgraph/install.md",
+      "sha256": "f63fdc3f042f920831aac9e7b89e2d3b6ec7de9ec9c49b9dae6e872d6949ecf3",
+      "bytes": 1546,
+      "title": "install",
+      "description": "To install the base LangGraph package:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/interrupts",
+      "path": "oss/python/langgraph/interrupts.md",
+      "sha256": "8d2af4e2fb2d612446ecf5833a65de29ec79d2d7b70bba01d3c08624648df323",
+      "bytes": 46641,
+      "title": "interrupts",
+      "description": "Interrupts allow you to pause graph execution at specific points and wait for external input before continuing. This enables human-in-the-loop patterns where you need external input to proceed. When an interrupt is triggered, LangGraph saves the graph state using its [persistence](https://docs.langchain.com/oss/python/langgraph/persistence.md) layer and waits indefinitely until you resume execution."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/local-server",
+      "path": "oss/python/langgraph/local-server.md",
+      "sha256": "d793b57506f4911da2a37a1a6077cdebc2020ba764eef4f2f336a37feb97c455",
+      "bytes": 8042,
+      "title": "local-server",
+      "description": "This guide shows you how to run a LangGraph agent locally."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/observability",
+      "path": "oss/python/langgraph/observability.md",
+      "sha256": "fba619ae440eb732caf7c21ff314414a2d6f428a110c2405501023e490aef435",
+      "bytes": 6298,
+      "title": "observability",
+      "description": "Traces are a series of steps that your agent takes to go from input to output. Each of these individual steps is represented by a run. You can use [LangSmith](https://smith.langchain.com?utm_source=docs\\&utm_medium=cta\\&utm_campaign=langsmith-signup\\&utm_content=oss-langgraph-observability) to visualize these execution steps. To use it, [enable tracing for your agent](https://docs.langchain.com/langsmith/trace-with-langgraph.md). This enables you to do the following:"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+      "path": "oss/python/langgraph/overview.md",
+      "sha256": "708d741ce78dde2c4fa9e767b675996bf5d01851bd31d46704772b76e9403b11",
+      "bytes": 8738,
+      "title": "overview",
+      "description": "Trusted by companies shaping the future of agents—including Klarna, Uber, J.P. Morgan, and more—LangGraph is a low-level orchestration framework and runtime for building, managing, and deploying long-running, stateful agents. LangGraph gives you fine-grained control to mix deterministic, hand-coded steps with LLM-driven agentic steps in the same graph, so you can build bespoke agents that behave exactly the way your application requires."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "path": "oss/python/langgraph/persistence.md",
+      "sha256": "9985e697f3f56c9c703360f75d7e56c0d3040307d46ccff4b0a7d4964ab07932",
+      "bytes": 5321,
+      "title": "persistence",
+      "description": "Persistence lets LangGraph applications keep useful information beyond a single graph run. It matters when an agent needs to continue a conversation, resume after an interruption, recover from a failure, or remember information across interactions."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/pregel",
+      "path": "oss/python/langgraph/pregel.md",
+      "sha256": "38fd210a9043b5116d9b0f918a6fc100422cac07564cf6d7cda54458b536e4d2",
+      "bytes": 20752,
+      "title": "pregel",
+      "description": "Compiling a [StateGraph](https://reference.langchain.com/python/langgraph/graph/state/StateGraph) or creating an [`@entrypoint`](https://reference.langchain.com/python/langgraph/func/entrypoint) produces a [`Pregel`](https://reference.langchain.com/python/langgraph/pregel/main/Pregel) instance that can be invoked with input."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/quickstart",
+      "path": "oss/python/langgraph/quickstart.md",
+      "sha256": "6595a22968246e150d0faf2114857ec03f709e0f0ed5447c9dacc550f765b490",
+      "bytes": 23457,
+      "title": "quickstart",
+      "description": "This quickstart demonstrates how to build a calculator agent using the LangGraph Graph API or the Functional API."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/sql-agent",
+      "path": "oss/python/langgraph/sql-agent.md",
+      "sha256": "72b9fbbf7ca0cc4e8455f101c11e7a61f9ebe532373a80971de1bdfd72ff4fb1",
+      "bytes": 33706,
+      "title": "sql-agent",
+      "description": "In this tutorial we will build a custom agent that can answer questions about a SQL database using LangGraph."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/stores",
+      "path": "oss/python/langgraph/stores.md",
+      "sha256": "9c2261dad1d2d3f1949add4e7eede7eb679a315be1718a5e12f7218fb19819b4",
+      "bytes": 17763,
+      "title": "stores",
+      "description": "Stores let agents persist information across threads, including user preferences, accumulated knowledge, and facts that should survive beyond a single conversation. Unlike [checkpointers](https://docs.langchain.com/oss/python/langgraph/checkpointers.md), which save the full graph state scoped to one thread, stores hold arbitrary key-value data accessible from any thread."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/streaming",
+      "path": "oss/python/langgraph/streaming.md",
+      "sha256": "d23a794d8181c5ea7809154cd14a7f043ec0f0d95b9c5796e8061ea89cfb9711",
+      "bytes": 45566,
+      "title": "streaming",
+      "description": "This page covers LangGraph's stream-mode API. It exposes graph execution through stream modes such as `updates`, `values`, `messages`, `custom`, `checkpoints`, `tasks`, and `debug`. Use it when you need direct access to graph-runtime events or specific stream-mode output."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/studio",
+      "path": "oss/python/langgraph/studio.md",
+      "sha256": "ae2df1389e872da9547b8ed06bc36557a8e568ba522f68bdeec2f9fb21627cf5",
+      "bytes": 7916,
+      "title": "studio",
+      "description": "When building agents with LangChain locally, it's helpful to visualize what's happening inside your agent, interact with it in real-time, and debug issues as they occur. **LangSmith Studio** is a free visual interface for developing and testing your LangChain agents from your local machine."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/test",
+      "path": "oss/python/langgraph/test.md",
+      "sha256": "f52f5a58fdcefa65873037aca4a09358fdac685c355d05832ad6055a2735990b",
+      "bytes": 6996,
+      "title": "test",
+      "description": "After you've prototyped your LangGraph agent, a natural next step is to add tests. This guide covers some useful patterns you can use when writing unit tests."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/thinking-in-langgraph",
+      "path": "oss/python/langgraph/thinking-in-langgraph.md",
+      "sha256": "13cba66a151734222b2e45f8787291634ce42ce0599560e1904611595d8bb65b",
+      "bytes": 30165,
+      "title": "thinking-in-langgraph",
+      "description": "When you build an agent with LangGraph, you will first break it apart into discrete steps called **nodes**. Then, you will describe the different decisions and transitions from each of your nodes. Finally, you connect nodes together through a shared **state** that each node can read from and write to."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/ui",
+      "path": "oss/python/langgraph/ui.md",
+      "sha256": "6394406f841c99da2ed61ef39b1bb2170ee2081e5f85dcbf7f2f7ffaf49698ab",
+      "bytes": 3484,
+      "title": "ui",
+      "description": "Agent Chat UI is open source and can be adapted to your application needs."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/use-functional-api",
+      "path": "oss/python/langgraph/use-functional-api.md",
+      "sha256": "4d03a1ed3f60999bd970e9e730f04f495dccce4641de2d8dd94efd6a786e3b51",
+      "bytes": 33316,
+      "title": "use-functional-api",
+      "description": "The [**Functional API**](https://docs.langchain.com/oss/python/langgraph/functional-api.md) allows you to add LangGraph's key features ([persistence](https://docs.langchain.com/oss/python/langgraph/persistence.md), [memory](https://docs.langchain.com/oss/python/langgraph/add-memory.md), [human-in-the-loop](https://docs.langchain.com/oss/python/langgraph/interrupts.md), and [streaming](https://docs.langchain.com/oss/python/langgraph/streaming.md)) to your applications with minimal changes to your existing code."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/use-graph-api",
+      "path": "oss/python/langgraph/use-graph-api.md",
+      "sha256": "7264ac87a8b1bfaaa7103e9d7f1c207da81dcc4f206aa265d20349bc1cacd4f3",
+      "bytes": 99031,
+      "title": "use-graph-api",
+      "description": "This guide demonstrates the basics of LangGraph's Graph API. It walks through [state](#define-and-update-state), as well as composing common graph structures such as [sequences](#create-a-sequence-of-steps), [branches](#create-branches), and [loops](#create-and-control-loops). It also covers LangGraph's control features, including the [Send API](#map-reduce-and-the-send-api) for map-reduce workflows and the [Command API](#combine-control-flow-and-state-updates-with-command) for combining state updates with \"hops\" across nodes."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/use-subgraphs",
+      "path": "oss/python/langgraph/use-subgraphs.md",
+      "sha256": "7a94316af89d3ccb11b03685c05098db45119c1bec78b97c90873d208ca4b2e9",
+      "bytes": 36846,
+      "title": "use-subgraphs",
+      "description": "This guide explains the mechanics of using subgraphs. A subgraph is a [graph](https://docs.langchain.com/oss/python/langgraph/graph-api.md#graphs) that is used as a [node](https://docs.langchain.com/oss/python/langgraph/graph-api.md#nodes) in another graph."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/use-time-travel",
+      "path": "oss/python/langgraph/use-time-travel.md",
+      "sha256": "56cea55cfa011f3a4afbe6c28aa93339416e2cccf3ad16d2b22b10c78952b84a",
+      "bytes": 12885,
+      "title": "use-time-travel",
+      "description": "LangGraph supports time travel through [checkpoints](https://docs.langchain.com/oss/python/langgraph/checkpointers.md#checkpoints):"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/workflows-agents",
+      "path": "oss/python/langgraph/workflows-agents.md",
+      "sha256": "c75d2f9522929e4bb62626cbb621b41f534371f3fc1f93be0d4bc6859732738c",
+      "bytes": 38757,
+      "title": "workflows-agents",
+      "description": "This guide reviews common workflow and agent patterns."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/learn",
+      "path": "oss/python/learn.md",
+      "sha256": "0f209635feba9bf02c3c6772c08575d3c18b9b7381f5f14169046d692371720c",
+      "bytes": 5890,
+      "title": "learn",
+      "description": "In the **Learn** section of the documentation, you will find a collection of tutorials, conceptual overviews, and additional resources to help you build powerful applications with Managed Deep Agents, Deep Agents, LangChain, and LangGraph."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/migrate/langchain-mcp-adapters",
+      "path": "oss/python/migrate/langchain-mcp-adapters.md",
+      "sha256": "0a8008739d7daefa4db7778426c463cdefba30e1327c5b153991a04572109e45",
+      "bytes": 18694,
+      "title": "langchain-mcp-adapters",
+      "description": "MCP support now ships inside LangChain in the `langchain.mcp` namespace, built on [FastMCP](https://gofastmcp.com). It replaces the standalone [`langchain-mcp-adapters`](https://github.com/langchain-ai/langchain-mcp-adapters) package, whose `MultiServerMCPClient` is collapsed into a single [`MCPAdapter`](https://reference.langchain.com/python/langchain/mcp/adapter/MCPAdapter) class."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/migrate/langchain-v1",
+      "path": "oss/python/migrate/langchain-v1.md",
+      "sha256": "8a08f4d7341458c7de6fe2d96a38425bec7395638a89fb07927ebdcb98c52159",
+      "bytes": 39305,
+      "title": "langchain-v1",
+      "description": "Migrate a codebase to LangChain v1."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/migrate/langgraph-supervisor",
+      "path": "oss/python/migrate/langgraph-supervisor.md",
+      "sha256": "f3a7a9e9c994a8d38650cf2821eb0321d436677ab379ff23e70f074408f16cd6",
+      "bytes": 16176,
+      "title": "langgraph-supervisor",
+      "description": "The [`langgraph-supervisor`](https://github.com/langchain-ai/langgraph-supervisor-py) package is no longer actively maintained. Instead use the [subagents](https://docs.langchain.com/oss/python/langchain/multi-agent/subagents.md) pattern: a main agent coordinates specialized workers by calling them as [tools](https://docs.langchain.com/oss/python/langchain/tools.md)."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/migrate/langgraph-v1",
+      "path": "oss/python/migrate/langgraph-v1.md",
+      "sha256": "660a465bdb5e52c885417a853c24d8fbb067a31f91afcb4e24ab93b0c37e4912",
+      "bytes": 5810,
+      "title": "langgraph-v1",
+      "description": "Migrate a codebase to LangGraph v1."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/reference/overview",
+      "path": "oss/python/reference/overview.md",
+      "sha256": "fada0cbcee3817c7ab0dbc27d4c9dc89280575763f1dd6649926489bbc6c9811",
+      "bytes": 1531,
+      "title": "overview",
+      "description": "Comprehensive API reference documentation for the LangChain and LangGraph Python and TypeScript libraries."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/releases/changelog",
+      "path": "oss/python/releases/changelog.md",
+      "sha256": "cd3c875f5e12a76be9cd1a7f4abeab4b2b507cb7cc6f7d39bf153175ee8d40a7",
+      "bytes": 26801,
+      "title": "changelog",
+      "description": "In [event streaming](https://docs.langchain.com/oss/python/langchain/event-streaming.md), tool-call arguments now stream as `tool-call-delta` events. Each event carries only the new part of the arguments, as `text-delta` does for text. Earlier versions sent `block-delta` events that repeated all of the arguments so far."
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/releases/langchain-v1",
+      "path": "oss/python/releases/langchain-v1.md",
+      "sha256": "892ec232940ec721b2fae759077a10f41762752578947fe66909080b93e8703e",
+      "bytes": 17522,
+      "title": "langchain-v1",
+      "description": "To upgrade,"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/releases/langgraph-v1",
+      "path": "oss/python/releases/langgraph-v1.md",
+      "sha256": "c0d01c3d96a48dfaf54c4ebbfff61a80eeabbe81de1389ddc7bfc1a82ccaf215",
+      "bytes": 3924,
+      "title": "langgraph-v1",
+      "description": "It's designed to work hand-in-hand with [LangChain v1](https://docs.langchain.com/oss/python/releases/langchain-v1.md) (whose `create_agent` is built on LangGraph) so you can start high-level and drop down to granular control when needed."
+    },
+    {
+      "url": "https://docs.langchain.com/use-these-docs",
+      "path": "use-these-docs.md",
+      "sha256": "8b9d0eb3570ba34bedb18e1647d186cddf03252751a7466ade09d82dcf482189",
+      "bytes": 6799,
+      "title": "use-these-docs",
+      "description": "We want to make our documentation as accessible as possible. We've included several ways for you to use these docs programmatically through AI assistants, code editors, and direct integrations, such as Model Context Protocol (MCP)."
+    }
+  ]
+}

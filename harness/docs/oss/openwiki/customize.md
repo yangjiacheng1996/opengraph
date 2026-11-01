@@ -1,0 +1,97 @@
+> ## Documentation Index
+> Fetch the complete documentation index at: https://docs.langchain.com/llms.txt
+> Use this file to discover all available pages before exploring further.
+
+# Customize OpenWiki
+
+> Ignore paths, wiki instructions, agent pointers, and telemetry for OpenWiki
+
+Customize OpenWiki with ignore rules, wiki briefs, agent instruction pointers, and telemetry.
+
+## Ignore paths
+
+Create `.openwikiignore` at the repository root to exclude private, generated, or irrelevant paths from documentation runs. See [Code mode](https://docs.langchain.com/oss/openwiki/code-mode.md#ignore-paths) for syntax and behavior.
+
+## Wiki instructions
+
+OpenWiki reads the following files during runs. Edit them yourself, or ask OpenWiki in chat to revise the brief (for example, `openwiki "Update openwiki/INSTRUCTIONS.md to focus on the public API"`).
+
+| Mode | Path | Purpose |
+| - | - | - |
+| Code | `openwiki/INSTRUCTIONS.md` | Shared, user-authored brief for repository documentation scope and priorities |
+| Personal | `~/.openwiki/INSTRUCTIONS.md` | Global personal wiki instructions |
+
+Normal `--init` and `--update` runs do not rewrite these files.
+
+## Agent instruction files
+
+On each code run, OpenWiki maintains agent instruction pointers at the repository root:
+
+* **`AGENTS.md`**: Created when missing. OpenWiki rewrites only the `<!-- OPENWIKI:START -->` … `<!-- OPENWIKI:END -->` block and leaves the rest of your content untouched
+* **`CLAUDE.md`**: Updated only when the file already exists. The managed block imports `@AGENTS.md` so Claude Code reads the same instructions. OpenWiki does not create `CLAUDE.md` when it is absent, and it leaves a file that is only `@AGENTS.md` unchanged
+
+That managed content tells coding agents when to consult the generated wiki for repository context.
+
+## Local configuration directory
+
+Both code and personal mode store machine-local state under `~/.openwiki/` by default:
+
+| Path | Mode | Purpose |
+| - | - | - |
+| `~/.openwiki/.env` | Both | Provider config, API keys, and connector OAuth tokens |
+| `~/.openwiki/openwiki.sqlite` | Both | Conversation checkpoint database |
+| `~/.openwiki/install-id` | Both | Random install ID for anonymous telemetry |
+| `~/.openwiki/wiki/` | Personal | Personal mode wiki output |
+| `~/.openwiki/INSTRUCTIONS.md` | Personal | Personal wiki brief |
+| `~/.openwiki/onboarding.json` | Personal | Personal onboarding preferences and connector schedules |
+| `~/.openwiki/connectors/` | Mostly personal | Connector raw data and config. Personal sources use this path; code-mode LangSmith ingestion can also cache raw data here |
+
+Code-mode repository artifacts such as the generated wiki, Claims under `openwiki/.claims/`, `openwiki/INSTRUCTIONS.md`, and `openwiki/.last-update.json` live in the project, not under `~/.openwiki/`. For more detail, see [Code mode](https://docs.langchain.com/oss/openwiki/code-mode.md) and [Personal mode](https://docs.langchain.com/oss/openwiki/personal-mode.md).
+
+### Override the state directory
+
+Set `OPENWIKI_CONFIG_DIR` before starting OpenWiki to use a different writable directory, such as a mounted container volume:
+
+```bash theme={"theme":{"light":"catppuccin-latte","dark":"catppuccin-mocha"}}
+OPENWIKI_CONFIG_DIR=/data/openwiki openwiki personal --init
+```
+
+The override selects a separate state directory. OpenWiki does not move or delete an existing `~/.openwiki` directory. To preserve any state you wish to preserve, copy it yourself and point the variable at a dedicated directory because OpenWiki restricts its permissions for the current user.
+
+## Telemetry
+
+OpenWiki collects anonymous, aggregate usage data by default so the project can understand how the tool is used and improve it.
+
+**Collected** on a single `openwiki_run` event, keyed by a random install ID stored in `~/.openwiki/install-id`:
+
+* Every recorded run: the command (`init` / `update`) and outcome (`success` / `failure` / `no-op`), plus a coarse error category on failure (never the error message). Interactive chat, `auth`, and `ingest` are not recorded
+* At setup (on init only): brain mode (`code` / `personal`), model provider, and configured connector names (never their contents)
+
+**Never collected:** file contents, repository data or names, credentials, prompts, model output, connector payloads, error messages, file paths, URLs, model IDs, run duration, IP address, or personal information. GeoIP enrichment is disabled.
+
+Scheduled and CI runs are tagged separately under a shared CI identifier and are not counted as distinct installs.
+
+### Opt out
+
+```bash theme={"theme":{"light":"catppuccin-latte","dark":"catppuccin-mocha"}}
+export OPENWIKI_TELEMETRY_DISABLED=1
+# or
+export DO_NOT_TRACK=1
+```
+
+To disable telemetry collection permanently, add `OPENWIKI_TELEMETRY_DISABLED=1` to `~/.openwiki/.env`. In CI, set it in the workflow environment.
+
+To inspect exactly what a run would send, add `--telemetry-file=<path>` to any run.
+
+## See also
+
+* [Code mode](https://docs.langchain.com/oss/openwiki/code-mode.md)
+* [Personal mode](https://docs.langchain.com/oss/openwiki/personal-mode.md)
+* [Automate updates](https://docs.langchain.com/oss/openwiki/automate-updates.md)
+* [Model providers](https://docs.langchain.com/oss/openwiki/providers.md)
+
+***
+
+[Connect these docs](https://docs.langchain.com/use-these-docs.md) to your agent of choice via MCP for real-time answers.
+
+[Edit this page on GitHub](https://github.com/langchain-ai/docs/edit/main/src/oss/openwiki/customize.mdx) or [file an issue](https://github.com/langchain-ai/docs/issues/new/choose).

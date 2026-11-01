@@ -1,0 +1,168 @@
+# Docs by LangChain: AGENT DEVELOPMENT LIFECYCLE
+
+> Documentation for LangSmith, Fleet, and our open source packages.
+
+## AGENT DEVELOPMENT LIFECYCLE
+
+- [AGENT DEVELOPMENT LIFECYCLE / Build (462 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/build.txt): Build agents with open source
+- [AGENT DEVELOPMENT LIFECYCLE / Deploy (253 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/deploy.txt): Ship agents to production
+- [AGENT DEVELOPMENT LIFECYCLE / Monitor (688 pages)](https://docs.langchain.com/_llms/agent-development-lifecycle/monitor.txt): Trace, debug, and observe agents
+
+### Home
+
+- [Docs by LangChain](https://docs.langchain.com/index.md)
+
+### Test
+
+#### Get started
+
+- [LangSmith Evaluation](https://docs.langchain.com/langsmith/evaluation.md): Evaluate and test agent quality at scale with datasets, evaluators, prompts, and Studio.
+- [Evaluation quickstart](https://docs.langchain.com/langsmith/evaluation-quickstart.md)
+- [Evaluation concepts](https://docs.langchain.com/langsmith/evaluation-concepts.md)
+- [Application-specific evaluation approaches](https://docs.langchain.com/langsmith/evaluation-approaches.md)
+
+#### Datasets & Experiments
+
+##### Datasets
+
+- [Manage datasets](https://docs.langchain.com/langsmith/manage-datasets.md)
+- [Custom output rendering](https://docs.langchain.com/langsmith/custom-output-rendering.md)
+
+###### Create a dataset
+
+- [Create and manage datasets in the UI](https://docs.langchain.com/langsmith/manage-datasets-in-application.md)
+- [How to create and manage datasets programmatically](https://docs.langchain.com/langsmith/manage-datasets-programmatically.md)
+
+##### Run an evaluation
+
+- [How to evaluate agents](https://docs.langchain.com/langsmith/evaluate-llm-application.md)
+- [How to evaluate with OpenTelemetry](https://docs.langchain.com/langsmith/evaluate-with-opentelemetry.md)
+- [How to use the REST API](https://docs.langchain.com/langsmith/run-evals-api-only.md)
+
+##### Evaluation techniques
+
+###### Define evaluation target
+
+- [How to define a target function to evaluate](https://docs.langchain.com/langsmith/define-target-function.md)
+- [How to evaluate an application's intermediate steps](https://docs.langchain.com/langsmith/evaluate-on-intermediate-steps.md)
+- [How to evaluate a runnable](https://docs.langchain.com/langsmith/langchain-runnable.md)
+- [How to evaluate a graph](https://docs.langchain.com/langsmith/evaluate-graph.md)
+- [How to simulate multi-turn interactions](https://docs.langchain.com/langsmith/multi-turn-simulation.md)
+- [How to evaluate your agent with trajectory evaluations](https://docs.langchain.com/langsmith/trajectory-evals.md)
+
+###### Scoring methods
+
+- [How to return multiple scores in one evaluator](https://docs.langchain.com/langsmith/multiple-scores.md)
+- [How to return categorical vs numerical metrics](https://docs.langchain.com/langsmith/metric-type.md)
+
+###### Experiment configuration
+
+- [Experiment configuration](https://docs.langchain.com/langsmith/experiment-configuration.md)
+- [How to run an evaluation asynchronously](https://docs.langchain.com/langsmith/evaluation-async.md)
+- [How to evaluate with repetitions](https://docs.langchain.com/langsmith/repetition.md)
+- [How to handle model rate limits](https://docs.langchain.com/langsmith/handle-model-rate-limiting.md)
+- [How to add evaluators to an existing experiment (Python only)](https://docs.langchain.com/langsmith/evaluate-existing-experiment.md)
+- [How to run an evaluation locally (Python only)](https://docs.langchain.com/langsmith/local.md)
+- [How to read experiment results locally](https://docs.langchain.com/langsmith/read-local-experiment-results.md)
+- [How to retry failed runs in experiments (Python only)](https://docs.langchain.com/langsmith/evaluate-with-retry.md)
+
+###### Multimodal evaluations
+
+- [Run an evaluation with multimodal content](https://docs.langchain.com/langsmith/evaluate-with-attachments.md): Learn how to create dataset examples with file attachments and use them in prompts and evaluators when running LangSmith evaluations with multimodal content.
+
+##### Analyze experiment results
+
+- [Analyze an experiment](https://docs.langchain.com/langsmith/analyze-an-experiment.md)
+- [How to compare experiment results](https://docs.langchain.com/langsmith/compare-experiment-results.md)
+- [How to filter experiments in the UI](https://docs.langchain.com/langsmith/filter-experiments-ui.md)
+- [How to fetch performance metrics for an experiment](https://docs.langchain.com/langsmith/fetch-perf-metrics-experiment.md)
+- [How to upload experiments run outside of LangSmith with the REST API](https://docs.langchain.com/langsmith/upload-existing-experiments.md)
+
+##### Fine-tuning
+
+- [Fine-tune models with Smithtune](https://docs.langchain.com/langsmith/smithtune.md): Use Smithtune to fine-tune models on LangSmith conversations and compare the results in LangSmith.
+
+##### Tutorials
+
+- [Evaluate a chatbot](https://docs.langchain.com/langsmith/evaluate-chatbot-tutorial.md)
+- [Evaluate a RAG application](https://docs.langchain.com/langsmith/evaluate-rag-tutorial.md)
+- [Test a ReAct agent with Pytest/Vitest and LangSmith](https://docs.langchain.com/langsmith/test-react-agent-pytest.md)
+- [Evaluate a complex agent](https://docs.langchain.com/langsmith/evaluate-complex-agent.md)
+- [Run backtests on a new version of an agent](https://docs.langchain.com/langsmith/run-backtests-new-agent.md)
+
+##### Common data types
+
+- [Example data format](https://docs.langchain.com/langsmith/example-data-format.md)
+- [Dataset prebuilt JSON schema types](https://docs.langchain.com/langsmith/dataset-json-types.md)
+- [Dataset transformations](https://docs.langchain.com/langsmith/dataset-transformations.md)
+
+#### Evaluators
+
+- [Evaluation types](https://docs.langchain.com/langsmith/evaluation-types.md)
+- [Manage evaluators](https://docs.langchain.com/langsmith/evaluators.md): View and manage evaluators at the workspace level in LangSmith.
+- [Manage evaluators with the SDK](https://docs.langchain.com/langsmith/manage-evaluators-sdk.md): Create, retrieve, update, list, and delete LangSmith evaluators programmatically with the SDK.
+- [Automatically run evaluators on experiments](https://docs.langchain.com/langsmith/bind-evaluator-to-dataset.md)
+- [Track and limit evaluator spend](https://docs.langchain.com/langsmith/evaluator-spend.md): Cap weekly LLM spend on evaluators with an organization-wide default or per-evaluator overrides to keep evaluator costs predictable.
+
+##### Evaluator types
+
+###### UI
+
+- [How to define an LLM-as-a-judge evaluator](https://docs.langchain.com/langsmith/llm-as-judge.md)
+- [How to define a decision model evaluator](https://docs.langchain.com/langsmith/decision-model-evaluator.md): Set up a LangSmith evaluator that uses a decision model as the judge with questions that each return typed feedback.
+- [How to define a code evaluator](https://docs.langchain.com/langsmith/code-evaluator-ui.md)
+- [How to create a composite evaluator](https://docs.langchain.com/langsmith/composite-evaluators-ui.md)
+
+###### SDK
+
+- [How to define an LLM-as-a-judge evaluator](https://docs.langchain.com/langsmith/llm-as-judge-sdk.md)
+- [How to define a code evaluator](https://docs.langchain.com/langsmith/code-evaluator-sdk.md)
+- [How to create a composite evaluator](https://docs.langchain.com/langsmith/composite-evaluators-sdk.md)
+- [How to define a summary evaluator](https://docs.langchain.com/langsmith/summary.md)
+- [How to run a pairwise evaluation](https://docs.langchain.com/langsmith/evaluate-pairwise.md)
+
+##### Frameworks & integrations
+
+- [Run evals with openevals package](https://docs.langchain.com/langsmith/openevals.md): Run evaluations using the open-source openevals and agentevals packages with LangSmith.
+- [How to run evaluations with pytest](https://docs.langchain.com/langsmith/pytest.md)
+- [How to run evaluations with Vitest/Jest](https://docs.langchain.com/langsmith/vitest-jest.md)
+- [Harbor integrations](https://docs.langchain.com/langsmith/harbor-integrations.md): Run evaluations, Deep Agents, and sandboxes on LangSmith with Harbor.
+
+##### Improve evaluators
+
+- [Improve LLM-as-judge evaluators using human feedback](https://docs.langchain.com/langsmith/improve-judge-evaluator-feedback.md)
+- [How to improve your evaluator with few-shot examples](https://docs.langchain.com/langsmith/create-few-shot-evaluators.md)
+- [How to audit evaluator scores](https://docs.langchain.com/langsmith/audit-evaluator-scores.md)
+
+#### Annotation Queues
+
+- [Use annotation queues](https://docs.langchain.com/langsmith/annotation-queues.md)
+- [Build custom views for annotation queues](https://docs.langchain.com/langsmith/annotation-queue-custom-views.md): Build a custom view with LangSmith Chat to control how runs and threads appear to reviewers in an annotation queue.
+- [Manage feedback & annotation queues programmatically](https://docs.langchain.com/langsmith/annotation-queues-sdk.md)
+- [Use assertions](https://docs.langchain.com/langsmith/assertions.md): Capture free-form acceptance criteria as dataset examples by writing assertions while reviewing runs in an annotation queue.
+- [Set up feedback criteria](https://docs.langchain.com/langsmith/set-up-feedback-criteria.md)
+- [Annotate traces and runs inline](https://docs.langchain.com/langsmith/annotate-traces-inline.md)
+
+##### Feedback
+
+- [Log user feedback using the SDK](https://docs.langchain.com/langsmith/attach-user-feedback.md)
+- [Collect feedback with presigned URLs](https://docs.langchain.com/langsmith/presigned-feedback-tokens.md): Use presigned feedback tokens to collect user feedback from client-side applications without exposing your LangSmith API key.
+
+#### Test from Playground
+
+- [Test from the Playground](https://docs.langchain.com/langsmith/test-from-playground.md): Test prompts and model configurations over datasets in the LangSmith Playground without writing code.
+- [Run an evaluation from the Playground](https://docs.langchain.com/langsmith/run-evaluation-from-playground.md)
+
+#### Test from Studio
+
+- [LangSmith Studio](https://docs.langchain.com/langsmith/studio.md)
+- [Get started with Studio](https://docs.langchain.com/langsmith/quick-start-studio.md)
+- [How to use Studio](https://docs.langchain.com/langsmith/use-studio.md)
+- [Observability in Studio](https://docs.langchain.com/langsmith/observability-studio.md)
+- [Studio troubleshooting](https://docs.langchain.com/langsmith/troubleshooting-studio.md)
+
+## OpenAPI Specs
+
+- [agent-server-openapi](/langsmith/agent-server-openapi.json)
+- [openapi](https://api.host.langchain.com/openapi.json)
+- [langsmith-platform-openapi](/langsmith/langsmith-platform-openapi.json)
